@@ -2,8 +2,11 @@ package main
 
 import (
 	"github.com/nic0lae/JerryMouse/Servers"
-	"github.com/nic0lae/JerryMouse/Contracts"
 )
+
+type DgitInputParams struct {
+	Data string `json:"data,omitempty"`
+}
 
 func main() {
 	apiServer := Servers.Api()
@@ -12,40 +15,40 @@ func main() {
 		{
 			Route:      "/push",
 			Handler:    pushRequestHandler,
-			JsonObject: &interface{},
+			JsonObject: &DgitInputParams{},
 		},
 		{
 			Route:      "/clone",
 			Handler:    cloneRequestHandler,
-			JsonObject: &interface{},
+			JsonObject: &DgitInputParams{},
 		},
 		{
 			Route:      "/commit",
 			Handler:    commitRequestHandler,
-			JsonObject: &interface{},
+			JsonObject: DgitInputParams{},
 		},
 		{
 			Route:      "/pull",
 			Handler:    pullRequestHandler,
-			JsonObject: &interface{},
+			JsonObject: &DgitInputParams{},
 		},
 	})
 
 	apiServer.Run(":9999")
 }
 
-func pushRequestHandler(data []byte) JsonResponse {
+func pushRequestHandler(data []byte) Servers.JsonResponse {
 
 }
 
-func cloneRequestHandler(data []byte) JsonResponse {
+func cloneRequestHandler(data []byte) Servers.JsonResponse {
 
 }
 
-func commitRequestHandler(data []byte) JsonResponse {
+func commitRequestHandler(data []byte) Servers.JsonResponse {
 
 }
 
-func pullRequestHandler(data []byte) JsonResponse {
+func pullRequestHandler(data []byte) Servers.JsonResponse {
 
 }
