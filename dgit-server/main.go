@@ -1,6 +1,8 @@
 package main
 
 import (
+	"fmt"
+
 	"github.com/nic0lae/JerryMouse/Servers"
 )
 
@@ -34,21 +36,22 @@ func main() {
 		},
 	})
 
+	fmt.Println("Catch me at :9999")
 	apiServer.Run(":9999")
 }
 
 func pushRequestHandler(data []byte) Servers.JsonResponse {
-
+	return Servers.JsonResponse{}
 }
 
 func cloneRequestHandler(data []byte) Servers.JsonResponse {
-
+	return Servers.JsonResponse{}
 }
 
 func commitRequestHandler(data []byte) Servers.JsonResponse {
-
+	return Servers.JsonResponse{}
 }
 
 func pullRequestHandler(data []byte) Servers.JsonResponse {
-
+	return Servers.JsonResponse{}
 }
