@@ -1,0 +1,1 @@
+This is the home for the `dgit` cli
