@@ -1,1 +1,3 @@
-React-UI/eosio_docker/data
+eos-bridge/eosio_docker/data
+eos-bridge/frontend/node_modules
+eos-bridge/eosio_docker/scripts/eosio.cdt-1.3.2.x86_64.deb
