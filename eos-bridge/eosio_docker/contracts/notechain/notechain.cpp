@@ -162,19 +162,19 @@ ACTION pulling(name user, std::string & note)
 
 
 
-ACTION issuebounty(pullrequest pull)
+ACTION issuebounty(uint64_t bounty_id, std::string code)
   {
     require_auth(_self);
 
-    auto existing = _bounties.find(pull.bounty_id);
+    auto existing = _bounties.find(bounty_id);
     eosio_assert(existing != _bounties.end(), "bounty does not esists");
     const auto& st = *existing;
 
     // *** assert contract balance >= reward
 
-    this->code = pull.code; // update code
+    this->code = code; // update code
     // *** transfer(st.user, st.reward);
-    deletebounty(pull.bounty_id);
+    deletebounty(bounty_id);
   }
 
   ACTION push(std::string newcode, uint64_t bounty_id, name user)
