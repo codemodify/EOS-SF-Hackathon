@@ -31,14 +31,14 @@ if (process.env.NODE_ENV === "production") {
 }
 
 
-// Endpoint test - Nicolae to call this endpoint via postman for test
-app.get("/test", (req, res) => {
+// Push Endpoint - Front-end can call this endpoint
+app.get("/push", (req, res) => {
   const param = req.query.q;  
 
     let account = accounts[0].name;
     let privateKey = accounts[0].privateKey;
     //let privateKey = event.target.privateKey.value;
-    let note = "Mike Lin test value 16";
+    let note = "Mike Lin Test (not used! /push endpoint)";
 
     // prepare variables for the switch below to send transactions
     let actionName = "";
@@ -50,7 +50,169 @@ app.get("/test", (req, res) => {
         actionName = "pulling4";
         actionData = {
           user: account,
-          data: "mike128z",
+          data: "Mike Lin Test -- /push endpoint - 2:05a",
+        };
+    //     break;
+    //   default:
+    //     return;
+    // }
+
+    // eosjs function call: connect to the blockchain
+    const rpc = new JsonRpc(endpoint, { fetch });
+    // const rpc = new JsonRpc(endpoint);
+    const signatureProvider = new JsSignatureProvider([privateKey]);
+    const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
+    // try {
+      api.transact({
+        actions: [{
+          account: "notechainacc",
+          name: actionName,
+          authorization: [{
+            actor: account,
+            permission: 'active',
+          }],
+          data: actionData,
+        }]
+      }, {
+        blocksBehind: 3,
+        expireSeconds: 30,
+      }).then(function(result){
+        // console.log(result);
+
+        // res.send("success");
+
+
+        const rpc = new JsonRpc(endpoint, { fetch });
+        rpc.get_table_rows({
+          "json": true,
+          "code": "notechainacc",   // contract who owns the table
+          "scope": "notechainacc",  // scope of the table
+          "table": "notestruct",    // name of the table as specified by the contract abi
+          "limit": 100,
+        }).then(function(result){
+          console.log(result);
+          // this.setState({ noteTable: result.rows })
+
+          res.send(
+              result.rows
+          );
+        }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+
+      }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+});
+
+app.get("/pull", (req, res) => {
+  const param = req.query.q;  
+
+    let account = accounts[0].name;
+    let privateKey = accounts[0].privateKey;
+    //let privateKey = event.target.privateKey.value;
+    let note = "Mike Lin Test (not used! /pull endpoint)";
+
+    // prepare variables for the switch below to send transactions
+    let actionName = "";
+    let actionData = {};
+
+    // define actionName and action according to event type
+    // switch (event.type) {
+    //   case "submit":
+        actionName = "pulling3";
+        actionData = {
+          user: account,
+          data: "Mike Lin Test -- /pull endpoint",
+        };
+    //     break;
+    //   default:
+    //     return;
+    // }
+
+    // eosjs function call: connect to the blockchain
+    const rpc = new JsonRpc(endpoint, { fetch });
+    // const rpc = new JsonRpc(endpoint);
+    const signatureProvider = new JsSignatureProvider([privateKey]);
+    const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
+    // try {
+      api.transact({
+        actions: [{
+          account: "notechainacc",
+          name: actionName,
+          authorization: [{
+            actor: account,
+            permission: 'active',
+          }],
+          data: actionData,
+        }]
+      }, {
+        blocksBehind: 3,
+        expireSeconds: 30,
+      }).then(function(result){
+        // console.log(result);
+
+        // res.send("success");
+
+
+        const rpc = new JsonRpc(endpoint, { fetch });
+        rpc.get_table_rows({
+          "json": true,
+          "code": "notechainacc",   // contract who owns the table
+          "scope": "notechainacc",  // scope of the table
+          "table": "notestruct",    // name of the table as specified by the contract abi
+          "limit": 100,
+        }).then(function(result){
+          console.log(result);
+          // this.setState({ noteTable: result.rows })
+
+          res.send(
+              result.rows
+          );
+        }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+
+      }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+});
+
+app.get("/clone", (req, res) => {
+  const param = req.query.q;  
+
+    let account = accounts[0].name;
+    let privateKey = accounts[0].privateKey;
+    //let privateKey = event.target.privateKey.value;
+    let note = "Mike Lin Test (not used! /clone endpoint)";
+
+    // prepare variables for the switch below to send transactions
+    let actionName = "";
+    let actionData = {};
+
+    // define actionName and action according to event type
+    // switch (event.type) {
+    //   case "submit":
+        actionName = "pulling2";
+        actionData = {
+          user: account,
+          data: "Mike Lin Test -- /clone endpoint",
         };
     //     break;
     //   default:

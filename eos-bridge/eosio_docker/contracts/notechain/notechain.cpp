@@ -85,14 +85,14 @@ private:
   std::string code;
   bounty_table _bounties;
   pull_table _pullrequests;
-  using contract::contract;
+  //using contract::contract;
 
 public:
   using contract::contract;
 
   // constructor
   notechain(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),
-                                                                     _notes(receiver, receiver.value)
+                                                                     _notes(receiver, receiver.value),
                                                                      _pullrequests(receiver, receiver.value),
                                                                      _bounties(receiver, receiver.value) {}
 
