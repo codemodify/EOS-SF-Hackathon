@@ -202,7 +202,7 @@ app.post("/issuebounty", (req, res) => {
 
 //DONE!
 // Push Endpoint - Front-end can call this endpoint
-// => notechain.cpp declaration ==> ACTION push(std::string newcode, uint64_t bounty_id, name user)
+// => notechain.cpp declaration ==> ACTION push(std::string code, uint64_t bounty_id, name user)
 app.post("/push", (req, res) => {
     let account = accounts[0].name;
     let privateKey = accounts[0].privateKey;
@@ -216,7 +216,7 @@ app.post("/push", (req, res) => {
     // define actionName and action according to event type
         actionName = "push";
         actionData = {
-          newcode: req.body.newcode,
+          code: req.body.code,
           bounty_id: req.body.bounty_id,
           user: account,
         };
@@ -278,7 +278,7 @@ app.post("/push", (req, res) => {
 });
 
 // Ownerpush
-// ACTION ownerpush(std::string newcode)
+// ACTION ownerpush(std::string code)
 app.post("/ownerpush", (req, res) => {
     let account = accounts[0].name;
     let privateKey = accounts[0].privateKey;
@@ -292,7 +292,7 @@ app.post("/ownerpush", (req, res) => {
     // define actionName and action according to event type
         actionName = "ownerpush";
         actionData = {
-          newcode: req.body.newcode
+          code: req.body.code
         };
 
     // eosjs function call: connect to the blockchain
@@ -343,6 +343,72 @@ app.post("/ownerpush", (req, res) => {
       // });
 
       }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+});
+
+// getpullrequests endpoint
+app.post("/getpullrequests", (req, res) => {
+
+
+  var bounty_id;
+  bounty_id = req.body.bounty_id
+
+
+  const rpc = new JsonRpc(endpoint, { fetch });
+        rpc.get_table_rows({
+          "json": true,
+          "code": "notechainacc",   // contract who owns the table
+          "scope": "notechainacc",  // scope of the table
+          "table": "pullrequest",    // name of the table as specified by the contract abi
+          "lower_bound": 0,       //should be a constant and never change??
+          "limit": 100,
+        }).then(function(result){
+          console.log(result);
+          // this.setState({ noteTable: result.rows })
+
+          var list = [];
+
+          for( var i = 0; i < result.rows.length; i++) {
+            if(result.rows[i].bounty_id === bounty_id) {
+              list.push(result.rows[i]);
+            }
+          }
+
+          res.send(
+              list
+          );
+        }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+});
+
+// getbounties endpoint
+app.post("/getbounties", (req, res) => {
+  const rpc = new JsonRpc(endpoint, { fetch });
+        rpc.get_table_rows({
+          "json": true,
+          "code": "notechainacc",   // contract who owns the table
+          "scope": "notechainacc",  // scope of the table
+          "table": "bounty",        // name of the table as specified by the contract abi
+          "lower_bound": 0,        // ???? TO fix later???
+          "limit": 100,
+        }).then(function(result){
+          console.log(result);
+          // this.setState({ noteTable: result.rows })
+
+          res.send(
+              result.rows
+          );
+        }).catch(function(e){ 
         console.error(e);
         console.log('Caught exception: ' + e);
         if (e instanceof RpcError) {

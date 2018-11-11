@@ -188,18 +188,18 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
     deletebounty(bounty_id);
   }
 
-  ACTION ownerpush(std::string newcode)
+  ACTION ownerpush(std::string code)
   {
     
 //    require_auth(_self);
-    this->setCode(newcode);
+    this->setCode(code);
   }  
 
-  ACTION push(std::string newcode, uint64_t bounty_id, name user)
+  ACTION push(std::string code, uint64_t bounty_id, name user)
   {
     _pullrequests.emplace(_self, [&](auto &new_pull) {
       new_pull.prim_key = _pullrequests.available_primary_key();
-      new_pull.code = newcode;
+      new_pull.code = code;
       new_pull.user = user;
       new_pull.bounty_id = bounty_id;
       new_pull.timestamp = now();
