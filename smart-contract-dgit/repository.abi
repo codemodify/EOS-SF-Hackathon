@@ -1,0 +1,144 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Nov 11 01:18:24 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "bounty",
+            "base": "",
+            "fields": [
+                {
+                    "name": "prim_key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "bountyname",
+                    "type": "string"
+                },
+                {
+                    "name": "reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "createbounty",
+            "base": "",
+            "fields": [
+                {
+                    "name": "bountyname",
+                    "type": "string"
+                },
+                {
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reward",
+                    "type": "asset"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "issuebounty",
+            "base": "",
+            "fields": [
+                {
+                    "name": "pull",
+                    "type": "pullrequest"
+                }
+            ]
+        },
+        {
+            "name": "pullrequest",
+            "base": "",
+            "fields": [
+                {
+                    "name": "prim_key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                },
+                {
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "push",
+            "base": "",
+            "fields": [
+                {
+                    "name": "newcode",
+                    "type": "string"
+                },
+                {
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "createbounty",
+            "type": "createbounty",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "issuebounty",
+            "type": "issuebounty",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "push",
+            "type": "push",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "bounties",
+            "type": "bounty",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "pullrequest",
+            "type": "pullrequest",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
