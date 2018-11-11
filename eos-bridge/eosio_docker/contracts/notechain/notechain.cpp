@@ -59,7 +59,7 @@ private:
   {
     uint64_t prim_key;
     std::string bountyname;
-    eosio::asset reward;
+    int reward;
     std::string description;
     uint64_t timestamp;
 
@@ -77,7 +77,7 @@ private:
     auto primary_key() const { return prim_key; }
   };
 
-  typedef eosio::multi_index<name("bounties"), bounty> bounty_table;
+  typedef eosio::multi_index<name("bounty"), bounty> bounty_table;
   // add secondary reference on bounty id
   typedef eosio::multi_index<name("pullrequest"), pullrequest> pull_table;
 
@@ -99,7 +99,7 @@ public:
   ACTION update(name user, std::string & note)
   {
     // to sign the action with the given account
-    require_auth(user);
+//    require_auth(user);
 
     // create new / update note depends whether the user account exist or not
     if (isnewuser(user))
@@ -131,7 +131,7 @@ public:
 ACTION pulling(name user, std::string & note)
   {
     // to sign the action with the given account
-    require_auth(user);
+//    require_auth(user);
 
     // create new / update note depends whether the user account exist or not
     // if (isnewuser(user))
@@ -164,7 +164,7 @@ ACTION pulling(name user, std::string & note)
 
 ACTION issuebounty(uint64_t bounty_id, std::string code)
   {
-    require_auth(_self);
+//    require_auth(_self);
 
     auto existing = _bounties.find(bounty_id);
     eosio_assert(existing != _bounties.end(), "bounty does not esists");
@@ -191,10 +191,10 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
   ACTION createbounty(
       std::string bountyname,
       uint64_t bounty_id,
-      asset reward,
+      int reward,
       std::string description)
   {
-    require_auth(_self);
+//    require_auth(_self);
 
     _bounties.emplace(_self, [&](auto &new_bounty) {
       new_bounty.prim_key     = _bounties.available_primary_key();
@@ -212,7 +212,7 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
   private:
   void deletebounty(uint64_t bounty_id)
   {
-    require_auth(_self);
+//    require_auth(_self);
     auto itr = _bounties.find(bounty_id);
     eosio_assert(itr != _bounties.end(), "bounty must exist to be deleted");
 

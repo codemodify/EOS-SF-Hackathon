@@ -201,6 +201,7 @@ app.post("/issuebounty", (req, res) => {
       });
 });
 
+//DONE!
 // Push Endpoint - Front-end can call this endpoint
 // => notechain.cpp declaration ==> ACTION push(std::string newcode, uint64_t bounty_id, name user)
 app.post("/push", (req, res) => {
@@ -243,30 +244,30 @@ app.post("/push", (req, res) => {
       }).then(function(result){
         // console.log(result);
 
-        // res.send("success");
+         res.send("success");
 
 
-        const rpc = new JsonRpc(endpoint, { fetch });
-        rpc.get_table_rows({
-          "json": true,
-          "code": "notechainacc",   // contract who owns the table
-          "scope": "notechainacc",  // scope of the table
-          "table": "notestruct",    // name of the table as specified by the contract abi
-          "limit": 100,
-        }).then(function(result){
-          console.log(result);
-          // this.setState({ noteTable: result.rows })
+      //   const rpc = new JsonRpc(endpoint, { fetch });
+      //   rpc.get_table_rows({
+      //     "json": true,
+      //     "code": "notechainacc",   // contract who owns the table
+      //     "scope": "notechainacc",  // scope of the table
+      //     "table": "notestruct",    // name of the table as specified by the contract abi
+      //     "limit": 100,
+      //   }).then(function(result){
+      //     console.log(result);
+      //     // this.setState({ noteTable: result.rows })
 
-          res.send(
-              result.rows
-          );
-        }).catch(function(e){ 
-        console.error(e);
-        console.log('Caught exception: ' + e);
-        if (e instanceof RpcError) {
-          console.log(JSON.stringify(e.json, null, 2)); 
-        }       
-      });
+      //     res.send(
+      //         result.rows
+      //     );
+      //   }).catch(function(e){ 
+      //   console.error(e);
+      //   console.log('Caught exception: ' + e);
+      //   if (e instanceof RpcError) {
+      //     console.log(JSON.stringify(e.json, null, 2)); 
+      //   }       
+      // });
 
       }).catch(function(e){ 
         console.error(e);
@@ -279,43 +280,7 @@ app.post("/push", (req, res) => {
 
 // pull endpoint which gets table values
 app.post("/pull", (req, res) => {
-  const param = req.query.q;  
-
-    let account = accounts[0].name;
-    let privateKey = accounts[0].privateKey;
-    //let privateKey = event.target.privateKey.value;
-    let note = "Mike Lin Test (not used! /pull endpoint)";
-
-    // prepare variables for the switch below to send transactions
-    let actionName = "";
-    let actionData = {};
-
-    // eosjs function call: connect to the blockchain
-    const rpc = new JsonRpc(endpoint, { fetch });
-    // const rpc = new JsonRpc(endpoint);
-    const signatureProvider = new JsSignatureProvider([privateKey]);
-    const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
-    // try {
-      api.transact({
-        actions: [{
-          account: "notechainacc",
-          name: actionName,
-          authorization: [{
-            actor: account,
-            permission: 'active',
-          }],
-          data: actionData,
-        }]
-      }, {
-        blocksBehind: 3,
-        expireSeconds: 30,
-      }).then(function(result){
-        // console.log(result);
-
-        // res.send("success");
-
-
-        const rpc = new JsonRpc(endpoint, { fetch });
+  const rpc = new JsonRpc(endpoint, { fetch });
         rpc.get_table_rows({
           "json": true,
           "code": "notechainacc",   // contract who owns the table
@@ -337,67 +302,12 @@ app.post("/pull", (req, res) => {
         }       
       });
 
-      }).catch(function(e){ 
-        console.error(e);
-        console.log('Caught exception: ' + e);
-        if (e instanceof RpcError) {
-          console.log(JSON.stringify(e.json, null, 2)); 
-        }       
-      });
+
 });
 
 // clone endpoint which gets table values
 app.post("/clone", (req, res) => {
-  const param = req.query.q;  
-
-    let account = accounts[0].name;
-    let privateKey = accounts[0].privateKey;
-    //let privateKey = event.target.privateKey.value;
-    let note = "Mike Lin Test (not used! /clone endpoint)";
-
-    // prepare variables for the switch below to send transactions
-    let actionName = "";
-    let actionData = {};
-
-    // define actionName and action according to event type
-    // switch (event.type) {
-    //   case "submit":
-        actionName = "pulling2";
-        actionData = {
-          user: account,
-          data: "Mike Lin Test -- /clone endpoint",
-        };
-    //     break;
-    //   default:
-    //     return;
-    // }
-
-    // eosjs function call: connect to the blockchain
-    const rpc = new JsonRpc(endpoint, { fetch });
-    // const rpc = new JsonRpc(endpoint);
-    const signatureProvider = new JsSignatureProvider([privateKey]);
-    const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
-    // try {
-      api.transact({
-        actions: [{
-          account: "notechainacc",
-          name: actionName,
-          authorization: [{
-            actor: account,
-            permission: 'active',
-          }],
-          data: actionData,
-        }]
-      }, {
-        blocksBehind: 3,
-        expireSeconds: 30,
-      }).then(function(result){
-        // console.log(result);
-
-        // res.send("success");
-
-
-        const rpc = new JsonRpc(endpoint, { fetch });
+  const rpc = new JsonRpc(endpoint, { fetch });
         rpc.get_table_rows({
           "json": true,
           "code": "notechainacc",   // contract who owns the table
@@ -412,14 +322,6 @@ app.post("/clone", (req, res) => {
               result.rows
           );
         }).catch(function(e){ 
-        console.error(e);
-        console.log('Caught exception: ' + e);
-        if (e instanceof RpcError) {
-          console.log(JSON.stringify(e.json, null, 2)); 
-        }       
-      });
-
-      }).catch(function(e){ 
         console.error(e);
         console.log('Caught exception: ' + e);
         if (e instanceof RpcError) {
