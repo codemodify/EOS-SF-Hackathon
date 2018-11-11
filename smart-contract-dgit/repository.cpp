@@ -29,49 +29,57 @@ public:
     auto primary_key() const { return prim_key; }
   };
 
-  typedef eosio::multi_index<name("bounties"), bounty> bounty_table;
-  // add secondary reference on bounty id
+  TABLE feild 
+  {
+    uint64_t prim_key;
+    std::string reponame;
+    std::string code;
+    auto primary_key() const { return prim_key; }
+  };
+
+  typedef eosio::multi_index<name("bounty"), bounty> bounty_table;
+  typedef eosio::multi_index<name("feild"), feild> feild_table;
   typedef eosio::multi_index<name("pullrequest"), pullrequest> pull_table;
 
-  std::string reponame;
-  std::string code;
+  feild_table _feilds;
   bounty_table _bounties;
   pull_table _pullrequests;
+
   using contract::contract;
 
   repository(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),
                                                                       _pullrequests(receiver, receiver.value),
+                                                                      _feilds(receiver, receiver.value),
                                                                       _bounties(receiver, receiver.value) {}
 
-  ACTION issuebounty(pullrequest pull)
+  ACTION issuebounty(uint64_t bounty_id, std::string code)
   {
     require_auth(_self);
 
-    auto existing = _bounties.find(pull.bounty_id);
+    auto existing = _bounties.find(bounty_id);
     eosio_assert(existing != _bounties.end(), "bounty does not esists");
     const auto& st = *existing;
 
     // *** assert contract balance >= reward
 
-    this->code = pull.code; // update code
+    this->setCode(code); // update code
     // *** transfer(st.user, st.reward);
-    deletebounty(pull.bounty_id);
+    deletebounty(bounty_id);
   }
 
   ACTION push(std::string newcode, uint64_t bounty_id, name user)
   {
     _pullrequests.emplace(_self, [&](auto &new_pull) {
-      new_pull.prim_key = _pullrequests.available_primary_key();
-      new_pull.code = newcode;
-      new_pull.user = user;
-      new_pull.bounty_id = bounty_id;
-      new_pull.timestamp = now();
+      new_pull.prim_key   = _pullrequests.available_primary_key();
+      new_pull.code       = newcode;
+      new_pull.user       = user;
+      new_pull.bounty_id  = bounty_id;
+      new_pull.timestamp  = now();
     });
   }
 
   ACTION createbounty(
       std::string bountyname,
-      uint64_t bounty_id,
       asset reward,
       std::string description)
   {
@@ -85,12 +93,25 @@ public:
       new_bounty.timestamp    = now();
     });
   }
-
-  std::string pull()
-  {
-    return this->code;
+  ACTION setreponame(std::string reponame) {
+    auto itr = _feilds.find(0);
+    if(itr == _feilds.end()) {
+      _feilds.emplace( _self, [&](auto& new_data ) {
+        new_data.prim_key = 0,
+        new_data.reponame = reponame,
+        new_data.code     = "";
+      });
+    } else {
+      auto st = *itr;
+      _feilds.modify(itr, _self, [&](auto& new_data) {
+        new_data.prim_key = st.prim_key,
+        new_data.reponame = reponame,
+        new_data.code     = st.code;
+      });
+    }
   }
-  private:
+
+private:
   void deletebounty(uint64_t bounty_id)
   {
     require_auth(_self);
@@ -118,6 +139,24 @@ public:
       }
       auto itr = _bounties.find(bounty_id);
       _bounties.erase(itr);
+    }
+  }
+
+  void setCode(std::string code) {
+    auto itr = _feilds.find(0);
+    if(itr == _feilds.end()) {
+      _feilds.emplace( _self, [&](auto& new_data ) {
+        new_data.prim_key = 0,
+        new_data.reponame = "",
+        new_data.code     = code;
+      });
+    } else {
+      auto st = *itr;
+      _feilds.modify(itr, _self, [&](auto& new_data) {
+        new_data.prim_key = st.prim_key,
+        new_data.reponame = st.reponame,
+        new_data.code     = code;
+      });
     }
   }
 }; 

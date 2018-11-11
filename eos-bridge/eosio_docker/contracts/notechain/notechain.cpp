@@ -77,8 +77,17 @@ private:
     auto primary_key() const { return prim_key; }
   };
 
+  TABLE feild 
+  {
+    uint64_t prim_key;
+    std::string reponame;
+    std::string code;
+
+    auto primary_key() const { return prim_key; }
+  };
+
   typedef eosio::multi_index<name("bounty"), bounty> bounty_table;
-  // add secondary reference on bounty id
+  feild_table _feilds;
   typedef eosio::multi_index<name("pullrequest"), pullrequest> pull_table;
 
   std::string reponame;
@@ -94,6 +103,7 @@ public:
   notechain(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),
                                                                      _notes(receiver, receiver.value),
                                                                      _pullrequests(receiver, receiver.value),
+                                                                     _feilds(receiver, receiver.value),
                                                                      _bounties(receiver, receiver.value) {}
 
   ACTION update(name user, std::string & note)
@@ -172,7 +182,7 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
 
     // *** assert contract balance >= reward
 
-    this->code = code; // update code
+    this->setCode(code); // update code
     // *** transfer(st.user, st.reward);
     deletebounty(bounty_id);
   }
@@ -205,10 +215,24 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
     });
   }
 
-  std::string pull()
-  {
-    return this->code;
+  ACTION setreponame(std::string reponame) {
+    auto itr = _feilds.find(0);
+    if(itr == _feilds.end()) {
+      _feilds.emplace( _self, [&](auto& new_data ) {
+        new_data.prim_key = 0,
+        new_data.reponame = reponame,
+        new_data.code     = "";
+      });
+    } else {
+      auto st = *itr;
+      _feilds.modify(itr, _self, [&](auto& new_data) {
+        new_data.prim_key = st.prim_key,
+        new_data.reponame = reponame,
+        new_data.code     = st.code;
+      });
+    }
   }
+
   private:
   void deletebounty(uint64_t bounty_id)
   {
@@ -237,6 +261,23 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
       }
       auto itr = _bounties.find(bounty_id);
       _bounties.erase(itr);
+    }
+  }
+  void setCode(std::string code) {
+    auto itr = _feilds.find(0);
+    if(itr == _feilds.end()) {
+      _feilds.emplace( _self, [&](auto& new_data ) {
+        new_data.prim_key = 0,
+        new_data.reponame = "",
+        new_data.code     = code;
+      });
+    } else {
+      auto st = *itr;
+      _feilds.modify(itr, _self, [&](auto& new_data) {
+        new_data.prim_key = st.prim_key,
+        new_data.reponame = st.reponame,
+        new_data.code     = code;
+      });
     }
   }
 };
