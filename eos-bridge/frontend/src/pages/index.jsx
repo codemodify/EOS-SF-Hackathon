@@ -94,7 +94,7 @@ class Index extends Component {
     try {
       const result = await api.transact({
         actions: [{
-          account: "notechain",
+          account: "notechainacc",
           name: actionName,
           authorization: [{
             actor: account,
