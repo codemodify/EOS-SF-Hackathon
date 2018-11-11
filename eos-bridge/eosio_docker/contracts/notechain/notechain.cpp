@@ -283,4 +283,4 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
 };
 
 // specify the contract name, and export a public action: update
-EOSIO_DISPATCH(notechain, (update)(pulling)(issuebounty)(push)(createbounty))
+EOSIO_DISPATCH(notechain, (update)(pulling)(issuebounty)(push)(createbounty)(setreponame))

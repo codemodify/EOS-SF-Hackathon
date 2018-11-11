@@ -161,4 +161,4 @@ private:
   }
 }; 
 
-EOSIO_DISPATCH( repository, (issuebounty)(push)(createbounty) )
+EOSIO_DISPATCH( repository, (issuebounty)(push)(createbounty)(setreponame) )
