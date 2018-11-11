@@ -87,13 +87,14 @@ private:
   };
 
   typedef eosio::multi_index<name("bounty"), bounty> bounty_table;
-  field_table _fields;
+  typedef eosio::multi_index<name("field"), field> field_table;
   typedef eosio::multi_index<name("pullrequest"), pullrequest> pull_table;
 
   std::string reponame;
   std::string code;
   bounty_table _bounties;
   pull_table _pullrequests;
+  field_table _fields;
   //using contract::contract;
 
 public:
@@ -109,7 +110,7 @@ public:
   ACTION update(name user, std::string & note)
   {
     // to sign the action with the given account
-//    require_auth(user);
+    //    require_auth(user);
 
     // create new / update note depends whether the user account exist or not
     if (isnewuser(user))
