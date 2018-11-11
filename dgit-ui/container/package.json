@@ -1,0 +1,21 @@
+{
+	"main": "build/index.js",
+	"license": "MIT",
+	"devDependencies": {
+		"@types/react": "^16.4.16",
+		"framer": "^0.9.2"
+	},
+	"peerDependencies": {
+		"framer": "^0.9.2",
+		"react": "^16.3.0",
+		"react-dom": "^16.3.0"
+	},
+	"framer": {
+		"id": "b2f937a0-f2e9-4bc0-9276-a03d527473bb"
+	},
+	"author": "fred madrid",
+	"dependencies": {
+		"@framer/anubisvic_ofx.interactive-form-elements": "^1.1.0",
+		"@framer/panr.button": "^1.6.0"
+	}
+}
