@@ -56,7 +56,7 @@ echo "=== deploy smart contract ==="
 # $2 account holder name of the smart contract
 # $3 wallet for unlock the account
 # $4 password for unlocking the wallet
-deploy_contract.sh notechain notechainacc notechainwal $(cat notechain_wallet_password.txt)
+deploy_contract.sh notechain notechainacc eosiomain $(cat eosiomain_wallet_password.txt)
 
 echo "=== create user accounts ==="
 # script for create data into blockchain

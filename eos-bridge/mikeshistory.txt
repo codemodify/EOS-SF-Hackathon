@@ -1,0 +1,5135 @@
+    1  vim ~/.zshrc
+    2  zsh
+    3  git clone https://github.com/zsh-users/zsh-autosuggestions ~/.zsh/zsh-autosuggestions
+    4  vim ~/.zshrc
+    5  zsh
+    6  cat ~/.bash_history | grep clone
+    7  git clone https://github.com/jchai002/b-mo.git
+    8  cd b-mo
+    9  gco origin/plugin
+   10  git checkout plugin
+   11  gs
+   12  npm run babel
+   13  npm install
+   14  ~/Projects/hackathons/20180407-C4YT/b-mo-new/webapp/plugins/local/b-mo
+   15  cd ..
+   16  ls
+   17  cd ..
+   18  ls
+   19  cd ..
+   20  ls
+   21  less config/pluginsConfig.js
+   22  cd ..
+   23  cd
+   24  cd -
+   25  ls
+   26  npm run babel
+   27  npm install
+   28  docker ps
+   29  docker stop f9b52507f33c 5c20788287a5 ebf0c0d1f6e1 00a8898b6da2 882078d6c9d6
+   30  less docker-compose.yml
+   31  docker-compose up
+   32  ~/Projects/hackathons/20180407-C4YT/b-mo-new/webapp/plugins/local/b-mo
+   33  cd ..
+   34  npm start
+   35  git submodule init
+   36  git submodule update
+   37  cd express-charge
+   38  ls
+   39  npm install
+   40  npm run babel
+   41  cd ..
+   42  npm start
+   43  npm run start:repl
+   44  npm start
+   45  pwd
+   46  ls
+   47  ls -l
+   48  pwd
+   49  git status
+   50  git stash
+   51  git pull origin/plugin
+   52  git status
+   53  git remote
+   54  git remote -v
+   55  git pull origin plugin
+   56  npm run babel
+   57  npm start
+   58  npm run babel
+   59  npm start
+   60  npm run babel
+   61  npm start
+   62  npm run babel
+   63  npm start
+   64  ls
+   65  git pull origin plugin
+   66  stash
+   67  git pull origin plugin
+   68  npm run babel
+   69  npm start
+   70  git 
+   71  git pull origin plugin
+   72  npm run babel
+   73  npm start
+   74  npm run babel
+   75  npm start
+   76  npm run babel
+   77  npm start
+   78  npm run babel
+   79  npm start
+   80  npm run babel
+   81  npm start
+   82  npm run babel
+   83  npm start
+   84  git add .
+   85  git commit -m "added tabs on main pay page and changed some text"
+   86  git push origin plugin
+   87  npm run babel
+   88  npm start
+   89  npm run babel
+   90  npm start
+   91  git pull origin plugin
+   92  npm run babel
+   93  npm start
+   94  git remote -v
+   95  git pull origin plugin
+   96  git pull origin
+   97  git pull origin plugin
+   98  npm start
+   99  npm run babel
+  100  npm start
+  101  git pull origin plugin
+  102  npm run babel
+  103  npm start
+  104  docker-compose up
+  105  npm run babel
+  106  npm start
+  107  git log
+  108  git co 3b22e4158be86990f67a1f9c7da65d0610125409
+  109  git checkout 3b22e4158be86990f67a1f9c7da65d0610125409
+  110  npm run babel
+  111  npm start
+  112  git log
+  113  git checkout master
+  114  npm start
+  115  npm run babel
+  116  npm start
+  117  npm run babel
+  118  npm install
+  119  npm run babel
+  120  git branch
+  121  git checkout plugin
+  122  stash
+  123  git checkout plugin
+  124  stash
+  125  git stash
+  126  git checkout plugin
+  127  npm run babel
+  128  git checkout master
+  129  npm run babel
+  130  git checkout plugin
+  131  npm run babel
+  132  git log
+  133  git checkout 795270f071126753560c9dd48b357ed34d0727e5
+  134  npm run babel
+  135  git log
+  136  git checkout a2cc9f164d248ba75743cd93910353b81e17690f
+  137  npm run babel
+  138  docker ps
+  139  docker down 5c20788287a5
+  140  docker-compose down
+  141  docker ps
+  142  docker-compose down 5c20788287a5
+  143  docker ps
+  144  docker stop 5c20788287a5
+  145  docker ps
+  146  docker stop ebf0c0d1f6e1
+  147  docker stop 5c20788287a5
+  148  docker ps
+  149  docker stop 5c20788287a5
+  150  docker ps
+  151  docker-compose down
+  152  ls
+  153  docker-compose down
+  154  docker ps
+  155  pwd
+  156  docker-compose up
+  157  docker ps
+  158  OA\nls
+  159  cd ..
+  160  ls
+  161  cd ..
+  162  ls
+  163  cd ..
+  164  ls
+  165  cd ..
+  166  ls
+  167  cd react_native_apps
+  168  ls
+  169  cd coinshares-wallet
+  170  ls
+  171  cd ~/Projects/react_native_apps/coinshares-wallet
+  172  ls
+  173  npm i -S react-native-app-link
+  174  npm install
+  175  brew update && brew cask install react-native-debugger
+  176  ls
+  177  brew update && brew cask install react-native-debugger
+  178  open "rndebugger://set-debugger-loc?host=localhost&port=8081"
+  179  exp://192.168.86.22:19000
+  180  open "rndebugger://set-debugger-loc?host=192.168.86.22&port=19000"
+  181  bundle.js:9 WebSocket connection to 'ws://192.168.86.22:19000/debugger-proxy?role=debugger&name=Chrome' failed: Connection closed before receiving a handshake responseopen React Native Debugger
+  182  open React Native Debugger
+  183  ls
+  184  open "rndebugger://set-debugger-loc?host=192.168.86.22&port=19000"
+  185  docker ps
+  186  ps docker
+  187  ps
+  188  open "rndebugger://set-debugger-loc?host=192.168.86.22&port=19000"
+  189  exp://192.168.86.22:19000
+  190  open "rndebugger://set-debugger-loc?host=192.168.86.22&port=19000"
+  191  npm install -g react-devtools\n
+  192  react-devtools
+  193  ls
+  194  git add .
+  195  git commit -m "deep links work, need to parse payload next"
+  196  git push origin
+  197  git add .
+  198  git commit -m "extracted simple WIF from URI"
+  199  ls
+  200  git log
+  201  git co 19b26febae7d821a5b3fc3f7b9a066950bf8e17a
+  202  git checkout 19b26febae7d821a5b3fc3f7b9a066950bf8e17a
+  203  pls
+  204  ps
+  205  git branch
+  206  git add .
+  207  git commit -m "can extract WIF if app already opened"
+  208  git branch
+  209  cd '/Users/ML/Projects/react_native_apps/coinshares-wallet' && clear
+  210  exit
+  211  ls
+  212  git add .
+  213  git commit -m "importing wallet via WIF deep link works\nq
+  214  git commit -m "importing wallet via WIF deep link works"\nq
+  215  git push origin
+  216  git branch
+  217  git push master
+  218  git
+  219  git branch
+  220  ls
+  221  git
+  222  git log
+  223  git branch
+  224  git checkout master
+  225  git branch
+  226  git
+  227  git branch
+  228  git push
+  229  git log
+  230  git
+  231  git branch
+  232  git checkout
+  233  ls
+  234  git add .
+  235  git commit -m "cleaned up setting text and made comments"
+  236  git push origin
+  237  git log
+  238  git branch
+  239  add .
+  240  add commit -m "fixed receive screen"
+  241  add .
+  242  git add .
+  243  git commit -m "fixed UI, massive text changes, page layout changes"
+  244  git push origin
+  245  git add .
+  246  git commit -m "fixed UI, massive text changes, page layout changes v2"
+  247  git push
+  248  git push origin
+  249  ls
+  250  cd Users
+  251  cd Users/
+  252  ls
+  253  cd ML
+  254  cd Projects
+  255  ls
+  256  cd nodejs_apps
+  257  ls
+  258  cd coinshares-web
+  259  ls
+  260  cd web
+  261  sublime .
+  262  npm install
+  263  npm start
+  264  ls
+  265  cd ..
+  266  ls
+  267  cd ..
+  268  ls
+  269  pwd
+  270  ls
+  271  cd Users/ML
+  272  cd Projects
+  273  ls
+  274  cd nodejs_apps
+  275  ls
+  276  cd coinshares-web
+  277  git pull
+  278  ls
+  279  cd services
+  280  ls
+  281  sublime .
+  282  git pull
+  283  sublime .
+  284  cd ..
+  285  ls
+  286  sublime .
+  287  java --version
+  288  /usr/libexec/java_home -V
+  289  export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_162`
+  290  java --version
+  291  /usr/libexec/java_home -V
+  292  export JAVA_HOME=`/usr/libexec/java_home -v 1.8.0_162`
+  293  exec zsh
+  294  /usr/libexec/java_home -V
+  295  java --version
+  296  java -v
+  297  java
+  298  java -version
+  299  mvn -version
+  300  brew install maven
+  301  cd ~/opt/packages/cassandra/
+  302  curl -O http://mirror.cc.columbia.edu/pub/software/apache/cassandra/3.11.2/apache-cassandra-3.11.2-bin.tar.gz
+  303  tar xzvf apache-cassandra-3.11.2-bin.tar.gz
+  304  ln -s ~/opt/packages/cassandra/apache-cassandra-3.11.2 ~/opt/cassandra
+  305  vi ~/.bashrc 
+  306  nano ~/.bashrc
+  307  source ~/.bashrc
+  308  cassandra -v
+  309  cassandra -f
+  310  ~/opt/cassandra/bin/cqlsh
+  311  pwd
+  312  cd Users/ML/
+  313  ls
+  314  cd Projects
+  315  ls
+  316  cd nodejs_apps
+  317  ls
+  318  cd coinshares-web
+  319  ls
+  320  cd web
+  321  ls
+  322  git stash
+  323  git pull
+  324  sublime .
+  325  cassandra -v
+  326  cassandra -f
+  327  ~/opt/cassandra/bin/cqlshInstall Schema
+  328  ps cassandra
+  329  ps
+  330  ps cassandra
+  331  cassandra -f
+  332  java -version
+  333  nano  ~/.bashrc 
+  334  source ~/.bashrc
+  335  cassandra -f
+  336  install schema
+  337  ~/opt/cassandra/bin/cqlsh
+  338  pwd
+  339  cassandra -f
+  340  source ~/.bashrc
+  341  java --version
+  342  java -version
+  343  cassandra -f
+  344  ~/opt/cassandra/bin/cqlsh
+  345  lsof -i :7199
+  346  java -version
+  347  cassandra -f
+  348  ~/opt/cassandra/bin/cqlsh
+  349  cassandra -v
+  350  which ~/opt/cassandra/bin/cqlsh
+  351  which cqlsh
+  352  /usr/local/bin/cqlsh
+  353  ls
+  354  cd Users/ML/Projects/nodejs_apps/coinshares-web
+  355  ls
+  356  pwd
+  357  cd services
+  358  ls
+  359  cat README.md
+  360  pwd
+  361  git status
+  362  cd /Users/ML/Projects/nodejs_apps/coinshares-web/services
+  363  ls
+  364  cat README.md
+  365  which cqlsh
+  366  /usr/local/bin/cqlsh\n
+  367  mvn clean install
+  368  ls
+  369  git pull
+  370  mvn clean install
+  371  git pull
+  372  mvn clean install -DskipTests
+  373  mvn spring-boot:run
+  374  git pull
+  375  mvn spring-boot:run
+  376  cd ..
+  377  ls
+  378  nano README.md
+  379  ls
+  380  cd services
+  381  nano README.md
+  382  cd ..
+  383  ls
+  384  cd web
+  385  ls
+  386  git pull
+  387  mvn spring-boot:run
+  388  ls
+  389  cd ..
+  390  nano README.md
+  391  mvn spring-boot:run
+  392  mvn clean install -DskipTests
+  393  cd ..
+  394  ls
+  395  cd services
+  396  mvn spring-boot:run
+  397  cd ../web
+  398  ls
+  399  cd ..
+  400  ls
+  401  pwd
+  402  git status
+  403  git stash
+  404  git status
+  405  git reset --hard
+  406  git status
+  407  npm start
+  408  ls
+  409  cd 
+  410  cd ..
+  411  ls
+  412  cd Users/ML/Projects/nodejs_apps/coinshares-web
+  413  cd services
+  414  nano README.md
+  415  mvn spring-boot:run
+  416  nano ~/.bashrc
+  417  source ~/.bashrc
+  418  pwd
+  419  ls
+  420  cd Users/ML/Projects/nodejs_apps/coinshares-web
+  421  nano ~/.bashrc
+  422  cd coinshares-web
+  423  cd Users/ML/Projects/react_native_apps/coinshares-wallet
+  424  cd coinshares-web
+  425  source ~/.bashrc
+  426  cd coinshares-web
+  427  cd coinshares-wallet
+  428  nano ~/.bashrc
+  429  cd coinshares-wallet
+  430  cd coinshares-web
+  431  nano ~/.bashrc
+  432  source ~/.bashrc
+  433  cd web
+  434  source ~/.bashrc
+  435  cd web
+  436  cd wallet
+  437  nano ~/.bashrc
+  438  cd /Users/ML/Projects/nodejs_apps/coinshares-web
+  439  source ~/.bashrc
+  440  nano ~/.bashrc
+  441  web
+  442  wallet
+  443  web
+  444  wallet
+  445  cd -
+  446  web
+  447  wallet
+  448  sublime .
+  449  wallet
+  450  sublime .
+  451  wallet
+  452  wd
+  453  pwd
+  454  sublime .
+  455  git status
+  456  git diff class.js
+  457  git diff MainBottomTabs.js
+  458  git status
+  459  git diff signer.js
+  460  git diff class.js
+  461  git models/signer.js
+  462  git diff models/signer.js
+  463  git status
+  464  git diff screen/E_settings.js
+  465  git diff screen/wallets/1_list.js
+  466  git add .
+  467  git commit -m "generate testnet pubkey and privkey"
+  468  git push
+  469  git status
+  470  git diff screen/E_settings.js
+  471  git status
+  472  git diff class.js
+  473  git diff screen/wallets/1_list.js
+  474  wallet
+  475  git stash
+  476  git pull
+  477  git log
+  478  git status
+  479  git stash list
+  480  git stash apply
+  481  add .
+  482  commit -m "created testnet WIF button on add wallet scree"
+  483  git add .
+  484  git commit -m "created testnet WIF button on add wallet screen"
+  485  git add .
+  486  git status
+  487  git log
+  488  git commit -m "testnet version of wallet works"
+  489  git push
+  490  git-reset[1]
+  491  git reset --hard
+  492  git add .
+  493  git commit -m "fix formatting"
+  494  git push
+  495  web
+  496  cd ..
+  497  git clone git://github.com/bcoin-org/bcoin.git
+  498  ls
+  499  cd bcoin
+  500  ls
+  501  npm install
+  502  git tag
+  503  ./bin/bcoin
+  504  web
+  505  cd ..
+  506  web
+  507  source ~/.bashrc
+  508  web
+  509  cd ../bcoin
+  510  ./bin/bcoin
+  511  nano ~/.bashrc
+  512  bcoindir
+  513  source ~/.bashrc
+  514  bcoindir
+  515  nano ~/.bashrc
+  516  source ~/.bashrc
+  517  webdir
+  518  walletdir
+  519  bcoindir
+  520  sublime .
+  521  showFiles
+  522  showmount
+  523  showFiles
+  524  ls
+  525  cd .bcoin/
+  526  cd .bcoin
+  527  cd ~/.bcoin
+  528  ls
+  529  nano bcoin.conf
+  530  cd ..
+  531  pwed
+  532  pwd
+  533  cd ~/.bcoin
+  534  pwd
+  535  bcoindir
+  536  walletdir
+  537  sublime
+  538  sublime .
+  539  cd ..
+  540  ls
+  541  git clone https://github.com/Overtorment/BlueWallet.git
+  542  cd BlueWallet
+  543  npm install
+  544  npm start
+  545  git log
+  546  git co 0c12930f895ca0851272e6b5b124119bedc0d954
+  547  git checkout 0c12930f895ca0851272e6b5b124119bedc0d954
+  548  stash
+  549  git stash
+  550  git checkout 0c12930f895ca0851272e6b5b124119bedc0d954
+  551  git diff
+  552  ls
+  553  git show
+  554  git
+  555  git branch
+  556  git checkout master
+  557  wallet
+  558  nano ~/.bashrc
+  559  ls
+  560  git show
+  561  ls
+  562  git
+  563  git status
+  564  git log
+  565  exit
+  566  ps
+  567  ps cassandra
+  568  ps
+  569  exit
+  570  walletdir
+  571  source ~/.bashrc
+  572  walletdir
+  573  webdir
+  574  source ~/.bashrc
+  575  webdir
+  576  pwed
+  577  pwd
+  578  walletdir
+  579  sublime
+  580  npm start
+  581  git stash
+  582  ls
+  583  git log
+  584  git checkout 26e3dcd316b9c17e44d146aecf305ac89a9c8fe6
+  585  git log
+  586  ls
+  587  git log
+  588  git checkout master
+  589  git log
+  590  git checkout master
+  591  git reset --hard
+  592  git checkout master
+  593  git log
+  594  sublime .
+  595  ls
+  596  git log
+  597  git branch
+  598  git log
+  599  sublime .
+  600  git add .
+  601  git commit -m "fix huge file path typo"
+  602  git push
+  603  git log
+  604  git reset --hard
+  605  git checkout 2a56d24e7e0a135428eb16218b0d59aa2b99edb3
+  606  git log
+  607  git checkout head
+  608  git checkout master
+  609  git log
+  610  git stash
+  611  git stash apply
+  612  git stash
+  613  git log
+  614  git checkout master
+  615  add .
+  616  git add .
+  617  git commit -m "vTESTNET - not working on testnet" 
+  618  git push
+  619  git branch emailFeature
+  620  git checkout emailFeature
+  621  git branch -d emailFeature
+  622  git checkout master
+  623  git branch -d emailFeature
+  624  git branch emailFeatureMainnetOnly
+  625  git checkout emailFeatureMainnetOnly
+  626  git stash list
+  627  git stash apply stash@{2}
+  628  git checkout master
+  629  git diff
+  630  reset --hard HEAD
+  631  git stash list
+  632  git stash apply stash@{2}
+  633  git diff
+  634  reset --hard HEAD
+  635  git stash list
+  636  git stash apply stash@{1}
+  637  git diff
+  638  reset --hard HEAD
+  639  git stash list
+  640  git stash apply stash@{0}
+  641  git diff
+  642  reset --hard HEAD
+  643  git branch
+  644  git branch master
+  645  git checkout master
+  646  git stash
+  647  git checkout master
+  648  git reset --hard
+  649  git checkout master
+  650  git stash list
+  651  git checkout emailFeatureMainnetOnly
+  652  git stash list
+  653  git branch
+  654  git add .
+  655  git commit -m "vMainnet - working?"
+  656  cd ..
+  657  ls
+  658  cd BlueWallet
+  659  git pull
+  660  npm install
+  661  cd ..
+  662  rm -rf
+  663  git clone git@github.com:Overtorment/BlueWallet.git
+  664  ls
+  665  rm -rf BlueWallet
+  666  git clone git@github.com:Overtorment/BlueWallet.git
+  667  cd BlueWallet
+  668  npm install
+  669  ls
+  670  sul
+  671  sublime .
+  672  git commit -m "Unedited app as of 4/19/18"
+  673  git add .
+  674  git commit -m "Unedited app as of 4/19/18"
+  675  git reset --hard
+  676  git diff
+  677  git reset --hard
+  678  git log
+  679  cd ..
+  680  ls
+  681  rm -rf BlueWallet
+  682  ls
+  683  rm -rf BlueWallet
+  684  ls
+  685  git clone git@github.com:Overtorment/BlueWallet.git
+  686  npm install
+  687  ls
+  688  cd BlueWallet
+  689  ls
+  690  npm install
+  691  ls
+  692  sublime .
+  693  ls
+  694  git pull
+  695  ls
+  696  cd ..
+  697  mv BlueWallet BlueWallet2
+  698  cd BlueWallet2
+  699  npm install
+  700  npm cache clean --force
+  701  npm install
+  702  cd ..
+  703  cd
+  704  ls
+  705  walletdir
+  706  git branch
+  707  cd ..
+  708  ls
+  709  cd BlueWallet2
+  710  ls
+  711  npm install
+  712  walletdir
+  713  source ~/.bashrc
+  714  walletdir
+  715  ls
+  716  sublime .
+  717  git log
+  718  git branch
+  719  git checkout master
+  720  ls
+  721  git log
+  722  git checkout 26e3dcd316b9c17e44d146aecf305ac89a9c8fe6
+  723  git checkout master
+  724  git add .
+  725  git commit -m "fix path typo"
+  726  git branch
+  727  git push
+  728  git log
+  729  git pull
+  730  git log
+  731  git checkout emailFeatureMainnetOnly
+  732  sublime .
+  733  git diff
+  734  cd ..
+  735  cd BlueWallet2
+  736  ls
+  737  cd .
+  738  cd ..
+  739  ls
+  740  rm -rf BlueWallet2
+  741  ls
+  742  rm -rf BlueWallet2
+  743  ls
+  744  ls -l
+  745  rm package-lock.json
+  746  ls
+  747  git clone git@github.com:Overtorment/BlueWallet.git
+  748  cd B
+  749  cd BlueWallet
+  750  ls
+  751  npm install
+  752  sublime .
+  753  exp start -c --localhost --ios
+  754  expo update
+  755  exp start -c --localhost --ios
+  756  npm install -g exp
+  757  exp start -c --localhost --ios
+  758  showF
+  759  showFiles
+  760  showFile
+  761  hideFiles
+  762  defaults write com.apple.finder AppleShowAllFiles YES
+  763  walletdir
+  764  cd ..
+  765  ls
+  766  cd BlueWallet
+  767  git reset --hard
+  768  npm install
+  769  cd ../
+  770  ls
+  771  rm -rf BlueWallet
+  772  ls
+  773  ls -l
+  774  git clone git@github.com:Overtorment/BlueWallet.git
+  775  cd BlueWallet
+  776  npm install
+  777  npm start
+  778  ls
+  779  cd ..
+  780  ls
+  781  git branch
+  782  walletdir
+  783  git branch
+  784  sublime .
+  785  exp start -c --localhost --ios
+  786  webdir
+  787  git pull
+  788  walletdir
+  789  curl -i -X POST -H 'Content-Type: application/json' -d '{"id":"514971ad-4927-4af7-93a1-9f30041e677d","recipientsId":"3a776c87-1cd6-42d0-95ca-5c25f6d17721","recipientsEmail":"ustymenko+2@gmail.com","recipientsPubAddr":"tb1qspdpgl2a657xsya7srt3f7klle0h6l2e459pkj","recipientNew":true,"sendersId":null,"coinId":"BTC","amount":"0.1","txHEX":null,"sentDate":null,"sendersUserAgent":null,"sendersIp":null,"exchangeRateUSD":"8220.590000","minersFee":"0.00000255"}' http://localhost:8080/tx/notify
+  790  curl
+  791  on:\ncurl -i -X POST -H 'Content-Type: application/json' -d '{"id":"514971ad-4927-4af7-93a1-9f30041e677d","recipientsId":"3a776c87-1cd6-42d0-95ca-5c25f6d17721","recipientsEmail":"ustymenko+2@gmail.com","recipientsPubAddr":"tb1qspdpgl2a657xsya7srt3f7klle0h6l2e459pkj","recipientNew":true,"sendersId":null,"coinId":"BTC","amount":"0.1","txHEX":null,"sentDate":null,"sendersUserAgent":null,"sendersIp":null,"exchangeRateUSD":"8220.590000","minersFee":"0.00000255"}'
+  792  curl -i -X POST -H 'Content-Type: application/json' -d '{"id":"514971ad-4927-4af7-93a1-9f30041e677d","recipientsId":"3a776c87-1cd6-42d0-95ca-5c25f6d17721","recipientsEmail":"ustymenko+2@gmail.com","recipientsPubAddr":"tb1qspdpgl2a657xsya7srt3f7klle0h6l2e459pkj","recipientNew":true,"sendersId":null,"coinId":"BTC","amount":"0.1","txHEX":null,"sentDate":null,"sendersUserAgent":null,"sendersIp":null,"exchangeRateUSD":"8220.590000","minersFee":"0.00000255"}' http://localhost:8080/tx/notify
+  793  curl -i -X POST -H 'Content-Type: application/json' -d '{"id":"514971ad-4927-4af7-93a1-9f30041e677d","recipientsId":"3a776c87-1cd6-42d0-95ca-5c25f6d17721","recipientsEmail”:”mlin08.mit@gmail.com","recipientsPubAddr":"tb1qspdpgl2a657xsya7srt3f7klle0h6l2e459pkj","recipientNew":true,"sendersId":null,"coinId":"BTC","amount":"0.1","txHEX":null,"sentDate":null,"sendersUserAgent":null,"sendersIp":null,"exchangeRateUSD":"8220.590000","minersFee":"0.00000255"}' http://coinshares.io:8080/tx/notify
+  794  curl google.com
+  795  curl -i -X POST -H 'Content-Type: application/json' -d '{"id":"514971ad-4927-4af7-93a1-9f30041e677d","recipientsId":"3a776c87-1cd6-42d0-95ca-5c25f6d17721","recipientsEmail":"ustymenko+3@gmail.com","recipientsPubAddr":"tb1qspdpgl2a657xsya7srt3f7klle0h6l2e459pkj","recipientNew":true,"sendersId":null,"coinId":"BTC","amount":"0.1","txHEX":null,"sentDate":null,"sendersUserAgent":null,"sendersIp":null,"exchangeRateUSD":"8220.590000","minersFee":"0.00000255"}' http://coinshares.io:8080/tx/notify
+  796  curl http://localhost:8080/tx/create/m@m.com
+  797  curl http://google.com
+  798  curl http://www.coinshares.io/tx/create/m@m.com
+  799  curl http://coinshares.io/tx/create/m@m.com
+  800  curl http://coinshares.io:8080/tx/create/mlin.products+cs2@gmail.com
+  801  ls
+  802  stash
+  803  git branch
+  804  git add .
+  805  git commit -m "WIP - fetch reddit top URL working"
+  806  curl http://coinshares.io:8080/tx/create/mlin.products+cs3@gmail.com
+  807  git add .
+  808  git commit -m "WIP - fetch http://coinshares.io:8080/tx/create/$\{sub\} button working"
+  809  git add .
+  810  git commit -m "WIP - email input into fetch button working"
+  811  curl http://coinshares.io:8080/tx/create/mlin.products+cs3@gmail.com
+  812  git add .
+  813  git commit -m "WIP - recipientsPubAddr gets pushed into component button (promise requires .then)\n\nq\ndfsad\nd\nfa\ndsf
+  814  git commit -m "WIP - recipientsPubAddr gets pushed into component button -- promise requires .then\n\nq\ndfsad\nd\nfa\ndsf\ngit commit -m "WIP - recipientsPubAddr gets pushed into component button (promise requires .then)q\n\nq\ndfsad\nd\nfa\ndsf
+  815  q
+  816  git commit -m "WIP - recipientsPubAddr gets pushed into component button (promise requires .then)"\n\nq\ndfsad\nd\nfa\ndsf
+  817  add . 
+  818  git add .
+  819  git commit -m "WIP - recipientsPubAddr gets pushed into component button (promise requires .then)"
+  820  git add .
+  821  git commit -m "WIP - sendCreate working, mining fee and w/o pubkey address error check removed"
+  822  git add .
+  823  git commit -m "WIP - need to call coinmarketcap api to get current BTC price"
+  824  add .
+  825  git add .
+  826  git commit -m "WIP - sendDetails completely in USD and dynamic"
+  827  git add .
+  828  git commit -m "WIP - sendDetails completely in USD and dynamic v2"
+  829  git log
+  830  git add .
+  831  git commit -m "WIP - sending payments working (w/USD), trans. list brokern"
+  832  git add .
+  833  git commt -m "WIP - send works! POST update works\nq
+  834  git commt -m "WIP - send works! POST update works\nq\ngit commt -m "WIP - send works\! POST update works\!"\nq
+  835  git commt -m "WIP - send works! POST update works"
+  836  git commit -m "WIP - send works! POST update works\nq
+  837  git commit -m "WIP - send works POST update works"
+  838  git add .
+  839  git commit -m "WIP - commented sendCreate.js"
+  840  git commit -m "WIP - commented sendDetails.js\nq
+  841  git commit -m "WIP - commented sendDetails.js"
+  842  git add .
+  843  walletdir
+  844  source ~/.bashrc
+  845  walletdir
+  846  git add .
+  847  git commit -m "WIP - commented transactions list.js"
+  848  hideFiles
+  849  defaults write com.apple.finder AppleShowAllFiles YES
+  850  defaults write com.apple.finder AppleShowAllFiles NO
+  851  sudo nano ~/.bash_profile
+  852  source ~/.bashrc
+  853  hideFiles
+  854  sudo nano ~/.zshrc
+  855  sudo nano ~/.bash_profile
+  856  source ~/.zshrc
+  857  hideFiles
+  858  sudo nano ~/.zshrc
+  859  source ~/.zshrc
+  860  hideFiles
+  861  ls
+  862  git add .
+  863  git commit -m "WIP - further comments/formatting"
+  864  git add .
+  865  git commit -m "WIP - updated readme"
+  866  git log
+  867  git rebase -i HEAD~3
+  868  git log
+  869  git diff
+  870  git log
+  871  git branch
+  872  git log --graph --decorate --pretty=oneline --abbrev-commit
+  873  git rebase --interactive
+  874  branch
+  875  git branch
+  876  git rebase --interactive
+  877  git branch --set-upstream-to=origin/<branch> emailFeatureMainnetOnly
+  878  git branch emailFeatureMainnetOnlyTODELETE
+  879  git branch
+  880  git log
+  881  git rebase -i 5a9a8122e9fc3ad855bec8c3c1f37f77803f9fb1
+  882  git log
+  883  git rebase -i 5b0e090b938b5464f5e478ff6bd5d987425f116c
+  884  git log
+  885  git branch
+  886  git checkout emailFeatureMainnetOnly
+  887  git log
+  888  git branch
+  889  git rebase -i 5b0e090b938b5464f5e478ff6bd5d987425f116c
+  890  git rebase --continue
+  891  git rebase --edit-todo
+  892  git reset --soft HEAD~3 &&\nq
+  893  git reset --soft HEAD~3\nq
+  894  git reset --soft HEAD~3
+  895  git log
+  896  git diff
+  897  git commit -m "WIP - made comments"
+  898  git diff
+  899  git log
+  900  git checkout emailFeatureMainnetOnlyTODELETE
+  901  git log
+  902  git co emailFeatureMainnetOnly
+  903  git checkout emailFeatureMainnetOnly
+  904  git log
+  905  git checkout emailFeatureMainnetOnlyTODELETE
+  906  git log
+  907  git checkout emailFeatureMainnetOnly
+  908  git log
+  909  git branch
+  910  git checkout emailFeatureMainnetOnlyTODELETE
+  911  git log
+  912  git checkout master
+  913  git log
+  914  git checkout emailFeatureMainnetOnlyTODELETE
+  915  git log
+  916  git branch
+  917  git branch emailMainnetOnly
+  918  git branch
+  919  git checkout emailMainnetOnly
+  920  git log
+  921  git branch
+  922  git checkout emailFeatureMainnetOnlyTODELETE
+  923  git branch -m emailMainnetOnlyBACKUP
+  924  git branch
+  925  git checkout emailFeatureMainnetOnly
+  926  git branch -m ToDeleteCorrupted?
+  927  git branch -m ToDeleteCorrupted
+  928  git branch
+  929  git checkout emailMainnetOnly
+  930  cd ..
+  931  ls
+  932  pwd
+  933  clone git@github.com:Overtorment/BlueWallet.git
+  934  git clone git@github.com:Overtorment/BlueWallet.git
+  935  git clone https://github.com/Overtorment/BlueWallet.git
+  936  ls
+  937  cd BlueWallet
+  938  npm install
+  939  walletdir
+  940  source ~/.zshrc
+  941  walletdir
+  942  source ~/.zshrc
+  943  walletdir
+  944  ls
+  945  cd Users/ML/Projects/react_native_apps/coinshares-wallet
+  946  cd ../BlueWallet
+  947  ls
+  948  npm install
+  949  npm cach clean
+  950  npm cache clean --force
+  951  npm install
+  952  cd ..
+  953  ls
+  954  rm -rf BlueWallet
+  955  ls
+  956  rm -rf BlueWallet
+  957  ls
+  958  rm -rf BlueWallet
+  959  ls
+  960  git clone https://github.com/Overtorment/BlueWallet.git
+  961  cd BlueWallet
+  962  npm install
+  963  ls
+  964  cd ..
+  965  pwd
+  966  mkdir Blwllt
+  967  cd Blwllt
+  968  git clone https://github.com/Overtorment/BlueWallet.git
+  969  pwd
+  970  ls
+  971  mv BlueWallet Blwllt2
+  972  ls
+  973  mv Blwllt2 ../Blwllt2
+  974  ls
+  975  cd ..
+  976  ls
+  977  cd Blwllt
+  978  ls
+  979  cd ..
+  980  rm blwllt
+  981  rm -rf Blwllt
+  982  ls
+  983  sublime. 
+  984  sublime 
+  985  pwd
+  986  cd Blwllt2
+  987  npm install
+  988  cd walletdir
+  989  cd ../coinshares-wallet
+  990  ls
+  991  cd ../
+  992  ls
+  993  cd Blwllt2
+  994  cd ..
+  995  ls
+  996  rm -rf BlueWallet
+  997  ls
+  998  cd Blwllt2
+  999  ls
+ 1000  git add .
+ 1001  git commit -m "WIP - switched to testnet, still need to find new testnet broadcast API"
+ 1002  ls
+ 1003  git log
+ 1004  git add .
+ 1005  git commit -m "WIP - TESTNET - testnet done, smartbit brdcst API done, to fix transaction history prob (UXTO prob?)"
+ 1006  cd ...
+ 1007  cd ..
+ 1008  ls
+ 1009  cd coinshares-wallet
+ 1010  ls
+ 1011  cd ..
+ 1012  ls
+ 1013  pwd
+ 1014  cd Projects
+ 1015  ls
+ 1016  cd react_native_apps
+ 1017  ls
+ 1018  mv Blwllt2 BlueWallet
+ 1019  ls
+ 1020  cd coinshares-wallet
+ 1021  ls
+ 1022  sublime .
+ 1023  ls
+ 1024  pwd
+ 1025  sublime .
+ 1026  git log
+ 1027  git branch
+ 1028  git log
+ 1029  ls
+ 1030  git clone https://github.com/expo/expo-docs.git\n
+ 1031  ls
+ 1032  cd expo-docs
+ 1033  yarn
+ 1034  yarn run dev
+ 1035  yarn
+ 1036  brew yarn
+ 1037  brew install yarn
+ 1038  ls
+ 1039  yarn
+ 1040  yarn run dev
+ 1041  ls
+ 1042  nano package.json
+ 1043  ls
+ 1044  pwd
+ 1045  yarn
+ 1046  yarn install
+ 1047  yarn
+ 1048  nano package.json
+ 1049  yarn install
+ 1050  nano package.json
+ 1051  cd ..
+ 1052  ls
+ 1053  rm -rf expo-docs
+ 1054  cd ..
+ 1055  git clone https://github.com/expo/expo-docs.git\n
+ 1056  cd expo-docs
+ 1057  yarn
+ 1058  yarn run dev
+ 1059  npm install -g babel-cli
+ 1060  cd ..
+ 1061  npm install -g babel-cli
+ 1062  rm -rf /usr/local/lib/node_modules
+ 1063  sudo rm -rf /usr/local/lib/node_modules
+ 1064  brew uninstall node\n
+ 1065  brew install node --without-npm\n
+ 1066  echo prefix=~/.npm-packages >> ~/.npmrc\n
+ 1067  echo prefix=~/.npm-packages\n
+ 1068  curl -L https://www.npmjs.com/install.sh | sh\n
+ 1069  curl -O -L https://www.npmjs.com/install.sh | sh\n
+ 1070  curl -L https://www.npmjs.com/install.sh | sh\n
+ 1071  cd .
+ 1072  cd ..
+ 1073  ls
+ 1074  cd ..
+ 1075  cd Projects
+ 1076  ls
+ 1077  scripts/install.sh
+ 1078  NPM_VER=5.7.1
+ 1079  wget https://registry.npmjs.org/npm/-/npm-$\{NPM_VER\}.tgz\n
+ 1080  wget https://registry.npmjs.org/npm/-/npm-$\{NPM_VER\}.tgz
+ 1081  curl -L https://www.npmjs.com/install.sh | sh\n
+ 1082  cd /usr/local/lib/node_modules
+ 1083  npm --version
+ 1084  npm -v
+ 1085  wget https://registry.npmjs.org/npm/-/npm-$\{5.6.0}.tgz\n
+ 1086  wget https://registry.npmjs.org/npm/-/npm-$\{NPM_VER\}.tgz\n
+ 1087  wget https://registry.npmjs.org/npm/-/npm-${5.6.0}.tgz\n
+ 1088  wget https://registry.npmjs.org/npm/-/npm-5.6.0.tgz\n
+ 1089  tar xzf npm-5.6.0.tgz\n
+ 1090  cd aTemp
+ 1091  tar xzf npm-5.6.0.tgz\n
+ 1092  cd package
+ 1093  ./scripts/install.sh\n
+ 1094  ls
+ 1095  cd scripts
+ 1096  ls
+ 1097  install.sh
+ 1098  ./install.sh
+ 1099  ls
+ 1100  cd ..
+ 1101  rm -rf aTemp
+ 1102  ls
+ 1103  cd ..
+ 1104  rm -rf aTemp
+ 1105  ls
+ 1106  walletdir
+ 1107  cd react_native_apps
+ 1108  ls
+ 1109  cd coinshares-wallet
+ 1110  cd ..
+ 1111  cd expo-docs
+ 1112  yarn run dev
+ 1113  yarn
+ 1114  npm install yarn -g
+ 1115  yarn run dev
+ 1116  brew install yarn
+ 1117  brew link yarn
+ 1118  yarn run dev
+ 1119  nano package.json
+ 1120  npm install -g babel-cli
+ 1121  yarn run dev
+ 1122  ls
+ 1123  nano README.md
+ 1124  cd ..
+ 1125  cd coinshares-wallet
+ 1126  pwd
+ 1127  npm install
+ 1128  nano package.json
+ 1129  npm install
+ 1130  npm --version
+ 1131  npm install -g npm@latest\n
+ 1132  sudo npm install -g npm@latest\n
+ 1133  node -v
+ 1134  npm install npm@latest -g.
+ 1135  npm install
+ 1136  cd ..
+ 1137  ls
+ 1138  pwd
+ 1139  cd Users/ML/Projects/react_native_apps/coinshares-wallet
+ 1140  cd ..
+ 1141  ls
+ 1142  cd BlueWallet
+ 1143  ls
+ 1144  npm install
+ 1145  npm cach clean
+ 1146  npm cache clean
+ 1147  npm cache verify
+ 1148  npm install -g npm@latest\n
+ 1149  npm install -g npm@next\n
+ 1150  cd ..
+ 1151  sudo npm install -g npm@next\n
+ 1152  npm install
+ 1153  cd BlueWallet
+ 1154  npm install
+ 1155  sudo npm install -g npm@next\n
+ 1156  npm -v
+ 1157  nano $HOME/.bash_profile
+ 1158  source $HOME/.bash_profile
+ 1159  source ~/.bashrc
+ 1160  npm install
+ 1161  npm unlink
+ 1162  npm install
+ 1163  brew uninstall node\n
+ 1164  brew uninstall --force node
+ 1165  grep -irl "node_modules/node"\n
+ 1166  grep -irl "node_modules/node"
+ 1167  which node
+ 1168  cd /usr/local/lib
+ 1169  ls
+ 1170  cd ..
+ 1171  ls
+ 1172  cd lib
+ 1173  ls -l
+ 1174  cd node_modules
+ 1175  ls
+ 1176  cd ..
+ 1177  ls
+ 1178  rm -rf node_modules
+ 1179  sudo rm -rf node_modules
+ 1180  ls -l
+ 1181  ls
+ 1182  cd /usr/local/include
+ 1183  ls
+ 1184  rm -rf node
+ 1185  sudo rm -rf node
+ 1186  ls
+ 1187  cd /usr/local/bin
+ 1188  ls
+ 1189  ls -l
+ 1190  sudo rm -rf node-debug
+ 1191  sudo rm -rf node-gyp
+ 1192  sudo rm -rf node
+ 1193  ls -l
+ 1194  ls -l #n
+ 1195  ls -l *n
+ 1196  ls n*
+ 1197  ls -l *n
+ 1198  rm -rf node-dev
+ 1199  rm -rf node-inspector
+ 1200  rm -rf node-repl
+ 1201  rm -rf nodemon
+ 1202  rm -rf nodetool
+ 1203  rm -rf npm
+ 1204  cd ~
+ 1205  ls -l
+ 1206  showFiles
+ 1207  ls 
+ 1208  cd Users
+ 1209  cd ..
+ 1210  ls
+ 1211  cd ..
+ 1212  ls
+ 1213  showFiles
+ 1214  ls
+ 1215  cd Users
+ 1216  ls
+ 1217  cd ML
+ 1218  ls
+ 1219  ~
+ 1220  cd ~
+ 1221  pwd
+ 1222  cd /usr/local/share/man
+ 1223  cd man1
+ 1224  ls
+ 1225  rm -rf node.1
+ 1226  nano npm-access.1
+ 1227  cd ..
+ 1228  ls
+ 1229  cd ..
+ 1230  cd lib
+ 1231  ls d*
+ 1232  ls -l
+ 1233  rm -rf dtrace
+ 1234  cd /opt/bin
+ 1235  cd /opt
+ 1236  cd /usr/local/share/doc
+ 1237  ls
+ 1238  rm -rf node
+ 1239  sudo rm -rf node
+ 1240  ls
+ 1241  cd /usr/local/share/systemtap/tapset
+ 1242  ls
+ 1243  rm node.stp
+ 1244  ls
+ 1245  rm -rf node.stp
+ 1246  ls
+ 1247  sudo rm node.stp
+ 1248  ls
+ 1249  node -v
+ 1250  npm -v
+ 1251  npm --version
+ 1252  npm -v
+ 1253  cd ..
+ 1254  npm -v
+ 1255  node -v
+ 1256  cd /Users/ML/Projects/nodejs_apps/coinshares-web
+ 1257  npm install
+ 1258  cd walletdir
+ 1259  ls
+ 1260  cd ..
+ 1261  ls
+ 1262  cd nodejs
+ 1263  ls
+ 1264  cd ../react_native_apps
+ 1265  cd BlueWallet
+ 1266  npm install
+ 1267  which node
+ 1268  cd ../coinshares-wallet
+ 1269  ls
+ 1270  cd /Users/ML/Projects/nodejs_apps/coinshares-web
+ 1271  cd ..
+ 1272  cd react_native_apps
+ 1273  cd coinshares-wallet
+ 1274  ls
+ 1275  npm install
+ 1276  npm install reinstall -g\n
+ 1277  npm -v
+ 1278  npm install
+ 1279  cd coinshares-wallet
+ 1280  cd /Users/ML/Projects/nodejs_apps/coinshares-web
+ 1281  cd web
+ 1282  npm install
+ 1283  nano /Users/ML/.npm/_logs/2018-04-26T21_59_05_204Z-debug.log
+ 1284  git diff
+ 1285  npm install
+ 1286  npm install --save-dev metro metro-core\n
+ 1287  npm install
+ 1288  cd ..
+ 1289  ls
+ 1290  mv BlueWallet BlueWallet(testnet)
+ 1291  mv BlueWallet BlueWallet_Testnet
+ 1292  git clone https://github.com/Overtorment/BlueWallet.git
+ 1293  ls
+ 1294  cd BlueWallet
+ 1295  npm install
+ 1296  cd ..
+ 1297  ls
+ 1298  cd BlueWallet_Testnet
+ 1299  sublime
+ 1300  sublime .
+ 1301  npm install query-string
+ 1302  npm uninstall query-string
+ 1303  cd ..
+ 1304  ls
+ 1305  cd ..
+ 1306  ls
+ 1307  cd ..
+ 1308  ls
+ 1309  cd react_native_apps
+ 1310  ls
+ 1311  cd coinshares-wallet
+ 1312  ls
+ 1313  npm install query-string
+ 1314  git add .
+ 1315  git commit -m "WIP - TESTNET - exp:// WIF import working on case 2, https:// entry not working"
+ 1316  git add .
+ 1317  git commit -m "WIP - TESTNET - exp:// WIF import working"
+ 1318  add .
+ 1319  git add .
+ 1320  git commit -m "WIP - TESTNET - deeplink http:// WIF import fully working "
+ 1321  git add .
+ 1322  git commit -m "WIP - TESTNET - deeplink http:// WIF import fully working "
+ 1323  npm install
+ 1324  ls
+ 1325  git log
+ 1326  git stash
+ 1327  git log
+ 1328  git add .
+ 1329  git commit -m "WIP - TESTNET - deeplink http:// WIF import fully working (fixed a big typo)"
+ 1330  git diff
+ 1331  git stash
+ 1332  git add .
+ 1333  git commit -m "WIP - TESTNET - Set WIF import in E_settings to pull out "M" or "N" addresses (ideally want "2" addresses)\nq\ngit stash
+ 1334  git commit -m "WIP - TESTNET - Set WIF import in E_settings to pull out "M" or "N" addresses (ideally want "2" addresses)"
+ 1335  ls
+ 1336  git add .
+ 1337  git commit -m "WIP - TESTNET - auto refresh balance after WIF import"
+ 1338  git push origin
+ 1339  git merge
+ 1340  git checkout master
+ 1341  git merge emailMainnetOnly
+ 1342  git push origin
+ 1343  git branch
+ 1344  git diff
+ 1345  ls
+ 1346  git branch testnetOnly
+ 1347  git checkout testnetOnly
+ 1348  git add .
+ 1349  git commit -m "WIP - TESTET - organized code""
+ 1350  git commit -m "WIP - TESTET - organized code"
+ 1351  ls
+ 1352  cd ..
+ 1353  git clone https://github.com/Airbitz/edge-react-gui.git
+ 1354  ls
+ 1355  ls -l
+ 1356  nano package.json
+ 1357  rm package-lock.json
+ 1358  ls
+ 1359  rm install.sh
+ 1360  ls
+ 1361  ls -l
+ 1362  cd edge-react-gui
+ 1363  yarn
+ 1364  ls
+ 1365  cd Users/ML/Projects/react_native_apps/coinshares-wallet
+ 1366  cd ..
+ 1367  ls
+ 1368  cd edge-react-gui
+ 1369  sublime .
+ 1370  react-native run-ios
+ 1371  npm install -g react-native-cli\n
+ 1372  npm instal
+ 1373  npm install
+ 1374  react-native run-ios
+ 1375  react-native
+ 1376  git branch
+ 1377  react-native run-ios
+ 1378  yarn
+ 1379  react-native run-ios
+ 1380  node -v
+ 1381  npm -v
+ 1382  npm install -g react-native-cli\n
+ 1383  cd ..
+ 1384  npm install -g react-native-cli\n
+ 1385  ls
+ 1386  cd edge-react-gui
+ 1387  ls
+ 1388  yarn
+ 1389  \nreact-native run-ios
+ 1390  cd edge-react-gui
+ 1391  cd /Users/ML/Projects/react_native_apps/edge-react-gui
+ 1392  yarn
+ 1393  \nreact-native run-ios
+ 1394  react-native
+ 1395  npm install -g react-native-cli
+ 1396  \nreact-native run-ios
+ 1397  which node
+ 1398  npm install -g react-native-cli
+ 1399  \nreact-native run-ios
+ 1400  echo $path
+ 1401  npm config set prefix '~/.npm-global'
+ 1402  \nreact-native run-ios
+ 1403  react-native
+ 1404  nano ~/.zshrc
+ 1405  source ~/.zshrc
+ 1406  react-native
+ 1407  nano ~/.zshrc
+ 1408  source ~/.zshrc
+ 1409  react-native
+ 1410  nano ~/.zshrc
+ 1411  \nreact-native run-ios
+ 1412  source ~/.bashrc
+ 1413  nano ~/.bashrc
+ 1414  source ~/.bashrc
+ 1415  react-native run-ios
+ 1416  pwd
+ 1417  cd /Users/ML/Projects/react_native_apps/edge-react-gui
+ 1418  react-native run-ios
+ 1419  react-native
+ 1420  source ~/.bashrc
+ 1421  react-native
+ 1422  which node
+ 1423  echo $path
+ 1424  npm list -g | head -n 1
+ 1425  export PATH="/Users/ML/.npm-global/bin:$PATH"
+ 1426  react-native
+ 1427  nano ~/.bashrc
+ 1428  cd /Users/ML/.npm-global/bin
+ 1429  cd /Users/ML/.npm-globa
+ 1430  cd /Users/ML
+ 1431  ls -l
+ 1432  showFiles
+ 1433  ls
+ 1434  npm list -g
+ 1435  cd Users/ML/.npm-global/lib
+ 1436  cd Users/ML/.npm-global
+ 1437  nano Users/ML/.npm-global
+ 1438  npm list -g
+ 1439  npm root
+ 1440  npm root -g
+ 1441  cd /Users/ML/.npm-global/lib/node_modules\n
+ 1442  nano ~/.bashrc
+ 1443  source ~/.bashrc
+ 1444  react-native
+ 1445  nano ~/.zshrc
+ 1446  source ~/.zshrc
+ 1447  react-native
+ 1448  ls
+ 1449  pwd
+ 1450  cd /Users/ML/.npm-global/lib/node_modules\n
+ 1451  cd /Users/ML/Projects/react_native_apps\n
+ 1452  cd edge-react-gui
+ 1453  ls
+ 1454  react-native
+ 1455  npm install -g react-native-cli
+ 1456  react-native
+ 1457  react-native run-ios
+ 1458  /Users/ML/Projects/react_native_apps/edge-react-gui/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1459  ls
+ 1460  git add .
+ 1461  git commit -m "Got and recorded developer key"
+ 1462  git log
+ 1463  git branch
+ 1464  git checkout develop
+ 1465  git log
+ 1466  git status
+ 1467  hideFiles
+ 1468  cd ../
+ 1469  ls
+ 1470  cd coinshares-edge-wallet
+ 1471  ls
+ 1472  git log
+ 1473  git init
+ 1474  git add .
+ 1475  git commit -m "Got developer key and recorded it in readme-ML.md"
+ 1476  cd /Users/ML/Projects/react_native_apps\n
+ 1477  cd coinshares-edge-wallet
+ 1478  sublime .
+ 1479  react-native run-ios
+ 1480  cd ..
+ 1481  cd /Users/ML/Projects/react_native_apps\n
+ 1482  git clone https://github.com/Airbitz/edge-react-gui.git
+ 1483  showFiles
+ 1484  hideFiles
+ 1485  ls
+ 1486  cd coinshares-edge-wallet
+ 1487  react-native run-ios
+ 1488  yarn
+ 1489  git init
+ 1490  git add .
+ 1491  git commit -m "Got developer key and recorded it in readme-ML.md"
+ 1492  react-native run-ios
+ 1493  /Users/ML/Projects/react_native_apps/coinshares-edge-wallet/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1494  sublime .
+ 1495  react-native run-ios
+ 1496  /Users/ML/Projects/react_native_apps/coinshares-edge-wallet/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1497  react-native run-ios
+ 1498  /Users/ML/Projects/react_native_apps/coinshares-edge-wallet/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1499  ls
+ 1500  pwd
+ 1501  cd ..
+ 1502  ls
+ 1503  cd coinshares-edge-wallet
+ 1504  ls
+ 1505  react-native run-ios
+ 1506  /Users/ML/Projects/react_native_apps/coinshares-edge-wallet/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1507  cd ..
+ 1508  ls
+ 1509  cd coinshares-wallet
+ 1510  sublime .
+ 1511  git add .
+ 1512  git commit -m "WIP support LegacyWallet addresses (hackathon)"
+ 1513  ls
+ 1514  cd ..
+ 1515  cd /Users/ML/Projects
+ 1516  ls
+ 1517  mkdir react-apps
+ 1518  cd react_apps
+ 1519  ls
+ 1520  cd KitchenSink
+ 1521  ls
+ 1522  nano README.md
+ 1523  ls
+ 1524  cd ..
+ 1525  cd ../react_apps
+ 1526  ls
+ 1527  create-react-app my-app
+ 1528  npm install -g react-native-cli
+ 1529  git log
+ 1530  git revert c34a744248bcca063eb9ae97ae8baa9171428b8e
+ 1531  cd /Users/ML/Projects
+ 1532  cd react_native_apps
+ 1533  cd coinshares-wallet
+ 1534  ls
+ 1535  git log
+ 1536  git revert c34a744248bcca063eb9ae97ae8baa9171428b8e
+ 1537  stash
+ 1538  git revert c34a744248bcca063eb9ae97ae8baa9171428b8e
+ 1539  git 
+ 1540  git log
+ 1541  git reset --soft HEAD~1
+ 1542  git log
+ 1543  git 
+ 1544  git log
+ 1545  pwd
+ 1546  sublime .
+ 1547  git add .
+ 1548  git diff
+ 1549  git commit -m "WIP Testnet (not tested) - Import WIF -> new Bech32"
+ 1550  git log
+ 1551  git checkout bb973423783f3885acdf1aa463ba68a187848413
+ 1552  stash
+ 1553  git stash
+ 1554  git checkout bb973423783f3885acdf1aa463ba68a187848413
+ 1555  checkout master
+ 1556  git checkout master
+ 1557  exp publish
+ 1558  sublime .
+ 1559  cd /Users/ML/Projects/react_native_apps\n
+ 1560  cd coinshares-wallet
+ 1561  sublime .
+ 1562  git log
+ 1563  ls
+ 1564  git branch
+ 1565  git checkout emailMainnetOnly
+ 1566  ls
+ 1567  git log
+ 1568  git checkout 5e5062276c657a372214a5ad20dcbc440a5f674d
+ 1569  sublime .
+ 1570  ls
+ 1571  ls -l
+ 1572  q
+ 1573  git log
+ 1574  git checkout 77eeff20d67820825eff7d219785db523b02e62a
+ 1575  stash
+ 1576  git checkout 77eeff20d67820825eff7d219785db523b02e62a
+ 1577  sublime .
+ 1578  npm uninstall -g exp
+ 1579  npm i -g exp
+ 1580  exit
+ 1581  npm uninstall -g react-native-cli
+ 1582  ls
+ 1583  git
+ 1584  git status
+ 1585  git log
+ 1586  git checkout a4b8df466b75a3081327677caf58e694143fead8
+ 1587  stash
+ 1588  git stash
+ 1589  git checkout a4b8df466b75a3081327677caf58e694143fead8
+ 1590  sublime .
+ 1591  exp start
+ 1592  df;
+ 1593  exp start
+ 1594  pwd
+ 1595  cd coinshares-wallet
+ 1596  cd /Users/ML/Projects/react_native_apps\n
+ 1597  cd coinshares-wallet
+ 1598  run ios
+ 1599  exp ios
+ 1600  sublime .
+ 1601  cd /Users/ML/Projects/react_native_apps\n
+ 1602  cd coinshares-wallet
+ 1603  run ios
+ 1604  cd /Users/ML/Projects/react_native_apps\n
+ 1605  cd coinshares-wallet
+ 1606  pwd
+ 1607  run ios
+ 1608  exp ios
+ 1609  exp server
+ 1610  exp start
+ 1611  exp ios
+ 1612  run ios
+ 1613  ls
+ 1614  pwd
+ 1615  run ios
+ 1616  exp ios
+ 1617  exp start
+ 1618  exp ios
+ 1619  exp start
+ 1620  exp ios
+ 1621  ls
+ 1622  git
+ 1623  git log
+ 1624  git checkout master
+ 1625  ls
+ 1626  git branch
+ 1627  git checkout testnetOnly
+ 1628  git log
+ 1629  git branch
+ 1630  git checkout emailMainnetOnly
+ 1631  git log
+ 1632  git checkout testnetOnly
+ 1633  git log
+ 1634  sublime .
+ 1635  ls
+ 1636  sublime .
+ 1637  git log
+ 1638  git checkout 5e5062276c657a372214a5ad20dcbc440a5f674d
+ 1639  sublime .
+ 1640  ls
+ 1641  nano app.json
+ 1642  git log
+ 1643  git checkout f948e48b561105985d88384c414cbfb453328b12
+ 1644  stash
+ 1645  git stash
+ 1646  git checkout f948e48b561105985d88384c414cbfb453328b12
+ 1647  ls
+ 1648  nano app.json
+ 1649  exp server
+ 1650  exp ios
+ 1651  exp server
+ 1652  exp start
+ 1653  exp ios
+ 1654  cd /Users/ML/Projects/react_native_apps\n
+ 1655  cd coinshares-wallet
+ 1656  exp ios
+ 1657  ls
+ 1658  nano app.json
+ 1659  git log
+ 1660  git
+ 1661  git checkout testnetOnly
+ 1662  git log
+ 1663  git checkout 76d3eaf3295e72037c0276c2465eb6a75f1fe5fa
+ 1664  git log
+ 1665  sublime .
+ 1666  git log
+ 1667  git checkout f948e48b561105985d88384c414cbfb453328b12
+ 1668  git log
+ 1669  sublime .
+ 1670  git checkout testnetOnly
+ 1671  git log
+ 1672  git add .
+ 1673  git commit -m "WIP Testnet - Switched WIF import back to Segwit P2SH"
+ 1674  git diff
+ 1675  exp start
+ 1676  run ios
+ 1677  exp ios
+ 1678  git log
+ 1679  git revert 30b1aab0a59375031d91fc8fcc78b4ae5b62e720
+ 1680  git log
+ 1681  git reset --hard @{1}
+ 1682  git log
+ 1683  git config --global alias.co checkout\n\n
+ 1684  git log
+ 1685  git branch
+ 1686  git log
+ 1687  git co emailFeatureMainnetOnly
+ 1688  git log
+ 1689  git co emailMainnetOnly
+ 1690  exp start
+ 1691  exp ios
+ 1692  sublime .
+ 1693  exit
+ 1694  ps expo
+ 1695  cd /Users/ML/Projects/react_native_apps\n
+ 1696  cd coinshares-wallet
+ 1697  ls
+ 1698  sublime .
+ 1699  cd /Users/ML/Projects/react_native_apps\n
+ 1700  cd coinshares-wallet
+ 1701  ls
+ 1702  git log
+ 1703  git co 749c82d2b301abb7e02946bb5576a15bdd48c48f
+ 1704  ls
+ 1705  cd ..
+ 1706  ls
+ 1707  mkdir AAWallet
+ 1708  cd AAWallet
+ 1709  ls
+ 1710  exp init
+ 1711  cd coinshares-wallet
+ 1712  ls
+ 1713  git init
+ 1714  git log
+ 1715  ls
+ 1716  cd ..
+ 1717  ls
+ 1718  cd ..
+ 1719  cd /Users/ML/Projects/react_native_apps\n
+ 1720  ls
+ 1721  cd AAWallet
+ 1722  ls
+ 1723  git clone https://gitlab.com/deevilboy/coinshares-wallet.git
+ 1724  ls
+ 1725  cd coinshares-wallet
+ 1726  ls
+ 1727  git log
+ 1728  ls
+ 1729  sublime .
+ 1730  npm install
+ 1731  ps
+ 1732  ls
+ 1733  ls -l
+ 1734  rm -rf node_modules
+ 1735  yarn cache clean
+ 1736  npm cache clean
+ 1737  npm cache clean --force
+ 1738  npm i
+ 1739  watchman watch-del-all
+ 1740  px
+ 1741  ps
+ 1742  rm -fr $TMPDIR/metro*
+ 1743  run exp r -c
+ 1744  exp r -c
+ 1745  exp ios
+ 1746  ls
+ 1747  cd /Users/ML/Projects/react_native_apps\n
+ 1748  cd AAWallet
+ 1749  cd coinshares-wallet
+ 1750  exp ios
+ 1751  git log
+ 1752  git checkout 76d3eaf3295e72037c0276c2465eb6a75f1fe5fa
+ 1753  stash
+ 1754  git stash
+ 1755  git co 76d3eaf3295e72037c0276c2465eb6a75f1fe5fa
+ 1756  cd ..
+ 1757  cd coinshares-wallet
+ 1758  showFiles
+ 1759  ls
+ 1760  showFiles
+ 1761  ls
+ 1762  showFiles
+ 1763  ls -l
+ 1764  cd ./expo
+ 1765  cd /
+ 1766  ls
+ 1767  cd Users
+ 1768  ls
+ 1769  cd ML
+ 1770  ls
+ 1771  cd /Users/ML/Projects/react_native_apps\n
+ 1772  cd coinshares-wallet
+ 1773  ps
+ 1774  rm -rf node_modules
+ 1775  npm cache clean --force
+ 1776  npm i
+ 1777  watchman watch-del-all 
+ 1778  rm -fr $TMPDIR/metro*
+ 1779  exp r -c
+ 1780  exp ios
+ 1781  git log
+ 1782  sublime .
+ 1783  npm i
+ 1784  npm cache clean --force
+ 1785  rm -rf node_modules
+ 1786  npm i
+ 1787  ls
+ 1788  nano app.json
+ 1789  git
+ 1790  git log
+ 1791  npm i
+ 1792  cd ..
+ 1793  ls
+ 1794  cd ..
+ 1795  cd coinshares-wallet
+ 1796  rm -rf node_modules
+ 1797  npm cache clean --force
+ 1798  npm i
+ 1799  rm -fr $TMPDIR/metro
+ 1800  cd $tmpdir
+ 1801  ls
+ 1802  pwd
+ 1803  ls
+ 1804  cd /Users/ML/Projects/react_native_apps\n
+ 1805  cd coinshares-wallet
+ 1806  ls
+ 1807  rm package-lock.json
+ 1808  ls
+ 1809  npm i
+ 1810  ls
+ 1811  git log
+ 1812  git branch
+ 1813  git co testnetOnly
+ 1814  git branch
+ 1815  git log
+ 1816  git reset --hard @{1}
+ 1817  git log
+ 1818  git logdfdsaf --graph --decorate --pretty=oneline --abbrev-commit
+ 1819  git reset --hard @{2}
+ 1820  git log
+ 1821  git co master
+ 1822  git branch newBranch
+ 1823  git log
+ 1824  git co newBranch
+ 1825  ls
+ 1826  ls -l
+ 1827  cd ..
+ 1828  cd AAWallet/coinshares-wallet
+ 1829  npm i
+ 1830  nnao app.json
+ 1831  ls
+ 1832  nano app.json
+ 1833  npm i
+ 1834  ls
+ 1835  git log
+ 1836  git branch
+ 1837  ls
+ 1838  git branch
+ 1839  git co master
+ 1840  stash
+ 1841  git stash
+ 1842  git branch
+ 1843  git co master
+ 1844  git log
+ 1845  npm i
+ 1846  git log
+ 1847  git co bb973423783f3885acdf1aa463ba68a187848413
+ 1848  ls
+ 1849  git log
+ 1850  git co 76d3eaf3295e72037c0276c2465eb6a75f1fe5fa
+ 1851  stash
+ 1852  git stash
+ 1853  git co 76d3eaf3295e72037c0276c2465eb6a75f1fe5fa
+ 1854  git log
+ 1855  git co master
+ 1856  git log
+ 1857  git co 749c82d2b301abb7e02946bb5576a15bdd48c48f
+ 1858  expo
+ 1859  git log
+ 1860  git co 77eeff20d67820825eff7d219785db523b02e62a
+ 1861  git log
+ 1862  git co f948e48b561105985d88384c414cbfb453328b12
+ 1863  q
+ 1864  git co master
+ 1865  git log
+ 1866  git co e361d4b3fa0a8c17b8fad5e6eb2fe729dc517020
+ 1867  git co master
+ 1868  git log
+ 1869  git co 5b0e090b938b5464f5e478ff6bd5d987425f116c
+ 1870  git co master
+ 1871  git log
+ 1872  git co f12ed251689f3c3a121ce685777c04884ca767d5
+ 1873  git log
+ 1874  git co 156cc47988e91507ab4dd85ed35c85f81da4ee9c
+ 1875  git log
+ 1876  git co master
+ 1877  git log
+ 1878  git co 0ecf5792053593c17d36daa745820343ca6930dd
+ 1879  git log
+ 1880  git co 2a56d24e7e0a135428eb16218b0d59aa2b99edb3
+ 1881  git 
+ 1882  git log
+ 1883  git co 156cc47988e91507ab4dd85ed35c85f81da4ee9c
+ 1884  git log
+ 1885  git co master
+ 1886  git log
+ 1887  git diff 2a56d24e7e0a135428eb16218b0d59aa2b99edb3...156cc47988e91507ab4dd85ed35c85f81da4ee9c
+ 1888  git diff 2a56d24e7e0a135428eb16218b0d59aa2b99edb3 156cc47988e91507ab4dd85ed35c85f81da4ee9c
+ 1889  git co master
+ 1890  cd ..
+ 1891  ls
+ 1892  cd ..
+ 1893  cd BlueWallet_Testnet
+ 1894  ls
+ 1895  cd ../coinshares-wallet
+ 1896  pwd
+ 1897  sublime .
+ 1898  rm -rf node_modules
+ 1899  yarn install
+ 1900  npm uninstall -g react-native-cli
+ 1901  git stash
+ 1902  sublime .
+ 1903  ls
+ 1904  git log
+ 1905  git branch
+ 1906  sublime .
+ 1907  expo
+ 1908  npm i
+ 1909  rm -rf node_modules
+ 1910  npm i
+ 1911  ls
+ 1912  sublime .
+ 1913  rm -rf node_modules
+ 1914  yarn i
+ 1915  yarn cache clean
+ 1916  yarn install
+ 1917  sublime .
+ 1918  /Library/Developer/PrivateFrameworks/CoreSimulator.framework/Versions/A/CoreSimulator ; exit;
+ 1919  git log
+ 1920  sublime .
+ 1921  sudo /Developer/Library/uninstall-devtools --mode=unixdev\n\n
+ 1922  sudo /Developer/Library/uninstall-devtools --mode=xcodedir
+ 1923  sudo /Developer/Library/uninstall-devtools --mode=all
+ 1924  cd /Users/ML/Projects/react_native_apps\n
+ 1925  cd coinshares-wallet
+ 1926  sublime .
+ 1927  npm install -g exp
+ 1928  ls
+ 1929  npm install -g ignite-cli
+ 1930  pwd
+ 1931  ls
+ 1932  ls -l
+ 1933  cd net
+ 1934  ls
+ 1935  cd /Users/ML/Projects/react_native_apps\n
+ 1936  npm install -g ignite-cli
+ 1937  ls
+ 1938  ignite new PizzaApp
+ 1939  npm install -g react-native-cli
+ 1940  ignite new PizzaApp
+ 1941  cd PizzaApp
+ 1942  react-native run-ios
+ 1943  /Users/ML/Projects/react_native_apps/PizzaApp/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1944  ignite generate screen pizza-location-list
+ 1945  react-native run-ios
+ 1946  react-native run-ios
+ 1947  /Users/ML/Projects/react_native_apps/PizzaApp/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 1948  exit
+ 1949  cd /Users/ML/Projects/react_native_apps\n
+ 1950  cd coinshares-wallet
+ 1951  sublime .
+ 1952  hid
+ 1953  hideFiles
+ 1954  cd ..
+ 1955  ls
+ 1956  cd coinshares-fintech-app-PREVIEW
+ 1957  yarn install
+ 1958  sublime .
+ 1959  cd ..
+ 1960  cd coinshares-fintech-app
+ 1961  cd coinshares-fintech-app-PREVIEW
+ 1962  cd ../coinshares-fintech-app-PREVIEW
+ 1963  yarn install
+ 1964  pwd
+ 1965  cd /Users/ML/Downloads
+ 1966  ls
+ 1967  cd ../Desktop
+ 1968  cd pocket-react
+ 1969  ls
+ 1970  ls -l
+ 1971  cd React\ Native
+ 1972  ls
+ 1973  cd react-native-pocket-preview
+ 1974  ls
+ 1975  sublime .
+ 1976  yarn install
+ 1977  yarn start
+ 1978  showFiles
+ 1979  cd /Users/ML/Desktop
+ 1980  ls -l
+ 1981  cd testapp
+ 1982  ls
+ 1983  cd test
+ 1984  ls
+ 1985  cd ..
+ 1986  ls
+ 1987  cd ..
+ 1988  ls
+ 1989  rm -rf testapp
+ 1990  ls
+ 1991  cd /Users/ML/Desktop
+ 1992  cd testapp
+ 1993  yarn install
+ 1994  cd react-native-pocket-preview
+ 1995  ls
+ 1996  cd React\ Native
+ 1997  yarn install
+ 1998  cd react-native-pocket-preview
+ 1999  yarn install
+ 2000  sublime .
+ 2001  cd ..
+ 2002  ls
+ 2003  cp 
+ 2004  cp coinshares-wallet /Users/ML/Desktop
+ 2005  hideFiles
+ 2006  cd coinshares-wallet
+ 2007  ls
+ 2008  git branch
+ 2009  git branch -d ToDeleteCorrupted
+ 2010  git branch -D ToDeleteCorrupted
+ 2011  git branch
+ 2012  git branch -m workingBranch
+ 2013  git branch -m latestWorkingBranch
+ 2014  git branch
+ 2015  git branch -d emailMainnetOnly
+ 2016  git branch
+ 2017  git branch fintechAppIntegration
+ 2018  git co fintechAppIntegration
+ 2019  git branch
+ 2020  sublime .
+ 2021  pwd
+ 2022  yarn install
+ 2023  yarn start -- --reset-cache
+ 2024  yarn install
+ 2025  yarn start
+ 2026  yarn start -- --reset-cache
+ 2027  yarn install
+ 2028  yarn start -- --reset-cache
+ 2029  yarn install
+ 2030  yarn start -- --reset-cache
+ 2031  ls
+ 2032  stash
+ 2033  git stash
+ 2034  git co master
+ 2035  git co fintechAppIntegration
+ 2036  git diff
+ 2037  ls
+ 2038  git b
+ 2039  git branch
+ 2040  git co latestWorkingBranch
+ 2041  git branch
+ 2042  git add .
+ 2043  git commit -m "WIP fix filename typo - scanQRaddress to scanQRAddress"
+ 2044  git co fintechAppIntegration
+ 2045  yarn install
+ 2046  sublime .
+ 2047  ls
+ 2048  git add .
+ 2049  git commit -m "WIP fix filename typo - scanQRaddress to scanQrAddress"
+ 2050  git co master
+ 2051  git branch
+ 2052  git co testnetOnly
+ 2053  git co latestWorkingBranch
+ 2054  git co emailMainnetOnlyBACKUP
+ 2055  git co fintechAppIntegration
+ 2056  pwd
+ 2057  sublime .
+ 2058  yarn install
+ 2059  yarn start
+ 2060  yarn install
+ 2061  ls
+ 2062  git add .
+ 2063  git commit -m "fixed react-native-svg dependency issue, moved it to main package.json"
+ 2064  pwd
+ 2065  git add .
+ 2066  git commit -m "UI Kit installed"
+ 2067  git add .
+ 2068  git commit -m "created splash page"
+ 2069  git diff
+ 2070  git diff fintechAppIntegration
+ 2071  git log
+ 2072  git diff a10c528b01de43e0a27173696b8baa1c8e602af3
+ 2073  git log
+ 2074  git config --global alias.b branch
+ 2075  git b
+ 2076  git config --global alias.c commit
+ 2077  git config --global alias.s status
+ 2078  git s
+ 2079  git b
+ 2080  git status
+ 2081  git alias
+ 2082  git config --get-regexp alias
+ 2083  git config --global alias.alias alias
+ 2084  git alias
+ 2085  alias
+ 2086  ~/.gitconfig
+ 2087  nano ~/.gitconfig
+ 2088  git b
+ 2089  git br
+ 2090  yarn start -- --reset-cache
+ 2091  cd /Users/ML/Projects/react_native_apps\n
+ 2092  cd coinshares-wallet
+ 2093  ls
+ 2094  git st
+ 2095  git l
+ 2096  git log
+ 2097  git add .
+ 2098  git commit -m "created Search2 initial route"
+ 2099  git b
+ 2100  git br
+ 2101  git co latestWorkingBranch
+ 2102  git st
+ 2103  git br
+ 2104  git co fintechAppIntegration
+ 2105  yarn add buffer
+ 2106  git stash
+ 2107  git br
+ 2108  git co latestWorkingBranch
+ 2109  git co fintechAppIntegration
+ 2110  git stash apply
+ 2111  git stash
+ 2112  git co latestWorkingBranch
+ 2113  git co fintechAppIntegration
+ 2114  git stash apply
+ 2115  git add .
+ 2116  git commit -m "WIP balanceScreen logic fails, need to pass params correctly somehow"
+ 2117  git add .
+ 2118  git commit -m "WIP fixed route labels for ScanGc screen"
+ 2119  git add .
+ 2120  git commit -m "WIP fixed route labels for send screen"
+ 2121  git add .
+ 2122  git commit -m "WIP added comments ScanGcScreen"
+ 2123  yarn install
+ 2124  git add .
+ 2125  git commit -m "Camera QR Code Scanning Works\nq
+ 2126  git commit -m "Camera QR Code Scanning Works"\nq
+ 2127  git add .
+ 2128  git commit -m "Redeem button works"
+ 2129  git add .
+ 2130  git commit -m "fetch (mocked up) bitcoin balance working"
+ 2131  npm install eslint@4.x babel-eslint@8 --save-dev
+ 2132  npm install babel-eslint -g\n
+ 2133  npm install eslint-plugin-react -g\n
+ 2134  npm install eslint-plugin-react --save-dev\n
+ 2135  eslint --init
+ 2136  $ npm install -g eslint\n
+ 2137  npm install -g eslint\n
+ 2138  eslint --init
+ 2139  watchman watch-del-all
+ 2140  rm -rf node_modules && npm install
+ 2141  npm start -- --reset-cache`
+ 2142  npm start -- --reset-cache
+ 2143  git add .
+ 2144  git commit -m "fixed bug"
+ 2145  pwd
+ 2146  cd /Users/ML/Projects/react_native_apps\n
+ 2147  ls
+ 2148  cd coinshares-fintech-app
+ 2149  ls
+ 2150  cd ..
+ 2151  cd coinshares-wallet
+ 2152  pwd
+ 2153  ls
+ 2154  pwd
+ 2155  sublime .
+ 2156  pwd
+ 2157  git add .
+ 2158  git commit -m "WIP SendScreen - SendScreen doesn't pass address prop correctly to Card.js to display the correct QR code"
+ 2159  git add .
+ 2160  git commit -m "WIP Receive Screen working"
+ 2161  cd /Users/ML/Projects/react_native_apps\n
+ 2162  ls
+ 2163  cd coinshares-fintech-app
+ 2164  ls
+ 2165  cd ..
+ 2166  cd coinshares-wallet
+ 2167  git log
+ 2168  git co f08b55eee3bb6ef1daa65ceae49a0b39a0c11794
+ 2169  git add .
+ 2170  git commit "WIP May need to delete this commit"
+ 2171  git commit -m "WIP May need to delete this commit"
+ 2172  git co f08b55eee3bb6ef1daa65ceae49a0b39a0c11794
+ 2173  sublime .
+ 2174  git co branch workingMVP
+ 2175  git branch workingMVP
+ 2176  git
+ 2177  git log
+ 2178  git co workingMVP
+ 2179  ls
+ 2180  git co master
+ 2181  ls
+ 2182  git add .
+ 2183  git commit -m "BlueWallet MVP theoretically working if you change app.js page to be bluewallet"
+ 2184  git reset --soft HEAD~1\n
+ 2185  git log
+ 2186  gti co master
+ 2187  git branch
+ 2188  git dgit branch -d workingMVP
+ 2189  git branch -d workingMVP
+ 2190  git branch -D  workingMVP
+ 2191  git branch
+ 2192  git co latestWorkingBranch
+ 2193  git l
+ 2194  git log
+ 2195  git b
+ 2196  git br
+ 2197  git co fintechAppIntegration
+ 2198  git log
+ 2199  git br
+ 2200  git co emailMainnetOnlyBACKUP
+ 2201  git log
+ 2202  git br
+ 2203  git co master
+ 2204  git log
+ 2205  git co fintechAppIntegration
+ 2206  git stash
+ 2207  git co testnetOnly
+ 2208  git log
+ 2209  git co master
+ 2210  git log
+ 2211  git co latestWorkingBranch
+ 2212  git log
+ 2213  git reset 'HEAD@{1}'\n
+ 2214  git reflog
+ 2215  git reflog show master
+ 2216  git co master
+ 2217  git log
+ 2218  git reflog show master
+ 2219  git log
+ 2220  git br
+ 2221  git log
+ 2222  git co fintechAppIntegration
+ 2223  git log
+ 2224  git add .
+ 2225  git commit -m "WIP fixed Bluewallets scanGC process"
+ 2226  git log
+ 2227  git co f08b55eee3bb6ef1daa65ceae49a0b39a0c11794
+ 2228  git co master
+ 2229  git co fintechAppIntegration
+ 2230  yarn install
+ 2231  ls
+ 2232  git add .
+ 2233  git commit -m "WIP removed E_Settings buttons"
+ 2234  git add .
+ 2235  git commit -m "WIP bluewallet has new scanner formatting and only one button not two now on scan QR page"
+ 2236  git add .
+ 2237  git commit -m "WIP bluewallet Testnet working"
+ 2238  git log
+ 2239  git add .
+ 2240  git commit -m "WIP Bluewallet Testnet Working - see app.js for status"
+ 2241  git add .
+ 2242  git commit -m "WIP Bluewallet Mainnet Working"
+ 2243  git log
+ 2244  git co 77eeff20d67820825eff7d219785db523b02e62a
+ 2245  git log
+ 2246  git co f948e48b561105985d88384c414cbfb453328b12
+ 2247  git co master
+ 2248  git log
+ 2249  git co f948e48b561105985d88384c414cbfb453328b12
+ 2250  git br
+ 2251  git co master
+ 2252  git branch fintechAppIntegration
+ 2253  git log
+ 2254  git branch
+ 2255  git co fintechAppIntegration
+ 2256  git log
+ 2257  cd /Users/ML/Projects/react_native_apps\n
+ 2258  cd BlueWallet
+ 2259  ls
+ 2260  sublime .
+ 2261  git log
+ 2262  yarn install
+ 2263  watchman watch-del-all
+ 2264  rm -rf node_modules && npm install
+ 2265  npm start -- --reset-cache
+ 2266  ls
+ 2267  cd /Users/ML/Projects/react_native_apps\n
+ 2268  ls
+ 2269  coinshares-fintech-app
+ 2270  ls
+ 2271  cd ..
+ 2272  cd BlueWallet
+ 2273  sublime .
+ 2274  git log
+ 2275  co 604792707fa5bb5d03de982ede9d150733386db4
+ 2276  git co 604792707fa5bb5d03de982ede9d150733386db4
+ 2277  cd /Users/ML/Projects/react_native_apps\n
+ 2278  ls
+ 2279  cd BlueWallet
+ 2280  git log
+ 2281  git co 604792707fa5bb5d03de982ede9d150733386db4
+ 2282  stash
+ 2283  git stash
+ 2284  git co 604792707fa5bb5d03de982ede9d150733386db4
+ 2285  sublime .
+ 2286  git co master
+ 2287  git branch
+ 2288  yarn install
+ 2289  sublime .
+ 2290  cd /Users/ML/Projects/react_native_apps\n
+ 2291  cd BlueWallet
+ 2292  ls
+ 2293  ls -l
+ 2294  git log
+ 2295  git co 604792707fa5bb5d03de982ede9d150733386db4
+ 2296  sublime .
+ 2297  git add .
+ 2298  git commit -m "WIP Bluewallet Add Scanning working"
+ 2299  git add .
+ 2300  git commit -m "WIP Bluewallet added icons to all scanner pages\nq\nq
+ 2301  git commit -m "WIP Bluewallet added icons to all scanner pages"
+ 2302  git add .
+ 2303  git commit -m "added support for creating new wallet if no wallet exists right before scanning, add wallet # naming system"
+ 2304  git add .
+ 2305  git commit -m "WIP fixed flexbox formatting - QR codes are now centered"
+ 2306  showFiles
+ 2307  hideFiles
+ 2308  ls
+ 2309  git log
+ 2310  git co b6227f4644a37b2d8e4eed995d3325f84dd35492
+ 2311  gig co master
+ 2312  git co master
+ 2313  git log
+ 2314  git br
+ 2315  git br fintechAppIntegration
+ 2316  git log
+ 2317  git br
+ 2318  git co fintechAppIntegration
+ 2319  git log
+ 2320  git co b6227f4644a37b2d8e4eed995d3325f84dd35492
+ 2321  git co fintechAppIntegration
+ 2322  stash
+ 2323  git co fintechAppIntegration
+ 2324  git stash
+ 2325  git co fintechAppIntegration
+ 2326  git log
+ 2327  sublime .
+ 2328  git log
+ 2329  git add .
+ 2330  git commit -m "Bluewallet - fully working"
+ 2331  exp build:android
+ 2332  cd ../
+ 2333  ls
+ 2334  cd coinshares-wallet
+ 2335  exp build:ios
+ 2336  pwd
+ 2337  sublime .
+ 2338  exp build:android
+ 2339  npm install -g exp
+ 2340  exp build:android
+ 2341  exp build:ios
+ 2342  ls
+ 2343  cd node_modules
+ 2344  ls
+ 2345  cd ..
+ 2346  ls
+ 2347  rm -rf node_modules
+ 2348  yarn install
+ 2349  rm -rf node_modules
+ 2350  yarn install
+ 2351  rm -rf node_modules
+ 2352  yarn install
+ 2353  rm -rf node_modules
+ 2354  yarn install
+ 2355  rm -rf node_modules
+ 2356  yarn install
+ 2357  exp build:android
+ 2358  stash
+ 2359  git stash
+ 2360  git log
+ 2361  git co a3144005bb12d45b558132523131b8fe77dbf4d7
+ 2362  git br
+ 2363  git co fintechAppIntegration
+ 2364  git log
+ 2365  git stash pop
+ 2366  git stash
+ 2367  git co a3144005bb12d45b558132523131b8fe77dbf4d7
+ 2368  git co fintechAppIntegration
+ 2369  git stash pop
+ 2370  curl -X POST "http://httpbin.org/post" -H "accept: application/json"
+ 2371  curl -i -X POST -d 'name=Pablo' https://putsreq.com/lLmIKsNIbSabkpNjWzVO
+ 2372  exit
+ 2373  git stash
+ 2374  git co a3144005bb12d45b558132523131b8fe77dbf4d7
+ 2375  git log
+ 2376  git co 091ba04f55f14fdbcbe3abd636b6ea41c375d45a
+ 2377  sublime .
+ 2378  git br fintechAppIntegration
+ 2379  git co fintechAppIntegration
+ 2380  git stash pop
+ 2381  git stash
+ 2382  git log
+ 2383  git co 091ba04f55f14fdbcbe3abd636b6ea41c375d45a
+ 2384  git log
+ 2385  git co bf2cf09639df64f5a15c5a01c9e8e995a46671e6
+ 2386  git co fintechAppIntegration
+ 2387  git stash pop
+ 2388  git stash
+ 2389  git log
+ 2390  git co c5af2d75f86af9d23852ab6de1b667996d76b23c
+ 2391  git co fintechAppIntegration
+ 2392  git log
+ 2393  git co a735d2599288ee1ae6d38cad889836229408582b
+ 2394  git log
+ 2395  git co fintechAppIntegration
+ 2396  git log
+ 2397  git co efa1f102ea0b1509090175682c20e9c9e5dab6c4
+ 2398  git co fintechAppIntegration
+ 2399  rm -rf node_modules
+ 2400  yarn install
+ 2401  git co fintechAppIntegration
+ 2402  git log
+ 2403  git co fintechAppIntegration
+ 2404  git stash pop
+ 2405  git stash
+ 2406  git stash list
+ 2407  git stash pop stash@{1}
+ 2408  rm -rf node_modules
+ 2409  yarn install
+ 2410  git add .
+ 2411  git commit -m "Bluewallet - Legacy Send Working - Still need to fully test"
+ 2412  git push origin
+ 2413  git co master
+ 2414  git merge fintechAppIntegration
+ 2415  git push origin master
+ 2416  git br
+ 2417  git add .
+ 2418  git commit -m "Bluewallet - made UI/Text changes"
+ 2419  git push origin master
+ 2420  git br
+ 2421  git log
+ 2422  git br -d fintechAppIntegration
+ 2423  git br mvpUiKitVersion
+ 2424  git br
+ 2425  git co mvpUiKitVersion
+ 2426  stash
+ 2427  git stash
+ 2428  git log
+ 2429  git add .
+ 2430  git commit -m "Swapped to UIKit Version"
+ 2431  git add .
+ 2432  git commit -m "WIP helpers.js working with BalanceHeader component"
+ 2433  git stash pop
+ 2434  git stash
+ 2435  git co mvpUiKitVersion
+ 2436  git log
+ 2437  git stash pop
+ 2438  git co mvpUiKitVersion
+ 2439  git log
+ 2440  git co 6c3d1b5d8001b7b7ec4f7cfd2fff1c8854560b4e
+ 2441  git mergetool
+ 2442  git reset
+ 2443  git co mvpUiKitVersion
+ 2444  git log
+ 2445  git co 6c3d1b5d8001b7b7ec4f7cfd2fff1c8854560b4e
+ 2446  git log
+ 2447  git reset
+ 2448  git mergetool
+ 2449  git stash list
+ 2450  git stash pop
+ 2451  git add . 
+ 2452  git commit -m "WIP git stash problems - temp commit"
+ 2453  git br
+ 2454  git co mvpUiKitVersion
+ 2455  git stash
+ 2456  git co mvpUiKitVersion
+ 2457  sublime .
+ 2458  ls
+ 2459  cd /Users/ML/Projects/react_native_apps\n
+ 2460  cd coinshares-wallet
+ 2461  sublime .
+ 2462  cd /Users/ML/Projects/react_native_apps\n
+ 2463  cd ..
+ 2464  ls
+ 2465  cd react-apps
+ 2466  ls
+ 2467  pwd
+ 2468  ls
+ 2469  npm install -g create-react-app
+ 2470  create-react-app my-app
+ 2471  cd my-app
+ 2472  ls
+ 2473  sublime .
+ 2474  rm -f src/*
+ 2475  npm start
+ 2476  ls
+ 2477  cd /Users/ML/Projects/react_native_apps\n
+ 2478  cd ..
+ 2479  ls
+ 2480  mkdir python_apps
+ 2481  cd python_apps
+ 2482  ls
+ 2483  git clone https://github.com/GiorgioRegni/AICryptoTrading.git
+ 2484  ls
+ 2485  cd AICryptoTrading
+ 2486  ls
+ 2487  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser -
+ 2488  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+ 2489  ls
+ 2490  pwd
+ 2491  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser -
+ 2492  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+ 2493  ls -la
+ 2494  cd ..
+ 2495  ls
+ 2496  pwd
+ 2497  ls -l
+ 2498  rm -rf AICryptoTrading
+ 2499  ls
+ 2500  git clone https://github.com/GiorgioRegni/AICryptoTrading.git
+ 2501  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+ 2502  cd ..
+ 2503  ls
+ 2504  cd python_apps
+ 2505  ls
+ 2506  rm -rf AICryptoTrading
+ 2507  cd ..
+ 2508  rm -rf python_apps
+ 2509  mkdir python_stuff
+ 2510  cd python_stuff
+ 2511  git clone https://github.com/GiorgioRegni/AICryptoTrading.git
+ 2512  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root
+ 2513  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+ 2514  ls
+ 2515  cd AICryptoTrading
+ 2516  ls
+ 2517  sublime .
+ 2518  docker ps
+ 2519  docker exec -it a807502d01cf /bin/bash
+ 2520  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+ 2521  docker ps
+ 2522  docker stop 5c20788287a5
+ 2523  docker ps
+ 2524  docker stop 5c20788287a5
+ 2525  docker ps
+ 2526  docker stop 00a8898b6da2
+ 2527  docker ps
+ 2528  docker stop 882078d6c9d6
+ 2529  docker ps
+ 2530  ls
+ 2531  docker run -it -p 8888:8888 --ipc=host -v $PWD:/root ufoym/deepo:all-jupyter-py27 jupyter notebook --no-browser --ip=0.0.0.0 --allow-root --NotebookApp.token= --notebook-dir='/root'
+ 2532  cd AICryptoTrading
+ 2533  sublime .
+ 2534  heroku
+ 2535  heroku login
+ 2536  ls
+ 2537  cd /Users/ML/Projects/react_native_apps\n
+ 2538  cd ../react_apps
+ 2539  ls
+ 2540  cd ..
+ 2541  ls
+ 2542  cd react-apps
+ 2543  ls
+ 2544  git clone git@gitlab.com:jackson-sandland/cryptogamerz.git
+ 2545  ls
+ 2546  cd /Users/ML/Projects/react_native_apps\n
+ 2547  cd /Users/ML/Projects/\n
+ 2548  ls
+ 2549  cd node_apps
+ 2550  ls
+ 2551  cd ..
+ 2552  ls
+ 2553  cd react-apps
+ 2554  ls
+ 2555  npm install --save neal-react
+ 2556  npm i npm
+ 2557  npm i
+ 2558  npm start
+ 2559  ls
+ 2560  rm -rf node_modules
+ 2561  rm package-lock.json
+ 2562  ls
+ 2563  ls -la
+ 2564  git clone https://github.com/dennybritz/neal-react.git
+ 2565  lls
+ 2566  ls
+ 2567  cd neal-react
+ 2568  ls
+ 2569  node install
+ 2570  ls
+ 2571  npm install --save neal-react
+ 2572  cd ..
+ 2573  ls
+ 2574  rm -rf neal-react
+ 2575  mkdir test
+ 2576  cd test
+ 2577  npm install --save neal-react
+ 2578  ls
+ 2579  cd ..
+ 2580  ls
+ 2581  rm -rf test
+ 2582  git clone https://github.com/dennybritz/neal-react.git
+ 2583  ls
+ 2584  cd neal-react
+ 2585  npm i
+ 2586  npm start
+ 2587  npm install --save neal-react
+ 2588  npm s
+ 2589  npm start
+ 2590  cd ..
+ 2591  git clone https://github.com/react-brasil/conf.git
+ 2592  ls
+ 2593  cd conf
+ 2594  npm install
+ 2595  cd ..
+ 2596  ls
+ 2597  cd neal-react
+ 2598  npm install --global yarn
+ 2599  yarn start
+ 2600  ls
+ 2601  yarn start
+ 2602  ls
+ 2603  cd ..
+ 2604  ls
+ 2605  git clone --depth=1 https://github.com/react-boilerplate/react-boilerplate.git
+ 2606  ls
+ 2607  cd react-boilerplate
+ 2608  npm run setup
+ 2609  npm start
+ 2610  cd ..
+ 2611  ls
+ 2612  cd suicrux
+ 2613  npm install
+ 2614  flow-typed install
+ 2615  npm run dev
+ 2616  npm run build
+ 2617  npm run start
+ 2618  npm start
+ 2619  cd ..
+ 2620  curl https://codeload.github.com/mui-org/material-ui/tar.gz/master | tar -xz --strip=2  material-ui-master/examples/nextjs\n
+ 2621  cd nextjs
+ 2622  npm install
+ 2623  npm run dev
+ 2624  cd ..
+ 2625  ls
+ 2626  git clone https://github.com/react-bootstrap/react-bootstrap.git
+ 2627  ls
+ 2628  cd react-bootstrap
+ 2629  yarn start
+ 2630  ls
+ 2631  yarn install
+ 2632  cd ..
+ 2633  ls
+ 2634  git clone https://github.com/react-toolbox/react-toolbox.git
+ 2635  ls
+ 2636  cd react-toolbox
+ 2637  npm install --save react-toolbox
+ 2638  yarn start
+ 2639  pwd
+ 2640  ls
+ 2641  pwd
+ 2642  npm start
+ 2643  npm install --save react-toolbox
+ 2644  ls
+ 2645  npm start
+ 2646  yarn start
+ 2647  pwd
+ 2648  yarn start
+ 2649  npm i -g gatsby@next
+ 2650  yarn start
+ 2651  npm i
+ 2652  npm start
+ 2653  npm install cross-env
+ 2654  npm install
+ 2655  npm start
+ 2656  npm i -g gatsby@latest
+ 2657  cd ..
+ 2658  git clone https://github.com/grommet/grommet.gitt
+ 2659  npm i -g grommet
+ 2660  grommet new sample-app
+ 2661  ls
+ 2662  git clone https://github.com/grommet/grommet.git
+ 2663  ls
+ 2664  cd grommet
+ 2665  npm i -g grommet
+ 2666  grommet new sample-app
+ 2667  ls
+ 2668  npm start
+ 2669  npm i -g grommet-cli
+ 2670  grommet new sample-app
+ 2671  cd sample-app
+ 2672  npm run dev-server
+ 2673  npm run dev
+ 2674  cd ..
+ 2675  ls
+ 2676  cd ..
+ 2677  ls
+ 2678  git clone https://gitlab.com/jackson-sandland/cryptogamehouse.git
+ 2679  ls
+ 2680  cd cryptogamehouse
+ 2681  ls
+ 2682  npm i
+ 2683  npm start
+ 2684  ls
+ 2685  npm run start
+ 2686  npm -v
+ 2687  nvm use 6
+ 2688  nvm
+ 2689  url -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+ 2690  curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.0/install.sh | bash
+ 2691  cd /Users/ML/Projects/\n
+ 2692  cd react_apps
+ 2693  ls
+ 2694  cd react-apps
+ 2695  ls
+ 2696  cd cryptogamehouse
+ 2697  nvm
+ 2698  nvm use 5.6
+ 2699  nvm install 5.6
+ 2700  nvm use 5.6
+ 2701  nvm use --delete-prefix v5.6.0
+ 2702  nvm use 5.6
+ 2703  nvm run start
+ 2704  ls
+ 2705  cd src
+ 2706  cd ..
+ 2707  npm run start
+ 2708  node -v
+ 2709  npm -v
+ 2710  npm start
+ 2711  ls
+ 2712  rm -rf node_modules
+ 2713  npm i
+ 2714  cd ..
+ 2715  ls
+ 2716  rm -rf cryptogamehouse
+ 2717  ls
+ 2718  git clone https://gitlab.com/jackson-sandland/cryptogamehouse.git
+ 2719  rvm use 6.0
+ 2720  nvm use 6.0
+ 2721  nvm install 6.0
+ 2722  nvm use 6.0
+ 2723  heroku login
+ 2724  npm i
+ 2725  cd cryptogamehouse
+ 2726  npm i
+ 2727  npm start
+ 2728  nvm use 6.0
+ 2729  npm start
+ 2730  cd /Users/ML/Projects/\n
+ 2731  cd react-apps
+ 2732  ls
+ 2733  cd cryptogamehouse
+ 2734  git log
+ 2735  ls
+ 2736  cd ..
+ 2737  ls
+ 2738  mkdir closebrace_tutorial
+ 2739  cd closebrace_tutorial
+ 2740  npm install -g express-generator
+ 2741  cd ..
+ 2742  ls
+ 2743  express nodetest1
+ 2744  ls
+ 2745  cd nodetest1
+ 2746  ls
+ 2747  ls -l
+ 2748  nano package.json
+ 2749  sublime .
+ 2750  npm install
+ 2751  npm start
+ 2752  brew update
+ 2753  brew install mongodb
+ 2754  brew upgrade mongodb
+ 2755  mkdir data
+ 2756  ls
+ 2757  brew install mongodb --devel
+ 2758  pwd
+ 2759  mongod --dbpath /Users/ML/Projects/react-apps/nodetest1/data\n
+ 2760  mongod
+ 2761  /Users/ML/Projects/react-apps/nodetest1\n
+ 2762  mongo --host 127.0.0.1:27017
+ 2763  npm start
+ 2764  cd ..
+ 2765  ls
+ 2766  express nodetest2
+ 2767  ls
+ 2768  cd nodetest2
+ 2769  sublime .
+ 2770  npm install
+ 2771  mkdir data
+ 2772  npm start
+ 2773  mongod --dbpath /Users/ML/Projects/react-apps/nodetest2/data\n
+ 2774  mongo
+ 2775  npm start
+ 2776  OA
+ 2777  npm start
+ 2778  npm -v
+ 2779  nvm
+ 2780  nvm -v
+ 2781  npm
+ 2782  nvm use node
+ 2783  nvm which
+ 2784  git clone https://github.com/sahat/hackathon-starter.git myproject\n
+ 2785  ls
+ 2786  ls -la
+ 2787  rm -rf myproject
+ 2788  cd ..
+ 2789  git clone https://github.com/sahat/hackathon-starter.git myproject\n
+ 2790  cd myproject
+ 2791  npm install
+ 2792  npm -g nodmon
+ 2793  npm -g nodemon
+ 2794  install -g nodemon
+ 2795  npm install -g nodemon
+ 2796  npm i
+ 2797  npm start
+ 2798  npm s
+ 2799  npm start
+ 2800  npm install
+ 2801  npm run start
+ 2802  npm install -g npm@latest\n
+ 2803  npm -v
+ 2804  npm install -g npm@next
+ 2805  npm -v
+ 2806  npm install -g npm@latest\n
+ 2807  npm -v
+ 2808  node -v
+ 2809  nvm which
+ 2810  nvm install -g npm@latest\n
+ 2811  nvm install node\n
+ 2812  ls
+ 2813  npm install
+ 2814  npm run start
+ 2815  npm rebuild node-sass --force
+ 2816  cd ..
+ 2817  rm -rf myproject
+ 2818  ls
+ 2819  git clone https://github.com/sahat/hackathon-starter.git myproject
+ 2820  cd myproject
+ 2821  ls
+ 2822  node -v
+ 2823  npm -v
+ 2824  nvm -v
+ 2825  nvm use node --lts
+ 2826  nvm install node
+ 2827  nvm use node --lts
+ 2828  nvm -v
+ 2829  node -v
+ 2830  npm -v
+ 2831  pwd
+ 2832  npm i
+ 2833  npm audit fix
+ 2834  npm install
+ 2835  npm audit
+ 2836  npm install -g sass
+ 2837  npm install
+ 2838  npm audit fix
+ 2839  npm audit
+ 2840  npm install hoek
+ 2841  npm audit fix
+ 2842  ls
+ 2843  rm -rf node_modules
+ 2844  npm i
+ 2845  npm audit fix
+ 2846  npm audit
+ 2847  npm i --save hoek
+ 2848  hoek -v
+ 2849  npm hoek -v
+ 2850  npm -v
+ 2851  sulbime .
+ 2852  sublime .
+ 2853  npm i
+ 2854  npm uninstall -g sass
+ 2855  npm uninstall -g node-sass
+ 2856  npm uninstall node-sass
+ 2857  npm audit fix
+ 2858  npm audit
+ 2859  npm i -g sass
+ 2860  npm i
+ 2861  npm install node-sass
+ 2862  npm audit fix
+ 2863  npm audit
+ 2864  npm i
+ 2865  npm install
+ 2866  npm i
+ 2867  rm -rf node_modules
+ 2868  npm i
+ 2869  ls
+ 2870  node app.js\n
+ 2871  npm run start
+ 2872  node app.js\n
+ 2873  ls
+ 2874  cd ..
+ 2875  ls
+ 2876  cd myproject
+ 2877  npm i
+ 2878  node app.js\n
+ 2879  install -g nodemon
+ 2880  npm install -g nodemon
+ 2881  npm run app.js
+ 2882  node app.js
+ 2883  ls
+ 2884  mkdir data
+ 2885  mongo
+ 2886  mongod
+ 2887  pwd
+ 2888  mongod --dbpath /Users/ML/Projects/react-apps/myproject\n
+ 2889  node app.js
+ 2890  pwd
+ 2891  heroku login
+ 2892  heroku addons:create mongolab
+ 2893  heroku create
+ 2894  heroku addons:create mongolab
+ 2895  npm run app.js
+ 2896  ls
+ 2897  ls -la
+ 2898  cd ..
+ 2899  ls
+ 2900  cd myproject
+ 2901  ls
+ 2902  npm run app.js
+ 2903  npm start
+ 2904  node app.js
+ 2905  heroku login
+ 2906  heroku addons:create mongolab
+ 2907  git push heroku master
+ 2908  ls
+ 2909  nano .env
+ 2910  printenv
+ 2911  git push heroku master
+ 2912  git remote -v
+ 2913  git remote set-url heroku https://git.heroku.com/cryptoskillz.git
+ 2914  git remote -v
+ 2915  git push heroku master
+ 2916  node app.js
+ 2917  git add .
+ 2918  git commit -m "Updated text on home.pug"
+ 2919  git push heroku master
+ 2920  git remote set-url gitlab https://gitlab.com/deevilboy/cryptoskillz.git
+ 2921  git remote add gitlab https://gitlab.com/deevilboy/cryptoskillz.git
+ 2922  git remote -v
+ 2923  git remote push gitlab
+ 2924  git push gitlab master
+ 2925  mongo ds241059.mlab.com:41059/heroku_thsfgtxw -u heroku_thsfgtxw -p ibobpr4v50kti4oht0i4j4b2u3
+ 2926  nano .babelrc
+ 2927  ls
+ 2928  pwd
+ 2929  nano .babelrc
+ 2930  curl -L https://cli.hasura.io/install.sh | bash\n
+ 2931  hasura login\n
+ 2932  cd /Users/ML/Projects/\n
+ 2933  cd react-apps
+ 2934  hasura quickstart hello-world
+ 2935  cd hello-world
+ 2936  ls
+ 2937  npm start
+ 2938  cd microservices
+ 2939  npm start
+ 2940  nano package.json
+ 2941  ls
+ 2942  cd..
+ 2943  ls
+ 2944  cd ..
+ 2945  ls
+ 2946  nano README.md
+ 2947  git add . && git commit -m 'First commit'
+ 2948  git push hasura master
+ 2949  ls
+ 2950  cd conf
+ 2951  ls
+ 2952  ls -l
+ 2953  cd ..
+ 2954  lls
+ 2955  ls
+ 2956  ls -l
+ 2957  cd migrations
+ 2958  ls
+ 2959  cd ..
+ 2960  ls
+ 2961  cd microservices
+ 2962  ls
+ 2963  cd ..
+ 2964  ls
+ 2965  hasura microservice open api
+ 2966  git push hasura master
+ 2967  hasura microservice open
+ 2968  hasura microservice open api
+ 2969  cd ..
+ 2970  ls
+ 2971  rm -rf hello-world
+ 2972  hasura quickstart hasura/hello-nodejs-express\n
+ 2973  exit
+ 2974  cd /Users/ML/Projects/\n
+ 2975  ls
+ 2976  cd react-apps
+ 2977  ls
+ 2978  rm -rf cryptogamehouse
+ 2979  rm -rf hello-nodejs-express
+ 2980  rm -rf myproject
+ 2981  rm -rf nodetest
+ 2982  rm -rf nodetest2
+ 2983  ls
+ 2984  rm -rf closebrace_tutorial
+ 2985  ls
+ 2986  rm -rf my-app
+ 2987  rm -rf nodetest1
+ 2988  cd ..
+ 2989  ls
+ 2990  cd rails_apps
+ 2991  cd ../meteor_apps
+ 2992  ls
+ 2993  rm -rf Telescope
+ 2994  ls
+ 2995  cd ..
+ 2996  ls
+ 2997  rm -rf meteor_apps
+ 2998  ls
+ 2999  cd node_apps
+ 3000  ls
+ 3001  cd ..
+ 3002  ls
+ 3003  cd nodejs_apps
+ 3004  ls
+ 3005  cd node_modules
+ 3006  ls
+ 3007  cd ..
+ 3008  ls
+ 3009  rm -rf node_modules
+ 3010  ls
+ 3011  rm package-lock.json
+ 3012  ls
+ 3013  cd ..
+ 3014  ls
+ 3015  cd python_stuff
+ 3016  ls
+ 3017  cd ..
+ 3018  ls
+ 3019  mv python_stuff python_apps
+ 3020  ls
+ 3021  cd react_native_apps
+ 3022  ls
+ 3023  rm -rf AwesomeProject
+ 3024  ls -la
+ 3025  cd ..
+ 3026  ls
+ 3027  cd rails_apps
+ 3028  ls
+ 3029  cd fpop_refer
+ 3030  rails s
+ 3031  bundle install
+ 3032  ls
+ 3033  cd ..
+ 3034  ls
+ 3035  cd EV-Coin
+ 3036  ls
+ 3037  rails s
+ 3038  exit
+ 3039  ls
+ 3040  cd Projects
+ 3041  ls
+ 3042  cd react_native_apps
+ 3043  ls
+ 3044  cd ..
+ 3045  ls
+ 3046  cd react-apps
+ 3047  ls
+ 3048  git clone https://github.com/Lumeos/landing-page.git
+ 3049  npm install
+ 3050  gulp
+ 3051  npm start
+ 3052  gulp
+ 3053  npm install -g gulp
+ 3054  gulp
+ 3055  npm install gulp
+ 3056  sublime .
+ 3057  ls
+ 3058  cd landing-page
+ 3059  ls
+ 3060  cd ..
+ 3061  ls
+ 3062  cd rails_apps
+ 3063  ls
+ 3064  cd ..
+ 3065  ls
+ 3066  cd react-apps
+ 3067  ls
+ 3068  cd landing-page
+ 3069  ls
+ 3070  cd ..
+ 3071  ls
+ 3072  nano gulpfile.js
+ 3073  ls
+ 3074  cd landing-page
+ 3075  ls
+ 3076  nano gulpfile.js
+ 3077  gulp
+ 3078  npm install gulp-watch
+ 3079  guplp
+ 3080  gulp
+ 3081  cd ..
+ 3082  ls
+ 3083  gulp
+ 3084  rm -rf node_modules
+ 3085  cd ..
+ 3086  ls
+ 3087  cd react-apps
+ 3088  ls
+ 3089  cd ..
+ 3090  rm -rf react-apps
+ 3091  mkdir react-apps
+ 3092  cd rails_apps
+ 3093  ls
+ 3094  cd ..
+ 3095  cd react-apps
+ 3096  ls
+ 3097  git clone https://github.com/Lumeos/landing-page.git
+ 3098  ls
+ 3099  cd landing-page
+ 3100  ls
+ 3101  gulp
+ 3102  npm install gulp --save-dev
+ 3103  npm install -g gulp
+ 3104  gulp
+ 3105  gulp -v
+ 3106  npm ls
+ 3107  ls
+ 3108  npm install
+ 3109  gulp
+ 3110  ls
+ 3111  cd ..
+ 3112  ls
+ 3113  cd ..
+ 3114  ls
+ 3115  cd react-apps
+ 3116  ls
+ 3117  cd landing-page
+ 3118  ls
+ 3119  sublime .
+ 3120  ls
+ 3121  cd ..
+ 3122  git clone https://github.com/Lumeos/MVP.git
+ 3123  ls
+ 3124  cd MVP
+ 3125  ls
+ 3126  pwd
+ 3127  ls
+ 3128  npm install
+ 3129  npm run dev
+ 3130  npm start
+ 3131  ls
+ 3132  pwd
+ 3133  cd ..
+ 3134  pwd
+ 3135  git clone https://github.com/Lumeos/server.git
+ 3136  npm start
+ 3137  ls
+ 3138  cd server
+ 3139  npm start
+ 3140  npm install
+ 3141  npm start
+ 3142  curl -H "Content-Type: application/json" --request POST --data '{"email":"some@email.com", "password":"some_password"}' localhost:3000/v1/login/
+ 3143  {"token":"some.hashed.token"}
+ 3144  curl -H "Content-Type: application/json" --request POST --data '{"email":"some@email.com", "password":"some_password"}' localhost:3000/v1/login/{"token":"some.hashed.token"}
+ 3145  curl -H "Content-Type: application/json" --request POST --data '{"email":"some@email.com", "password":"some_password"}' localhost:3000/v1/login
+ 3146  curl -H "Content-Type: application/json" --request POST --data '{"email":"mlin08.mit@gmail.com", "password":"Xingfish1!"}' localhost:3000/v1/login
+ 3147  ls
+ 3148  cd ..
+ 3149  ls
+ 3150  cd ..
+ 3151  ls
+ 3152  cd ..
+ 3153  ls
+ 3154  cd react_native_apps
+ 3155  ls
+ 3156  git clone https://gitlab.com/lumeos/mobile.git
+ 3157  ls
+ 3158  cd mobile
+ 3159  ls
+ 3160  npm install
+ 3161  sublime .
+ 3162  npm start
+ 3163  npm install
+ 3164  npm start
+ 3165  react-native run-ios
+ 3166  nvm -v
+ 3167  nvm
+ 3168  nvm -version
+ 3169  nvm --version
+ 3170  node -version
+ 3171  node -v
+ 3172  nvm ls
+ 3173  nvm alias default system
+ 3174  nvm ls
+ 3175  nvm alias default v10.6.0
+ 3176  nvm ls
+ 3177  nvm alias default v10.6.0
+ 3178  node -v
+ 3179  nvm use 10.6.0
+ 3180  nvm ls
+ 3181  ls
+ 3182  npm start
+ 3183  ls
+ 3184  cd ..
+ 3185  ls
+ 3186  cd ..
+ 3187  ls
+ 3188  cd react-apps
+ 3189  ls
+ 3190  rm -rf landing-page
+ 3191  ls
+ 3192  rm -rf MVP
+ 3193  ls
+ 3194  git clone https://gitlab.com/lumeos/website.git
+ 3195  ls
+ 3196  cd website
+ 3197  ls
+ 3198  npm start
+ 3199  ls
+ 3200  npm install
+ 3201  ls
+ 3202  ls -l
+ 3203  nano package-lock.json
+ 3204  ls
+ 3205  cd ..
+ 3206  ls
+ 3207  cd website
+ 3208  ls
+ 3209  sublime .
+ 3210  npm start
+ 3211  ls
+ 3212  rm -rf node_modules
+ 3213  yarn install
+ 3214  nano package.json
+ 3215  yarn start
+ 3216  npm install watchman
+ 3217  yarn install
+ 3218  yarn start
+ 3219  pwd
+ 3220  ls
+ 3221  nano package
+ 3222  nano package.json
+ 3223  react-native run-ios
+ 3224  ls
+ 3225  cd ..
+ 3226  ls
+ 3227  cd ..
+ 3228  ls
+ 3229  cd react-apps
+ 3230  ls
+ 3231  cd website
+ 3232  ls
+ 3233  npm start
+ 3234  npm install
+ 3235  ls ~/.ssh/*.pub
+ 3236  nano /Users/ML/.ssh/id_rsa.pub
+ 3237  cat ~/.ssh/id_rsa.pub\n\n
+ 3238  ls
+ 3239  cd /Users/ML/Projects/\n
+ 3240  ls
+ 3241  cd react_native_apps
+ 3242  ls
+ 3243  cd mobile
+ 3244  ls
+ 3245  npm start
+ 3246  yarn run ios
+ 3247  npm run ios
+ 3248  ls
+ 3249  nano package.json
+ 3250  react-native run-ios
+ 3251  /Users/ML/Projects/react_native_apps/mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3252  ls
+ 3253  cd /Users/ML/Projects/\n
+ 3254  cd react_native_apps
+ 3255  cd mobile
+ 3256  git pull
+ 3257  ls
+ 3258  sublime .
+ 3259  ls
+ 3260  cd ..
+ 3261  ls
+ 3262  git clone https://git.technorely.com/root/lumeous-mobile.git
+ 3263  ls
+ 3264  mv mobile mobile-lumeos-oldrepo
+ 3265  ls
+ 3266  git clone https://git.technorely.com/root/lumeous-mobile.git
+ 3267  \n597\ndown vote\naccepted\ncat ~/.ssh/id_rsa.pub
+ 3268  ccat ~/.ssh/id_rsa.pub
+ 3269  cat ~/.ssh/id_rsa.pub
+ 3270  ls
+ 3271  mv mobile mobile-lumeos-oldrepo lumeos-mobile-USA-old
+ 3272  mv mobile mobile-lumeos-oldrepo lumeos-mobile-US
+ 3273  mv mobile mobile-lumeos-oldrepo lumeos-mobil
+ 3274  mv mobile-lumeos-oldrepo lumeos-mobile-USA-old
+ 3275  ls
+ 3276  git clone ssh://git@git.technorely.com:2222/root/lumeous-mobile.git
+ 3277  ls
+ 3278  mv lumeos-mobile lumeos-mobile-ukraine
+ 3279  git clone ssh://git@git.technorely.com:2222/root/lumeous-mobile-api.git
+ 3280  ls
+ 3281  cd lumeous-mobile
+ 3282  ls
+ 3283  npm install
+ 3284  ls
+ 3285  cd ..
+ 3286  ls
+ 3287  cd lumeous-mobile-api
+ 3288  ls
+ 3289  npm install
+ 3290  git log
+ 3291  ls
+ 3292  git log
+ 3293  react-native run-ios
+ 3294  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3295  ls
+ 3296  git branch
+ 3297  git log
+ 3298  ls
+ 3299  sublime .
+ 3300  ls
+ 3301  cd ..
+ 3302  ls
+ 3303  cd lumeous-mobile-api
+ 3304  ls
+ 3305  sublime .
+ 3306  cd ..
+ 3307  cd lumeous-mobile-api
+ 3308  ls
+ 3309  cd ..
+ 3310  ls
+ 3311  cd lumeous-mobile-api
+ 3312  git add .
+ 3313  git commit -m "Updated verify email and reset password instructions"
+ 3314  ls
+ 3315  sublime .
+ 3316  git log
+ 3317  git remote -v
+ 3318  git push
+ 3319  git push origin
+ 3320  git branch
+ 3321  git push origin dev
+ 3322  git remote -v
+ 3323  git remote show origin
+ 3324  git remote show
+ 3325  git push
+ 3326  git branch
+ 3327  git push origin
+ 3328  git push origin dev
+ 3329  ls
+ 3330  git log
+ 3331  ls
+ 3332  git revert
+ 3333  git reset HEAD
+ 3334  git log
+ 3335  git reset --hard @{u}
+ 3336  git log
+ 3337  git checkout -b ap189verify_email
+ 3338  git branch
+ 3339  sublime .
+ 3340  ls
+ 3341  git branch
+ 3342  git push origina ap189verify_email
+ 3343  git push origin ap189verify_email
+ 3344  ls
+ 3345  git log
+ 3346  git branch
+ 3347  git co dev
+ 3348  git branch
+ 3349  git co ap189verify_email
+ 3350  sublime .
+ 3351  ls
+ 3352  git branch dev
+ 3353  git co dev
+ 3354  git br
+ 3355  sublime .
+ 3356  ls
+ 3357  git log
+ 3358  git add .
+ 3359  git commit -m "Updated verify email and reset password instructions"
+ 3360  git push origin dev
+ 3361  git pull
+ 3362  q
+ 3363  ls
+ 3364  cd ..
+ 3365  ls
+ 3366  rm -rf lumeous-mobile-api
+ 3367  ls
+ 3368  git clone ssh://git@git.technorely.com:2222/root/lumeous-mobile-api.git
+ 3369  ls
+ 3370  cd lumeous-mobile-api
+ 3371  sublime .
+ 3372  ls
+ 3373  git add .
+ 3374  git commit -m "Updated verify email and reset password instructions"
+ 3375  git push origin
+ 3376  git push origin dev
+ 3377  ls
+ 3378  git push origin test
+ 3379  git co ap189verify_email
+ 3380  ls
+ 3381  git branch
+ 3382  ls
+ 3383  cd Users/ML/Projects/react_native_apps/
+ 3384  ls
+ 3385  cd Projects
+ 3386  ls
+ 3387  cd react_native_apps
+ 3388  ls
+ 3389  cd lumeous-mobile
+ 3390  react-native run-ios
+ 3391  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3392  react-native run-ios
+ 3393  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3394  react-native run-ios
+ 3395  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3396  ls
+ 3397  pwd
+ 3398  cd /Users/ML/Projects/react_native_apps/lumeous-mobile\n
+ 3399  pwd
+ 3400  react-native run-ios
+ 3401  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3402  react-native run-ios
+ 3403  exit
+ 3404  cd /Users/ML/Projects/react_native_apps/lumeous-mobile\n
+ 3405  cd /Users/ML/Projects/react_native_apps/lumeous-mobile-api\n
+ 3406  ls
+ 3407  git log
+ 3408  git push gitlab dev
+ 3409  git push origin dev
+ 3410  git pull
+ 3411  git log
+ 3412  git remote add gitlab ssh://git@git.technorely.com:2222/root/lumeous-mobile-api.git\n
+ 3413  git push gitlab dev
+ 3414  cd ..
+ 3415  ls
+ 3416  cd rm -rf lumeous-mobile-api
+ 3417  rm -rf lumeous-mobile-api
+ 3418  ls
+ 3419  git clone ssh://git@git.technorely.com:2222/root/lumeous-mobile-api.git
+ 3420  git remote add gitlab ssh://git@git.technorely.com:2222/root/lumeous-mobile-api.git\n
+ 3421  ls
+ 3422  cd lumeous-mobile-api
+ 3423  git remote add gitlab ssh://git@git.technorely.com:2222/root/lumeous-mobile-api.git\n
+ 3424  git remove -v
+ 3425  git remote -v
+ 3426  ls
+ 3427  git co -b passwordresetemail
+ 3428  branch
+ 3429  git br
+ 3430  sublime .
+ 3431  git add .
+ 3432  git commit -m "Updated verify email and reset password instructions"
+ 3433  git push gitlab passwordresetemail
+ 3434  git pull
+ 3435  ls
+ 3436  pwd
+ 3437  git branch
+ 3438  ls
+ 3439  git co dev
+ 3440  git br
+ 3441  ls
+ 3442  cd ..
+ 3443  ls
+ 3444  cd lumeous-mobil
+ 3445  cd lumeous-mobile
+ 3446  react-native run-ios
+ 3447  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 3448  npm install
+ 3449  react-native run-ios
+ 3450  sublime .
+ 3451  cd ../lumeous-mobile-api
+ 3452  ls
+ 3453  pwd
+ 3454  ls
+ 3455  sublime .
+ 3456  cd ..
+ 3457  ls
+ 3458  cd lumeous-mobile
+ 3459  sublime .
+ 3460  exit
+ 3461  ls
+ 3462  cd /Users/ML/Projects/react_native_apps/lumeous-mobile-api\n
+ 3463  cd ..
+ 3464  ls
+ 3465  cd ..
+ 3466  ls
+ 3467  cd solidity_apps
+ 3468  git clone https://github.com/Dan-Nolan/Escrow-JQuery.git
+ 3469  ls
+ 3470  cd Escrow-JQuery
+ 3471  ls
+ 3472  npm install 
+ 3473  ls
+ 3474  cd app
+ 3475  npm i
+ 3476  npm start
+ 3477  npm install -g parcel-bundler
+ 3478  npm start
+ 3479  ls
+ 3480  cd ..
+ 3481  ls
+ 3482  cd ..
+ 3483  ls
+ 3484  git clone https://github.com/dharmaprotocol/dharma-react-starter-kit.git
+ 3485  ganache-cli\n
+ 3486  yarn compile
+ 3487  ls
+ 3488  cd dharma-react-starter-kit
+ 3489  ls
+ 3490  yarn compile
+ 3491  npm i -g yarn
+ 3492  yarn compile
+ 3493  ls
+ 3494  cd contracts
+ 3495  ls
+ 3496  yarn compile
+ 3497  ls
+ 3498  cd ..
+ 3499  ls
+ 3500  yarn install
+ 3501  ls
+ 3502  yarn compile
+ 3503  cd contracts
+ 3504  yarn compile
+ 3505  testrpc
+ 3506  ls
+ 3507  cd ..
+ 3508  yarn
+ 3509  yarn compile
+ 3510  yarn migrate
+ 3511  sublime .
+ 3512  yarn migrate
+ 3513  yarn start
+ 3514  cd ..
+ 3515  git clone https://github.com/dharmaprotocol/charta.git
+ 3516  yarn install
+ 3517  ls
+ 3518  cd charta
+ 3519  yarn install
+ 3520  yarn chain
+ 3521  yarn test
+ 3522  ls
+ 3523  cd..
+ 3524  ls
+ 3525  cd ..
+ 3526  ls
+ 3527  rm -rf dharma-react-starter-kit
+ 3528  ls
+ 3529  cd ..
+ 3530  ls
+ 3531  cd solidity_apps
+ 3532  ls
+ 3533  cd node_modules
+ 3534  ls
+ 3535  cd ..
+ 3536  rm -rf node_modules
+ 3537  ls
+ 3538  rm yarn.lock
+ 3539  ls
+ 3540  git clone https://github.com/dharmaprotocol/dharma-tutorial-1.git
+ 3541  cd dharma-tutorial-1
+ 3542  ls
+ 3543  npm i
+ 3544  npm run blockchain\n
+ 3545  npm start
+ 3546  sublime .
+ 3547  ls
+ 3548  sublime .
+ 3549  npm run blockchain
+ 3550  npm start
+ 3551  npm install -g solc
+ 3552  npm i
+ 3553  npm start
+ 3554  cd ..
+ 3555  ls
+ 3556  git clone https://github.com/dharmaprotocol/dharma-react-starter-kit.git
+ 3557  cd dharma-react-starter-kit
+ 3558  ls
+ 3559  yarn compile
+ 3560  yarn
+ 3561  yarn compile
+ 3562  yarn migrate
+ 3563  yarn start
+ 3564  sublime .
+ 3565  yarn compile
+ 3566  npm migrate
+ 3567  yarn compile
+ 3568  yarn migrate
+ 3569  npm install -g truffle
+ 3570  yarn compile
+ 3571  yarn migrate
+ 3572  yarn start
+ 3573  yarn compile
+ 3574  yarn migrate
+ 3575  yarn start
+ 3576  yarn compile
+ 3577  yarn migrate
+ 3578  yarn compile
+ 3579  yarn migrate
+ 3580  yarn compile
+ 3581  yarn
+ 3582  cd ..
+ 3583  ls
+ 3584  rm -rf dharma-react-starter-kit
+ 3585  git clone https://github.com/dharmaprotocol/dharma-react-starter-kit.git
+ 3586  ls
+ 3587  cd dharma-react-starter-kit
+ 3588  ls
+ 3589  yarn
+ 3590  node -v
+ 3591  ls
+ 3592  yarn
+ 3593  npm cache clean
+ 3594  npm cache clean --force
+ 3595  yarn
+ 3596  yarn cache clean
+ 3597  yarn
+ 3598  ls
+ 3599  cd /Users/ML/Projects/react_native_apps/lumeous-mobile-api\n
+ 3600  cd ..
+ 3601  ls
+ 3602  cd ../solidity_apps
+ 3603  ls
+ 3604  brew install go dep node yarn docker direnv\n\n
+ 3605  ls
+ 3606  npm install truffle -g\n
+ 3607  npm install -g npm
+ 3608  npm install -g truffle\n
+ 3609  ls
+ 3610  rm -rf Metacoin
+ 3611  mkdir MetaCoin
+ 3612  cd MetaCoin
+ 3613  truffle unbox metacoin
+ 3614  git log
+ 3615  ls
+ 3616  cd /Users/ML/Projects/react_native_apps/lumeous-mobile-api\n
+ 3617  ls
+ 3618  git log
+ 3619  ls
+ 3620  cd /Users/ML/Projects/react_native_apps/lumeous-mobile-api\n
+ 3621  ls
+ 3622  pwd
+ 3623  sublime .
+ 3624  git log
+ 3625  git checkout 6955fe23578b8d629a91c3f33156bb20792373be
+ 3626  git log
+ 3627  cd /Users/ML/Projects/react_native_apps/
+ 3628  ls
+ 3629  cd lumeous-mobile
+ 3630  ls
+ 3631  git branch
+ 3632  git checkout dev
+ 3633  git log
+ 3634  git co master
+ 3635  git co dev
+ 3636  git log
+ 3637  git checkout master
+ 3638  git checkout dev
+ 3639  git log
+ 3640  ls
+ 3641  docker pull eosio/eos:v1.3.2
+ 3642  docker run --name eosio \\n--publish 7777:7777 \\npublish 7777:7777 \\npublish 7777:7777 \n: 1540076283:0;docker run --name eosio \\n--publish 7777:7777 \\ndocker run --name eosio
+ 3643  publish 7777:7777
+ 3644  ls
+ 3645  docker run --name eosio
+ 3646  docker run --name eosio \\npublish 7777:7777
+ 3647  docker pull eosio/eos-dev
+ 3648  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3649  docker ps -aq -f status=exited
+ 3650  docker ps -aq --no-trunc -f status=exited | xargs docker rm\n
+ 3651  docker ps -aq -f status=exited
+ 3652  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3653  ls
+ 3654  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3655  docker logs --tail 10 eosio
+ 3656  docker pull eosio/eos:v1.3.2
+ 3657  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3658  ls
+ 3659  cd /Users/ML/Projects/react_native_apps/
+ 3660  cd ..
+ 3661  ls
+ 3662  mkdir EOS_apps
+ 3663  cd EOS_apps
+ 3664  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3665  ls
+ 3666  mkdir contracts
+ 3667  cd contracts
+ 3668  docker pull eosio/eos:v1.3.2
+ 3669  pwd
+ 3670  cd /Users/ML/Projects/EOS_apps/contracts
+ 3671  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/contracts:/Users/ML/Projects/EOS_apps/contracts \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3672  docker logs --tail 10 eosio
+ 3673  docker exec -it eosio bash
+ 3674  curl http://localhost:7777/v1/chain/get_info
+ 3675  alias cleos='docker exec -it eosio /opt/eosio/bin/cleos --url http://127.0.0.1:7777 --wallet-url http://127.0.0.1:5555'
+ 3676  exec bash
+ 3677  cd /Users/ML/Projects/EOS_apps/contracts
+ 3678  docker logs --tail 10 eosio
+ 3679  docker start eosio
+ 3680  docker stop eosio
+ 3681  git clone --recursive https://github.com/eosio/eosio.cdt --branch v1.2.1 --single-branch\n
+ 3682  ls -l
+ 3683  cd eosio.cdt
+ 3684  ./build.sh SYS
+ 3685  docker start eosio
+ 3686  docker logs --tail 10 eosio
+ 3687  docker exec -it eosio bash
+ 3688  sudo ./install.sh
+ 3689  npm install boost-lib
+ 3690  sudo ./install.sh
+ 3691  npm boost -version
+ 3692  npm -version
+ 3693  ls
+ 3694  cd ..
+ 3695  ls
+ 3696  cd ..
+ 3697  ls
+ 3698  cd contracts
+ 3699  ls
+ 3700  cd eosio.cdt
+ 3701  ls
+ 3702  cd node_modules
+ 3703  ls
+ 3704  cd ..
+ 3705  ls
+ 3706  cd build
+ 3707  ls
+ 3708  rm CMakeCache.txt
+ 3709  rm -r CMakeFiles
+ 3710  ls
+ 3711  cd ..
+ 3712  rm -rf build/
+ 3713  ls
+ 3714  rum -rf build/
+ 3715  rm -rf build/
+ 3716  sudo rm -rf build/
+ 3717  ls
+ 3718  git checkout master
+ 3719  ./eosio_build.sh
+ 3720  ./build.sh
+ 3721  nano /Users/ML/Projects/EOS_apps/contracts/eosio.cdt/build/EosioClang-prefix/src/EosioClang-build/CMakeFiles/CMakeOutput.log
+ 3722  rew uninstall --ignore-dependencies boost
+ 3723  brew uninstall --ignore-dependencies boost
+ 3724  ./build.sh
+ 3725  ./build.sh SYS
+ 3726  sudo ./install.sh
+ 3727  cleos wallet create --to-console
+ 3728  docker logs --tail 10 eosio
+ 3729  ls
+ 3730  cleos wallet create --to-console
+ 3731  alias cleos='docker exec -it eosio /opt/eosio/bin/cleos --url http://127.0.0.1:7777 --wallet-url http://127.0.0.1:5555'
+ 3732  cd /Users/ML/Projects/EOS_apps/contracts
+ 3733  ls
+ 3734  cd eosio.cdt
+ 3735  ls
+ 3736  docker start eosio
+ 3737  cleos wallet create --to-console
+ 3738  docker exec -it eosio bash
+ 3739  curl http://localhost:7777/v1/chain/get_info
+ 3740  docker stop eosio
+ 3741  docker start eosio
+ 3742  curl http://localhost:7777/v1/chain/get_info
+ 3743  cleos wallet create --to-console
+ 3744  cd ..
+ 3745  cleos wallet create --to-console
+ 3746  cd eosio.cdt
+ 3747  ls
+ 3748  nano .bash_profile
+ 3749  echo $PATH
+ 3750  nano ~/.bash_profile
+ 3751  nano ~/.profile
+ 3752  cd /Users/ML/Projects/EOS_apps/contracts
+ 3753  cd eosio.cdt
+ 3754  curl http://localhost:7777/v1/chain/get_info
+ 3755  cleos wallet create --to-console
+ 3756  alias cleos='docker exec -it eosio /opt/eosio/bin/cleos --url http://127.0.0.1:7777 --wallet-url http://127.0.0.1:5555'
+ 3757  cleos wallet create --to-console
+ 3758  cd /Users/ML/Projects/EOS_apps/contracts
+ 3759  cd eosio.cdt
+ 3760  curl http://localhost:7777/v1/chain/get_info
+ 3761  cleos wallet create --to-console
+ 3762  nano ~/.profile
+ 3763  source ~/.profile
+ 3764  cleos wallet create --to-console
+ 3765  cleos walle open
+ 3766  cleos wallet open
+ 3767  cleos wallet list
+ 3768  cleos wallet unlock
+ 3769  cleos create key
+ 3770  cleos create key --to-console
+ 3771  cleos wallet import 5JH5j8EaHa6jJ22McL4PRXeTveRTui4b545BsrNEpUpsZ9MH3ER
+ 3772  cleos wallet import ${5JH5j8EaHa6jJ22McL4PRXeTveRTui4b545BsrNEpUpsZ9MH3ER}
+ 3773  cd ~/Library/Application Support/eosio/nodeos/data
+ 3774  ls
+ 3775  pwed
+ 3776  cd ~/Library/Application Support/eosio/nodeos/data
+ 3777  ls
+ 3778  docker stop eosio
+ 3779  sudo ./install.sh
+ 3780  cleos wallet create --to-console
+ 3781  source ~/.profile
+ 3782  cleos wallet create --to-console
+ 3783  docker start eosio
+ 3784  cleos wallet create --to-console
+ 3785  cd /usr/local/include
+ 3786  ls
+ 3787  showFiles
+ 3788  cd ~/.local
+ 3789  cd share
+ 3790  ls
+ 3791  cd ~/Library
+ 3792  ls
+ 3793  cd Application\ S
+ 3794  ls
+ 3795  cd eosio
+ 3796  cleos wallet open -n default
+ 3797  source ~/.profile
+ 3798  cleos wallet open -n default
+ 3799  cd /tmp/eosio/data
+ 3800  cd /tmp/eosio
+ 3801  cd ~/eosio-wallet
+ 3802  keosd
+ 3803  source ~/.profile
+ 3804  keosd
+ 3805  ls
+ 3806  cd /Users/ML/Projects/EOS_apps/contracts
+ 3807  cd eosio.cdt
+ 3808  ls
+ 3809  cd build
+ 3810  ls
+ 3811  keosd
+ 3812  ls
+ 3813  cd ..
+ 3814  ls
+ 3815  cd eosio_llvm
+ 3816  ls
+ 3817  cd ..
+ 3818  ls
+ 3819  cd ..
+ 3820  ls
+ 3821  cd ..
+ 3822  ls
+ 3823  cd EOS_apps
+ 3824  ls
+ 3825  cd contracts
+ 3826  ls
+ 3827  cd eosio.cdt
+ 3828  ls
+ 3829  showFiles
+ 3830  cd ..
+ 3831  ls
+ 3832  cd ..
+ 3833  ls
+ 3834  cd contracts
+ 3835  cd eosio.cdt
+ 3836  ls
+ 3837  cd ..
+ 3838  ls
+ 3839  cd eosio.cdt
+ 3840  ls
+ 3841  cd build
+ 3842  ls
+ 3843  ls -l
+ 3844  find / -type d -name "eos/build/programs/keosd"
+ 3845  sudo find / -type d -name "eos/build/programs/keosd"
+ 3846  find *eos/build/programs/keosd -type d
+ 3847  find -name keosd
+ 3848  find -directory keosd
+ 3849  find ./keosd -d
+ 3850  find -name keosd
+ 3851  find / -name "keosd"
+ 3852  sudo find / -name "keosd"
+ 3853  keosd
+ 3854  source ~/.profile
+ 3855  keosd
+ 3856  docker start eosio
+ 3857  keosd
+ 3858  source ~/.profile
+ 3859  keosd
+ 3860  docker
+ 3861  docker ps
+ 3862  curl http://localhost:7777/v1/chain/get_info
+ 3863  cleos --wallet-url http://127.0.0.1:5555 wallet list keys
+ 3864  docker exec -it eosio bas
+ 3865  docker exec -it eosio bash
+ 3866  keosd
+ 3867  docker exec -it eosio bash
+ 3868  docker start eosio
+ 3869  keosd
+ 3870  source ~/.profile
+ 3871  keosd
+ 3872  cleos wallet create test_wallet
+ 3873  cleos --wallet-url http://127.0.0.1:5555 wallet list keys
+ 3874  docker start eosio
+ 3875  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3876  docker exec -it eosio bash
+ 3877  docker start eosio
+ 3878  docker logs --tail 10 eosio
+ 3879  docker exec -it eosio bash
+ 3880  docker logs --tail 10 eosio
+ 3881  source ~/.profile
+ 3882  docker logs --tail 10 eosio
+ 3883  docker exec -it eosio bash
+ 3884  docker stop $(docker ps -aq)\n
+ 3885  docker start eosio
+ 3886  docker logs --tail 10 eosio
+ 3887  nodeos --replay-blockchain --hard-replay-blockchain
+ 3888  docker exec -it eosio bash
+ 3889  ls
+ 3890  cd ..
+ 3891  ls
+ 3892  cd ..
+ 3893  ls
+ 3894  rm -rf contracts
+ 3895  mkdir contracts
+ 3896  cd contracts
+ 3897  ls
+ 3898  docker pull eosio/eos:v1.3.2
+ 3899  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3900  docker logs --tail 10 eosio
+ 3901  docker system prune
+ 3902  docker system prune -a
+ 3903  docker ps -a
+ 3904  docker pull eosio/eos:v1.3.2
+ 3905  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3906  docker pull eosio/eos:v1.3.2
+ 3907  cd /Users/ML/Projects/EOS_apps/contracts
+ 3908  ls
+ 3909  cd /Users/ML/Projects/EOS_apps/contracts
+ 3910  docker pull eosio/eos:v1.3.2
+ 3911  docker ps
+ 3912  exit
+ 3913  docker ps
+ 3914  docker pull eosio/eos:v1.3.2
+ 3915  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3916  docker logs --tail 10 eosio
+ 3917  cd /Users/ML/Projects/EOS_apps/contracts
+ 3918  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/contracts:/Users/ML/Projects/EOS_apps/contracts \\n  --detach \\n  eosio/eos \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::history_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 3919  docker logs --tail 10 eosio
+ 3920  docker exec -it eosio bash
+ 3921  curl http://localhost:7777/v1/chain/get_info
+ 3922  nano ~/.profile
+ 3923  ls
+ 3924  cd /Users/ML/Projects/EOS_apps/contracts
+ 3925  ls
+ 3926  git clone --recursive https://github.com/eosio/eosio.cdt --branch v1.2.1 --single-branc
+ 3927  cd eosio.cdt
+ 3928  ./build.sh SYS
+ 3929  cd /Users/ML/Projects/EOS_apps/contracts
+ 3930  ls
+ 3931  mkdir hello
+ 3932  cd hello
+ 3933  touch hello.cpp
+ 3934  nano hello.cpp
+ 3935  sublime .
+ 3936  sudo ./install.sh
+ 3937  cleos wallet create --to-console
+ 3938  source ~/.profile
+ 3939  cleos wallet create --to-console
+ 3940  nano .bash_profile
+ 3941  nano ~/.bash_profile
+ 3942  nano ~/.profile
+ 3943  cleos
+ 3944  source ~/.profile
+ 3945  cleos
+ 3946  source ~/.bashrc
+ 3947  cleos
+ 3948  source ~/.bashrc
+ 3949  cleos
+ 3950  source ~/.bash_profile
+ 3951  cleos
+ 3952  source ~/.bash_profile
+ 3953  cleos
+ 3954  nano ~/.bash_profile
+ 3955  nano ~/.profile
+ 3956  nano ~/.bash_profile
+ 3957  nano ~/.bashrc
+ 3958  cleos wallet open
+ 3959  cleos wallet list
+ 3960  cleos wallet unlock
+ 3961  cleos wallet list
+ 3962  cleos wallet create_key
+ 3963  cleos wallet import
+ 3964  cleos create account eosio bob EOS7Bcob8Zij9A6c9tYAsAryHLHAbsQo4smotKWVeyGjYVMCxpc1q \n
+ 3965  cleos create account eosio alice EOS7Bcob8Zij9A6c9tYAsAryHLHAbsQo4smotKWVeyGjYVMCxpc1q
+ 3966  cleos wallet list
+ 3967  ls
+ 3968  cd ..
+ 3969  ls
+ 3970  cd hello
+ 3971  ls
+ 3972  eosio-cpp -o hello.wasm hello.cpp --abigen
+ 3973  cleos wallet keys
+ 3974  cleos wallet unlock
+ 3975  cleos wallet keys
+ 3976  cleos create account eosio hello EOS7Bcob8Zij9A6c9tYAsAryHLHAbsQo4smotKWVeyGjYVMCxpc1q -p eosio@active
+ 3977  cleos set contract hello CONTRACTS_DIR/hello -p hello@active\n\n
+ 3978  cd /Users/ML/Projects/EOS_apps/contracts
+ 3979  ls
+ 3980  cleos set contract hello /Users/ML/Projects/EOS_apps/contracts/hello -p hello@active\n\n
+ 3981  cleos push action hello hi '["bob"]' -p bob@active
+ 3982  cleos push action hello hi '["bob"]' -p alice@active\n\n
+ 3983  eosio-cpp -o hello.wasm hello.cpp --abigen\n\n
+ 3984  cleos set contract hello /Users/ML/Projects/EOS_apps/contracts/hello -p hello@active\n\n
+ 3985  cleos push action hello hi '["bob"]' -p alice@active
+ 3986  cleos push action hello hi '["alice"]' -p alice@active
+ 3987  ls
+ 3988  cd ..
+ 3989  ls
+ 3990  git clone https://github.com/EOSIO/eosio.contracts --branch v1.3.1 --single-branch
+ 3991  ls
+ 3992  cd eosio.contracts
+ 3993  ls
+ 3994  cd eosio.token
+ 3995  ls
+ 3996  cleos wallet list
+ 3997  cleos wallet CMakeLists.txt
+ 3998  cleos wallet keys
+ 3999  ls
+ 4000  cd ..
+ 4001  ls
+ 4002  cd eosio.token
+ 4003  ls
+ 4004  cleos create account eosio eosio.token EOS6MRyAjQq8ud7hVNYcfnVPJqcVpscN5So8BhtHuGYqET5GDW5CV
+ 4005  cd src
+ 4006  ls
+ 4007  sublime .
+ 4008  ls
+ 4009  sublime .
+ 4010  cd ..
+ 4011  eosio-cpp -I include -o eosio.token.wasm src/eosio.token.cpp 
+ 4012  cleos set contract eosio.token CONTRACTS_DIR/eosio.contracts/eosio.token --abi abi/eosio.token.abi -p eosio.token@active
+ 4013  cd /Users/ML/Projects/EOS_apps/contracts
+ 4014  ls
+ 4015  cd eosio.contracts
+ 4016  ls
+ 4017  cd eosio.token
+ 4018  ls
+ 4019  cleos set contract eosio.token /Users/ML/Projects/EOS_apps/contracts/eosio.contracts/eosio.token --abi abi/eosio.token.abi -p eosio.token@active
+ 4020  ls
+ 4021  cd src
+ 4022  ls
+ 4023  sublime .
+ 4024  cleos push action eosio.token create '{"issuer":"eosio", "maximum_supply":"1000000000.0000 SYS"}' -p eosio.token@active
+ 4025  cleos push action eosio.token issue '[ "alice", "100.0000 SYS", "memo" ]' -p eosio@active
+ 4026  cleos push action eosio.token issue '["alice", "100.0000 SYS", "memo"]' -p eosio@active -d -j
+ 4027  cleos push action eosio.token transfer '[ "alice", "bob", "25.0000 SYS", "m" ]' -p alice@active
+ 4028  cleos get currency balance eosio.token bob SYS\n25.00 SYS
+ 4029  cleos get currency balance eosio.token bob SYS
+ 4030  cleos get currency balance eosio.token alice SYS
+ 4031  cd /Users/ML/Projects/EOS_apps/contracts
+ 4032  docker network inspect eosdev\n
+ 4033  ls
+ 4034  source ~/.bash_profile
+ 4035  nano ~/.bash_profile
+ 4036  docker network inspect eosdev\n
+ 4037  docker ps
+ 4038  docker network inspect eosdev\n
+ 4039  show
+ 4040  showFiles
+ 4041  hideFiles
+ 4042  exit
+ 4043  pwd
+ 4044  docker
+ 4045  LS
+ 4046  cd ..
+ 4047  ls
+ 4048  cd contracts
+ 4049  mkdir addressbook
+ 4050  cd addressbook
+ 4051  ls
+ 4052  touch addressbook.cpp
+ 4053  sublime
+ 4054  ls
+ 4055  sublime .
+ 4056  ls
+ 4057  cd ..
+ 4058  ls
+ 4059  cd ..
+ 4060  ls
+ 4061  cd ..
+ 4062  ls
+ 4063  cd /Users/ML/Projects/EOS_apps/contracts
+ 4064  cd ..
+ 4065  ls
+ 4066  cd ..
+ 4067  ls
+ 4068  cd react_native_apps
+ 4069  ls
+ 4070  cd lumeous-mobile
+ 4071  ls
+ 4072  react-native run-ios
+ 4073  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4074  ls
+ 4075  git pull
+ 4076  ls
+ 4077  react-native run-ios
+ 4078  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4079  react-native run-ios
+ 4080  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4081  npm install
+ 4082  react-native run-ios
+ 4083  git pull
+ 4084  exit
+ 4085  git pull
+ 4086  react-native run-ios
+ 4087  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4088  git branch
+ 4089  npm install
+ 4090  react-native run-ios
+ 4091  sublime 
+ 4092  sublime .
+ 4093  react-native run-ios
+ 4094  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4095  npm install
+ 4096  react-native run-ios
+ 4097  exit
+ 4098  cd ..
+ 4099  ls
+ 4100  cd ..
+ 4101  ls
+ 4102  cd ..
+ 4103  ls
+ 4104  cd react_native_apps
+ 4105  ls
+ 4106  cd lumeous-mobile
+ 4107  git pull
+ 4108  git stash
+ 4109  git pull
+ 4110  react-native run-ios
+ 4111  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4112  npm i
+ 4113  react-native run-ios
+ 4114  /Users/ML/Projects/react_native_apps/lumeous-mobile/node_modules/react-native/scripts/launchPackager.command ; exit;
+ 4115  npm install eosjs@beta
+ 4116  npm uninstall eosjs@beta
+ 4117  npm uninstall -g eosjs@beta
+ 4118  ls
+ 4119  cd ..
+ 4120  ls
+ 4121  cd eosio.contracts
+ 4122  ls
+ 4123  cd eosio.token
+ 4124  ls
+ 4125  cd abi
+ 4126  ls
+ 4127  sublime .
+ 4128  cd ..
+ 4129  ls
+ 4130  cd ..
+ 4131  ls
+ 4132  cd ..
+ 4133  ls
+ 4134  mkdir front_end_test
+ 4135  ls
+ 4136  cd front_end_test
+ 4137  ls
+ 4138  npm install eosjs@beta
+ 4139  ls
+ 4140  yarn build-web
+ 4141  npm i
+ 4142  ls
+ 4143  npm install
+ 4144  yarn build-web
+ 4145  npm run build-web
+ 4146  ls
+ 4147  cd ..
+ 4148  rm -rf front_end_test
+ 4149  git clone https://github.com/EOSEssentials/Scatter-Demos.git
+ 4150  ls
+ 4151  cd Scatter-Demos
+ 4152  npm i
+ 4153  ls
+ 4154  sublime .
+ 4155  ls
+ 4156  ls -la
+ 4157  cp .env.example .env
+ 4158  ls
+ 4159  npm run build
+ 4160  ls
+ 4161  npm i -g http-server
+ 4162  ls
+ 4163  http-server
+ 4164  exit
+ 4165  ls
+ 4166  nano .env
+ 4167  npm i
+ 4168  ls
+ 4169  cd build
+ 4170  ls
+ 4171  http-server
+ 4172  ls
+ 4173  cd build
+ 4174  ls
+ 4175  cd ..
+ 4176  ls
+ 4177  cd ..
+ 4178  ls
+ 4179  cd contracts
+ 4180  ls
+ 4181  cd eosio.cdt
+ 4182  ls
+ 4183  cd build
+ 4184  ls
+ 4185  cd nodeos
+ 4186  cd ..
+ 4187  ls
+ 4188  cd ..
+ 4189  ls
+ 4190  cd hello
+ 4191  ls
+ 4192  cd ..
+ 4193  ls
+ 4194  cd eosio.cdt
+ 4195  ls
+ 4196  cd build
+ 4197  ls
+ 4198  cd ..
+ 4199  ls
+ 4200  cd ..
+ 4201  ls
+ 4202  cd Scatter-Demos
+ 4203  ls
+ 4204  cd build
+ 4205  ls
+ 4206  cd ..
+ 4207  sublime .
+ 4208  ls
+ 4209  cd contracts
+ 4210  pwd
+ 4211  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/Scatter-Demos/contracts:/Users/ML/Projects/EOS_apps/Scatter-Demos/contracts \\n  --detach \\n  eosio/eos:v1.4.0 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 4212  docker ps -a
+ 4213  docker rm dd4fb273782a        
+ 4214  docker ps -a
+ 4215  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/Scatter-Demos/contracts:/Users/ML/Projects/EOS_apps/Scatter-Demos/contracts \\n  --detach \\n  eosio/eos:v1.4.0 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 4216  docker logs --tail 10 eosio
+ 4217  keosd
+ 4218  ls
+ 4219  cleos wallet open
+ 4220  alias cleos='docker exec -it eosio /opt/eosio/bin/cleos --url http://127.0.0.1:7777 --wallet-url http://127.0.0.1:5555'
+ 4221  cleos
+ 4222  cleos wallet open
+ 4223  cleos --wallet-url http://127.0.0.1:5555 wallet list keys
+ 4224  curl http://localhost:7777/v1/chain/get_info\n
+ 4225  cleos wallet create --to-console
+ 4226  cleos wallet open
+ 4227  cleos wallet list
+ 4228  cleos wallet unlock
+ 4229  cleos wallet list
+ 4230  cleos wallet create_key\n
+ 4231  cleos wallet import
+ 4232  cleos create account eosio bob EOS7dNkexvKFegWEDTBDsWpbiCAYzegmupWft2WyJgUNh3JpbFHwy \ncleos create account eosio alice EOS7dNkexvKFegWEDTBDsWpbiCAYzegmupWft2WyJgUNh3JpbFHwy
+ 4233  cleos wallet open
+ 4234  cleos wallet list
+ 4235  cleos wallet open
+ 4236  cleos wallet unlock
+ 4237  cleos wallet list
+ 4238  ls
+ 4239  docker ps -a
+ 4240  cleos wallet create -n lottery
+ 4241  cleos wallet create --to-console -n lottery
+ 4242  cleos create key
+ 4243  ls
+ 4244  cd ..
+ 4245  ls
+ 4246  cd contracts
+ 4247  ls
+ 4248  cd eosio.contracts
+ 4249  ls
+ 4250  sublime .
+ 4251  npm install eosjs@beta
+ 4252  ls
+ 4253  cd eosio.token
+ 4254  ls
+ 4255  npm install eosjs@beta
+ 4256  cd ..
+ 4257  ls
+ 4258  npm install eosjs@beta
+ 4259  cd ..
+ 4260  ls
+ 4261  cd eosio.contracts
+ 4262  ls
+ 4263  npm install -g eosjs@beta
+ 4264  ls
+ 4265  cd node_modules
+ 4266  ls
+ 4267  yarn build-web
+ 4268  cd ..
+ 4269  ls
+ 4270  yarn build-web
+ 4271  ls
+ 4272  pwd
+ 4273  npm run build-web
+ 4274  cd ..
+ 4275  ls
+ 4276  cd eosio.contracts
+ 4277  ls
+ 4278  npm run build-web
+ 4279  cd node_modules
+ 4280  ls
+ 4281  cd..
+ 4282  ls
+ 4283  cd ..
+ 4284  npm i
+ 4285  npm run build-web
+ 4286  nano package-lock.json
+ 4287  touch package.json
+ 4288  ls
+ 4289  nano package.json
+ 4290  sublime .
+ 4291  npm i
+ 4292  npm run build-web
+ 4293  ls
+ 4294  cd node_modules
+ 4295  ls
+ 4296  pwd
+ 4297  cd ..
+ 4298  ls
+ 4299  npm install
+ 4300  rm package-lock.json
+ 4301  npm install
+ 4302  cd ..
+ 4303  ls
+ 4304  cd eosio.contracts
+ 4305  ls
+ 4306  cd ..
+ 4307  ls
+ 4308  docker network create eosdev
+ 4309  docker ps -a
+ 4310  docker run \\n  --name nodeos -d -p 8888:8888 \\n  --network eosdev \\n  -v /tmp/eosio/work:/work \\n  -v /tmp/eosio/data:/mnt/dev/data \\n  -v /tmp/eosio/config:/mnt/dev/config \\n  eosio/eos-dev \n/bin/bash -c \\n  "nodeos -e -p eosio \\n    --plugin eosio::producer_plugin \\n    --plugin eosio::history_plugin \\n    --plugin eosio::chain_api_plugin \\n    --plugin eosio::history_api_plugin \\n    --plugin eosio::http_plugin \\n    -d /mnt/dev/data \\n    --config-dir /mnt/dev/config \\n    --http-server-address=0.0.0.0:8888 \\n    --access-control-allow-origin=* \\n    --contracts-console \\n    --http-validate-host=false"
+ 4311  cd ..
+ 4312  ls
+ 4313  cd ..
+ 4314  ls
+ 4315  cd node_apps
+ 4316  ls
+ 4317  pwd
+ 4318  ls
+ 4319  cd ..
+ 4320  ls
+ 4321  cd EOS_apps
+ 4322  ls
+ 4323  git clone https://github.com/EOSIO/eosio-project-boilerplate-simple.git\n
+ 4324  ./quick_start.sh\n
+ 4325  ls
+ 4326  cd eosio-project-boilerplate-simple
+ 4327  ls
+ 4328  ./quick_start.sh\n
+ 4329  npm i
+ 4330  ./quick_start.sh\n
+ 4331  react-scripts
+ 4332  npm install react-scripts
+ 4333  ./quick_start.sh\n
+ 4334  docker stop eosio
+ 4335  docker ps -a
+ 4336  docker stop eosio
+ 4337  docker ps -a
+ 4338  ls
+ 4339  cd ..
+ 4340  ls
+ 4341  cd ..
+ 4342  ls
+ 4343  docker ps -a
+ 4344  docker stop 530ea2192920
+ 4345  docker ps -a
+ 4346  docker stop eosio/eos:v1.4.0
+ 4347  docker stop 530ea2192920
+ 4348  docker ps -a
+ 4349  docker stop 530ea2192920
+ 4350  docker ps -a
+ 4351  docker stop eosio
+ 4352  docker ps -a
+ 4353  pwd
+ 4354  docker run --rm prakhar1989/static-site
+ 4355  docker run -d -P --name static-site prakhar1989/static-site
+ 4356  docker ps -a
+ 4357  docker port static-site
+ 4358  http://localhost:32769
+ 4359  docker port static-site
+ 4360  docker ps -a
+ 4361  docker stop 530ea2192920
+ 4362  docker ps -a
+ 4363  docker stop eosio
+ 4364  docker ps -a
+ 4365  docker stop static-site
+ 4366  docker ps -a
+ 4367  docker images
+ 4368  docker image ls
+ 4369  docker images ls
+ 4370  docker image ls
+ 4371  docker rm 9c427fac0b3a
+ 4372  docker image ls
+ 4373  docker rm 9c427fac0b3a
+ 4374  docker image rm 9c427fac0b3a
+ 4375  docker image ls
+ 4376  docker image rm f01030e1dcf3
+ 4377  docker ps -a
+ 4378  docker stop 3b7153f40ed3
+ 4379  docker ps -a
+ 4380  docker image rm 3b7153f40ed3
+ 4381  docker image ls
+ 4382  ls
+ 4383  cd /Users/ML/Projects/EOS_apps/contracts
+ 4384  ls
+ 4385  mkdir battles_eos_io
+ 4386  cd battles_eos_io
+ 4387  cd ..
+ 4388  ls
+ 4389  rm -rf battles_eos_io
+ 4390  npm init react-app battles_eos_io
+ 4391  ls
+ 4392  cd battles_eos_io
+ 4393  ls
+ 4394  npm start
+ 4395  sublime .
+ 4396  cd ..
+ 4397  ls
+ 4398  git clone https://github.com/EOSIO/eosio-card-game-repo.git
+ 4399  mv battles_eos_io battles_eos_io_TODELETE
+ 4400  ls
+ 4401  cd eosio-card-game-repo
+ 4402  ls
+ 4403  cd ..
+ 4404  ls
+ 4405  rm -rf eosio-card-game-repo
+ 4406  ls
+ 4407  git clone https://github.com/EOSIO/eosio-card-game-repo.git
+ 4408  cd eosio-card-game-repo
+ 4409  ls
+ 4410  ./quick_start.sh\n
+ 4411  ls -la
+ 4412  ls
+ 4413  git br
+ 4414  ls
+ 4415  cd ..
+ 4416  ls
+ 4417  rm -rf eosio-card-game-repo
+ 4418  rm -rf battles_eos_io
+ 4419  ls
+ 4420  rm battles_eos_io_TODELETE
+ 4421  ls
+ 4422  git clone https://github.com/EOSIO/eosio-card-game-repo.git
+ 4423  cd battles_eos_io
+ 4424  ls
+ 4425  rm -rf battles_eos_io_TODELETE
+ 4426  ls
+ 4427  cd eosio-card-game-repo
+ 4428  ls
+ 4429  ls -la
+ 4430  git br
+ 4431  cd ..
+ 4432  ls
+ 4433  rm -rf eosio-card-game-repo
+ 4434  ls
+ 4435  git clone https://github.com/EOSIO/eosio-card-game-repo.git
+ 4436  ls
+ 4437  cd eosio-card-game-repo
+ 4438  ls
+ 4439  ./quick_start.sh
+ 4440  cd ..
+ 4441  ls
+ 4442  rm -rf eosio-card-game-repo
+ 4443  ls
+ 4444  cd ..
+ 4445  ls
+ 4446  git clone https://github.com/EOSIO/eosio-card-game-repo.git
+ 4447  ls
+ 4448  cd eosio-card-game-repo
+ 4449  ls
+ 4450  showFiles
+ 4451  cd ..
+ 4452  rm -rf eosio-card-game-repo
+ 4453  ls
+ 4454  git clone https://github.com/EOSIO/eosio-card-game-repo.git
+ 4455  ls
+ 4456  cd eosio-card-game-repo
+ 4457  ls
+ 4458  bit br
+ 4459  git br
+ 4460  git branch -a
+ 4461  git branch
+ 4462  git branch -a
+ 4463  git branch remotes/origin/lesson-2
+ 4464  ls
+ 4465  git branch
+ 4466  git co remotes/origin/lesson-2
+ 4467  git br
+ 4468  ls
+ 4469  git branch -a
+ 4470  git checkout lesson-2
+ 4471  ls
+ 4472  git branch -a
+ 4473  git checkout lesson-2
+ 4474  ls
+ 4475  sublime .
+ 4476  ./quick_start.sh
+ 4477  nano quick_start.sh
+ 4478  ls
+ 4479  nano quick_start.sh
+ 4480  nano first_time_setup.sh
+ 4481  docker image ls
+ 4482  docker ps
+ 4483  ls
+ 4484  cd Users/ML/Projects/react_native_apps/
+ 4485  cd ..
+ 4486  ls
+ 4487  cd eos_apps
+ 4488  ls
+ 4489  git clone https://github.com/EOSIO/eosio-project-boilerplate-simple.git\n
+ 4490  cd eosio-project-boilerplate-simple
+ 4491  ls
+ 4492  ./quick_start.sh
+ 4493  cd ..
+ 4494  ls
+ 4495  rm -rf eosio-project-boilerplate-simple
+ 4496  ls
+ 4497  git clone https://github.com/EOSIO/eosio-project-boilerplate-simple.git\n
+ 4498  ls
+ 4499  cd eosio-project-boilerplate-simple
+ 4500  ls
+ 4501  ./quick_start.sh
+ 4502  hideFiles
+ 4503  exit
+ 4504  docker ps -a
+ 4505  docker pull eosio/eos:v1.4.2
+ 4506  docker image ls
+ 4507  docker image rm f01030e1dcf3
+ 4508  docker stop f01030e1dcf3
+ 4509  docker ps -a
+ 4510  docker rm 3b7153f40ed3
+ 4511  docker ps -a
+ 4512  ls
+ 4513  pwd
+ 4514  cd /Users/ML/Projects/EOS_apps/
+ 4515  ls
+ 4516  cd eosio-project-boilerplate-simple
+ 4517  ls
+ 4518  ./start_eosio_docker.sh
+ 4519  ./quick_start.sh
+ 4520  ./start_eosio_docker.sh
+ 4521  docke ps -a
+ 4522  docker ps -a
+ 4523  ls
+ 4524  docker ps -a
+ 4525  ls
+ 4526  ./start_eosio_docker.sh
+ 4527  docks ps -a
+ 4528  docker ps -a
+ 4529  docker stop 86001551aee6
+ 4530  docker ps -a
+ 4531  docker stop 530ea2192920
+ 4532  ls
+ 4533  ./start_eosio_docker.sh
+ 4534  ./start_frontend.sh
+ 4535  cd /Users/ML/Projects/EOS_apps/
+ 4536  cd eosio-project-boilerplate-simple
+ 4537  ls
+ 4538  ./start_frontend.sh
+ 4539  docker ps -a
+ 4540  docker stop eosio_notechain_container\n
+ 4541  docker ps -a
+ 4542  docker stop eosio
+ 4543  docker ps -a
+ 4544  docker stop eosio
+ 4545  docker ps -a
+ 4546  docker stop 530ea2192920
+ 4547  docker -ps a
+ 4548  docker ps -a
+ 4549  ./start_eosio_docker.sh
+ 4550  ./start_frontend.sh
+ 4551  docker pull eosio/eos:v1.4.2
+ 4552  ls
+ 4553  pwd
+ 4554  cd /Users/ML/Projects/EOS_apps/
+ 4555  ls
+ 4556  pwd
+ 4557  cd contracts
+ 4558  cd eosio.contracts
+ 4559  ls
+ 4560  cd ..
+ 4561  ls
+ 4562  pwd
+ 4563  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume CONTRACTS_DIR:CONTRACTS_DIR \\n  --detach \\n  eosio/eos:v1.4.2 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=f \\n  --detach \\n  eosio/eos:v1.4.2 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 4564  pwd
+ 4565  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/contracts:/Users/ML/Projects/EOS_apps/contracts \\n  --detach \\n  eosio/eos:v1.4.2 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 4566  docker logs --tail 10 eosio
+ 4567  docker exec -it eosio bash
+ 4568  docker logs --tail 10 eosio
+ 4569  docker exec -it eosio bash
+ 4570  docker -ps a
+ 4571  docker ps -a
+ 4572  docker stop eosio_notechain_container\n
+ 4573  docker stop eosio
+ 4574  docker ps -a
+ 4575  docker stop 530ea2192920 
+ 4576  docker ps -a
+ 4577  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/contracts:/Users/ML/Projects/EOS_apps/contracts \\n  --detach \\n  eosio/eos:v1.4.2 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 4578  docker ps -a
+ 4579  docker rm 530ea2192920
+ 4580  docker -ps a
+ 4581  docker ps -a
+ 4582  docker run --name eosio \\n  --publish 7777:7777 \\n  --publish 127.0.0.1:5555:5555 \\n  --volume /Users/ML/Projects/EOS_apps/contracts:/Users/ML/Projects/EOS_apps/contracts \\n  --detach \\n  eosio/eos:v1.4.2 \\n  /bin/bash -c \\n  "keosd --http-server-address=0.0.0.0:5555 & exec nodeos -e -p eosio --plugin eosio::producer_plugin --plugin eosio::chain_api_plugin --plugin eosio::history_plugin --plugin eosio::history_api_plugin --plugin eosio::http_plugin -d /mnt/dev/data --config-dir /mnt/dev/config --http-server-address=0.0.0.0:7777 --access-control-allow-origin=* --contracts-console --http-validate-host=false --filter-on='*'"
+ 4583  docker logs --tail 10 eosio
+ 4584  docker exec -it eosio bash
+ 4585  curl http://localhost:7777/v1/chain/get_info
+ 4586  alias cleos='docker exec -it eosio /opt/eosio/bin/cleos --url http://127.0.0.1:7777 --wallet-url http://127.0.0.1:5555'
+ 4587  docker ps -a
+ 4588  docker stop eosio
+ 4589  docker ps -a
+ 4590  cleos wallet create --to-console
+ 4591  docker start eosio
+ 4592  docker ps -a
+ 4593  cleos wallet create --to-console
+ 4594  cleos wallet open
+ 4595  cleos wallet list
+ 4596  cleos wallet unlock
+ 4597  cleos wallet list
+ 4598  cleos wallet create_key
+ 4599  cleos wallet import
+ 4600  cleos create account eosio bob EOS7SNgnSEah9rpXxoNjD2ryJXUqNw8E6aNtiC5nTbrf6HQumW49g \ncleos create account eosio alice EOS7SNgnSEah9rpXxoNjD2ryJXUqNw8E6aNtiC5nTbrf6HQumW49g
+ 4601  cleos wallet list
+ 4602  ls
+ 4603  docker ps -a
+ 4604  docker stop eosio
+ 4605  docker ps -a
+ 4606  docker remove cf422799581c
+ 4607  docker rm cf422799581c
+ 4608  docke ps -a
+ 4609  docker ps -a
+ 4610  ./start_eosio_docker.sh
+ 4611  ls
+ 4612  pwd
+ 4613  cd /Users/ML/Projects/EOS_apps/
+ 4614  ls
+ 4615  cd eosio-project-boilerplate-simple
+ 4616  ls
+ 4617  sublime .
+ 4618  docker ps -a
+ 4619  ls
+ 4620  git init
+ 4621  git clone https://github.com/deevilboy/Nougit_EOS_Hackathon.git
+ 4622  ls
+ 4623  cd /Users/ML/Projects/EOS_apps/
+ 4624  ls
+ 4625  git clone https://github.com/deevilboy/Nougit_EOS_Hackathon.git
+ 4626  ls
+ 4627  cd Nougit_EOS_Hackathon
+ 4628  git push master
+ 4629  ls
+ 4630  git remote -v
+ 4631  git br
+ 4632  git branch
+ 4633  git master
+ 4634  git push
+ 4635  git push master
+ 4636  showFiles
+ 4637  ls
+ 4638  pwd
+ 4639  ls
+ 4640  git push master
+ 4641  git init
+ 4642  git push master
+ 4643  git add .
+ 4644  git status
+ 4645  ls
+ 4646  git add
+ 4647  git add .
+ 4648  git commit -m "Initial Commit - based on eosio-project-boilerplate-simple"
+ 4649  git push master
+ 4650  git branch
+ 4651  git push origin master
+ 4652  git remote -v
+ 4653  git init
+ 4654  git add README.md
+ 4655  git commit -m "first commit"
+ 4656  cd ..
+ 4657  ls
+ 4658  rm -rf Nougit_EOS_Hackathon
+ 4659  git clone git@github.com:deevilboy/Nougit_EOS_Hackathon.git
+ 4660  git clone https://github.com/deevilboy/Nougit_EOS_Hackathon.git
+ 4661  ls
+ 4662  rm -rf Nougit_EOS_Hackathon
+ 4663  git clone https://github.com/deevilboy/Nougit_EOS_Hackathon.git
+ 4664  git init
+ 4665  git add README.md
+ 4666  git commit -m "first commit"
+ 4667  ls
+ 4668  cd Nougit_EOS_Hackathon
+ 4669  ls
+ 4670  git init
+ 4671  git add README.md
+ 4672  git commit -m "first commit"
+ 4673  git add README.md
+ 4674  git remote add origin https://github.com/deevilboy/Nougit_EOS_Hackathon.git
+ 4675  git remote -v
+ 4676  git add .
+ 4677  git commit -m "test commit"
+ 4678  git push origin master
+ 4679  git add .
+ 4680  git commit -m "Based off eosio-project-boilerplate-simple"
+ 4681  git push origin master
+ 4682  cd ..
+ 4683  ls
+ 4684  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4685  ls
+ 4686  cd EOS-SF-Hackathon
+ 4687  ls
+ 4688  cd ..
+ 4689  ls
+ 4690  rm -rf Nougit_EOS_Hackathon
+ 4691  ls
+ 4692  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4693  rm -rf EOS-SF-Hackathon
+ 4694  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4695  cd EOS-SF-Hackathon
+ 4696  ls
+ 4697  mkdir React-UI
+ 4698  cd React-UI
+ 4699  ls
+ 4700  git add .
+ 4701  git commit -m "uploaded React-UI folder for React front end"
+ 4702  git remote -v
+ 4703  git push origin master
+ 4704  git pull
+ 4705  gils
+ 4706  ls
+ 4707  cd ..
+ 4708  rm -rf React-UI
+ 4709  git clone https://github.com/EOSIO/eosio-project-boilerplate-simple.git
+ 4710  ls
+ 4711  mv eosio-project-boilerplate-simple react-ui
+ 4712  ls
+ 4713  git add .
+ 4714  git commit -m "uploaded React-UI folder for React front end"
+ 4715  git push origin master
+ 4716  ls
+ 4717  cd react_ui
+ 4718  ls
+ 4719  cd react-ui
+ 4720  ls
+ 4721  cd eosio_docker
+ 4722  ls
+ 4723  cd contracts
+ 4724  ls
+ 4725  ls -la
+ 4726  cd notechain
+ 4727  ls
+ 4728  cd ..
+ 4729  ls
+ 4730  cd ..
+ 4731  ls
+ 4732  cd scripts
+ 4733  ls
+ 4734  ls -la
+ 4735  ls
+ 4736  cd ..
+ 4737  ls
+ 4738  cd ..
+ 4739  ls
+ 4740  git push origin master
+ 4741  cd ..
+ 4742  ls
+ 4743  git push origin master
+ 4744  docker ps -a
+ 4745  docker stop fd9713a115f2
+ 4746  docker ps -a
+ 4747  showFiles
+ 4748  ls
+ 4749  showFiles
+ 4750  touch .gitignore
+ 4751  sudo touch .gitignore
+ 4752  ls
+ 4753  ls -la
+ 4754  sublime .
+ 4755  cd ..
+ 4756  ls
+ 4757  cd /Users/ML/Projects/EOS_apps/
+ 4758  cd EOS-SF-Hackathon
+ 4759  ls
+ 4760  sublime .
+ 4761  ls
+ 4762  nano .gitignore
+ 4763  git status
+ 4764  git push origin master
+ 4765  git pull
+ 4766  git push origin master
+ 4767  git branch
+ 4768  git pull
+ 4769  ls
+ 4770  ls -a
+ 4771  rm .DS_Store
+ 4772  git pull
+ 4773  git commit -m "uploaded React-UI folder for React front end"
+ 4774  git add .
+ 4775  git commit -m "uploaded React-UI folder for React front end"
+ 4776  git push origin master
+ 4777  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4778  ls
+ 4779  ls l
+ 4780  cd ..
+ 4781  ls
+ 4782  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4783  ls
+ 4784  cd EOS-SF-Hackathon
+ 4785  ls
+ 4786  git add .
+ 4787  git commit -m "uploaded React-UI folder for React front end"
+ 4788  git push origin master
+ 4789  pwd
+ 4790  cd EOS-SF-Hackathon
+ 4791  ls
+ 4792  cd react-ui
+ 4793  ./quick_start.sh
+ 4794  pwd
+ 4795  cd /Users/ML/Projects/EOS_apps/
+ 4796  cd EOS-SF-Hackathon
+ 4797  cd /Users/ML/Projects/EOS_apps/
+ 4798  cd EOS-SF-Hackathon
+ 4799  ./first_time_setup.sh
+ 4800  ls
+ 4801  cd react-ui
+ 4802  ./first_time_setup.sh
+ 4803  ./start_eosio_docker.sh
+ 4804  ./start_frontend.sh
+ 4805  ifconfig
+ 4806  hideFiles
+ 4807  ls
+ 4808  cd /Users/ML/Projects/EOS_apps/
+ 4809  cd EOS-SF-Hackathon
+ 4810  ls
+ 4811  cp react-ui eosjs-middleware
+ 4812  git add .
+ 4813  git commit -m "saved original unedited files"
+ 4814  git push origin master
+ 4815  git remote -v
+ 4816  nano .gitignore
+ 4817  ls
+ 4818  pwd
+ 4819  cd react-ui
+ 4820  ls la
+ 4821  ls -la
+ 4822  rm -rf .git
+ 4823  rm -rf .gitignore
+ 4824  cd ..
+ 4825  ls
+ 4826  git status
+ 4827  git add .
+ 4828  git status
+ 4829  ls -la
+ 4830  git add .
+ 4831  git status
+ 4832  git add .
+ 4833  git commit -m "saved"
+ 4834  git push origin master
+ 4835  git add .
+ 4836  cd /Users/ML/Projects/EOS_apps/
+ 4837  cd EOS-SF-Hackathon
+ 4838  nano .gitignore
+ 4839  git add .
+ 4840  git status
+ 4841  ls
+ 4842  cd ..
+ 4843  cd /Users/ML/Projects/EOS_apps/
+ 4844  ls
+ 4845  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4846  cd EOS-SF-Hackathon
+ 4847  ls
+ 4848  nano .gitignore
+ 4849  cd eos-bridge/eosio_docker/data
+ 4850  pwd
+ 4851  nano .gitignore
+ 4852  git add .
+ 4853  git commit -m "eos-bridge added"
+ 4854  ls
+ 4855  cd ..
+ 4856  ls
+ 4857  cd ..
+ 4858  ls
+ 4859  cd /Users/ML/Projects/EOS_apps/
+ 4860  cd EOS-SF-Hackathon
+ 4861  ls
+ 4862  cd EOS-SF-Hackathon
+ 4863  cd /Users/ML/Projects/EOS_apps/
+ 4864  cd EOS-SF-Hackathon/
+ 4865  nano .gitignore
+ 4866  pwd
+ 4867  cd ..
+ 4868  cd /Users/ML/Projects/EOS_apps/
+ 4869  ls
+ 4870  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4871  cd EOS-SF-Hackathon
+ 4872  ls
+ 4873  pwd
+ 4874  ls
+ 4875  cd eos-bridge
+ 4876  ls
+ 4877  ls -la
+ 4878  touch .gitignore
+ 4879  rm .gitignore
+ 4880  ls -la
+ 4881  cd ..
+ 4882  ls
+ 4883  touch .gitignore
+ 4884  nano .gitignore
+ 4885  pwd
+ 4886  ls -la
+ 4887  cat .gitignore
+ 4888  git add .
+ 4889  git status
+ 4890  ls
+ 4891  nano .gitignore
+ 4892  git add .
+ 4893  nano .gitignore
+ 4894  cd /Users/ML/Projects/EOS_apps/
+ 4895  ls
+ 4896  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4897  cd EOS-SF-Hackathon
+ 4898  ls
+ 4899  nano .gitignore
+ 4900  git add .
+ 4901  git commit -m "eos-bridge added"
+ 4902  git push origin master
+ 4903  nano .gitignore
+ 4904  cd /Users/ML/Projects/EOS_apps/
+ 4905  ls
+ 4906  git clone https://github.com/TheFlyingNomad/EOS-SF-Hackathon.git
+ 4907  ls
+ 4908  cd EOS-SF-Hackathon
+ 4909  ls
+ 4910  touch .gitignore
+ 4911  nano .gitignore
+ 4912  git add .
+ 4913  git commit -m "eos-bridge added"
+ 4914  git push origin master
+ 4915  ls
+ 4916  nano .gitignore
+ 4917  git add .
+ 4918  git commit -m "eos-bridge added"
+ 4919  git push origin master
+ 4920  docker ps -a
+ 4921  ./start_eosio_docker.sh
+ 4922  docker ps -a
+ 4923  docker stop f4c168f18dce
+ 4924  docker ps -a
+ 4925  ./start_eosio_docker.sh
+ 4926  ./start_frontend.sh
+ 4927  ls
+ 4928  cd ..
+ 4929  ls
+ 4930  cd eos-bridge
+ 4931  cd ..
+ 4932  ls
+ 4933  cd eos-bridge
+ 4934  \tls
+ 4935  cd eos-bridge
+ 4936  ls
+ 4937  ./start_eosio_docker.sh
+ 4938  ls
+ 4939  docker ps -a
+ 4940  docker stop 6447c15cd4d1
+ 4941  ./start_eosio_docker.sh
+ 4942  pwd
+ 4943  ls
+ 4944  ./start_frontend.sh
+ 4945  ls
+ 4946  cd eos-bridge
+ 4947  cd ..
+ 4948  cd eosio-docker
+ 4949  ls
+ 4950  nano .gitignore
+ 4951  ls
+ 4952  cd eos-bridge
+ 4953  ls
+ 4954  ./quick_start.sh
+ 4955  ls
+ 4956  ./first_time_setup.sh
+ 4957  ./start_eosio_docker.sh
+ 4958  ./start_frontend.sh
+ 4959  ls
+ 4960  cd /Users/ML/Projects/EOS_apps/
+ 4961  cd EOS-SF-Hackathon
+ 4962  ls
+ 4963  cd eos-bridge
+ 4964  ls
+ 4965  sublime .
+ 4966  docker ps -a
+ 4967  docker stop c700ba06d9ea
+ 4968  docker ps -a
+ 4969  ./start_eosio_docker.sh
+ 4970  ./start_frontend.sh
+ 4971  ls
+ 4972  cd /Users/ML/Projects/EOS_apps/
+ 4973  ls
+ 4974  pwd
+ 4975  ls
+ 4976  first_time_setup.sh
+ 4977  ./first_time_setup.sh
+ 4978  ./start_eosio_docker.sh
+ 4979  ./start_frontend.sh
+ 4980  ls
+ 4981  cd ~
+ 4982  ls
+ 4983  ls -a
+ 4984  cd .docker
+ 4985  ls
+ 4986  ls -a
+ 4987  ls
+ 4988  cd /Users/ML/Projects/EOS_apps/
+ 4989  cd EOS-SF-Hackathon/
+ 4990  ls
+ 4991  sudo docker ps -a
+ 4992  sudo docker destroy 2197d94ba89f
+ 4993  sudo docker container destroy 2197d94ba89f
+ 4994  sudo docker rm 2197d94ba89f
+ 4995  sudo docker container rm 2197d94ba89f
+ 4996  docker ps -a
+ 4997  sudo docker container stop 2197d94ba89f
+ 4998  sudo docker container rm 2197d94ba89f
+ 4999  docker ps -a
+ 5000  docker image
+ 5001  docker image ls
+ 5002  ls
+ 5003  cd eos-bridge
+ 5004  ls
+ 5005  ./quick_start.sh
+ 5006  ps aux | grep -i 3000
+ 5007  ./quick_start.sh
+ 5008  docker exec -it eosio bash
+ 5009  ls
+ 5010  cd EOS-SF-Hackathon
+ 5011  ls
+ 5012  cd eos-bridge
+ 5013  ls
+ 5014  docker exec -it eosio bash
+ 5015  ls
+ 5016  docker ps -a
+ 5017  docker container stop abf3359de61d
+ 5018  docker ps -a
+ 5019  pwd
+ 5020  ls
+ 5021  ./quick_start.sh
+ 5022  curl -sSL -o ~/bin/jq https://github.com/stedolan/jq/releases/download/jq-1.5/jq-linux64
+ 5023  cleos
+ 5024  cd ..
+ 5025  docker exec -it eosio bash
+ 5026  docker ps -a
+ 5027  docker exec -it eosio_notechain_container bash
+ 5028  ls
+ 5029  docker image ls
+ 5030  ls
+ 5031  cd eos-bridge
+ 5032  ./start_eosio_docker.sh
+ 5033  docker ps -a
+ 5034  docker stop 9ac6c1ebe013
+ 5035  docker container stop 9ac6c1ebe013
+ 5036  docker ps -a
+ 5037  ./start_eosio_docker.sh
+ 5038  ls
+ 5039  cd /Users/ML/Projects/EOS_apps/
+ 5040  cd EOS-SF-Hackathon
+ 5041  cd eos-bridge
+ 5042  ls
+ 5043  ./start_frontend.sh
+ 5044  ls
+ 5045  cd /Users/ML/Projects/EOS_apps/
+ 5046  cd EOS-SF-Hackathon
+ 5047  cd eos-bridge
+ 5048  cleos
+ 5049  docker exec -it eosio bash
+ 5050  docker ps -a
+ 5051  docker exec -it eosio_notechain_container bash
+ 5052  ./start_eosio_docker.sh
+ 5053  docker ps -a
+ 5054  docker container stop 884e7ae87623
+ 5055  docker ps -a
+ 5056  ./start_eosio_docker.sh
+ 5057  ./start_frontend.sh
+ 5058  docker ps -a
+ 5059  docker ps
+ 5060  docker ps -a
+ 5061  ./start_eosio_docker.sh
+ 5062  ./start_frontend.sh
+ 5063  cd ..
+ 5064  ls
+ 5065  git pull
+ 5066  git add .
+ 5067  git commit -m "small eos-bridge changes"
+ 5068  git push origin master
+ 5069  git pull
+ 5070  cleos push action hello pull  -p notechainacc@active
+ 5071  cd eos-bridge
+ 5072  cleos push action hello pull  -p notechainacc@active
+ 5073  docker exec -it eosio bash
+ 5074  docker ps -a
+ 5075  sudo docker exec -it eosio bash
+ 5076  sudo docker exec -it eosio_notechain_container bash
+ 5077  cd /Users/ML/Projects/EOS_apps/
+ 5078  cd EOS-SF-Hackathon
+ 5079  cd eos-bridge
+ 5080  ls
+ 5081  cd eosio-docker
+ 5082  cd eosio_docker
+ 5083  ls
+ 5084  cd contracts
+ 5085  eosio-cpp
+ 5086  eosio-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm
+ 5087  which eosio-cpp
+ 5088  docker ps
+ 5089  cleos
+ 5090  alias cleos='docker exec -it eosio /opt/eosio/bin/cleos --url http://127.0.0.1:8888'
+ 5091  alias cleos='docker exec -it eosio_notechain_container /opt/eosio/bin/cleos --url http://127.0.0.1:8888'
+ 5092  alias eos-cpp="docker exec eosio_notechain_container eosio-cpp"
+ 5093  eos-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm
+ 5094  docker exec -it eosio_notechain_container bash
+ 5095  docker ps
+ 5096  docker kill eosio_notechain_container
+ 5097  ls
+ 5098  cd ../..
+ 5099  ls
+ 5100  ./quick_start.sh
+ 5101  docker exec -it eosio_notechain_container bash
+ 5102  alias cleos='docker exec -it eosio_notechain_container /opt/eosio/bin/cleos --url http://127.0.0.1:8888'
+ 5103  alias eos-cpp="docker exec eosio_notechain_container eosio-cpp"
+ 5104  eos-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm
+ 5105  cleos set contract notechainacc /opt/eosio/bin/contracts/notechain/ -p notechainacc@active
+ 5106  cleos set contract notechainacc /opt/eosio/bin/compiled_contracts/notechain/ -p notechainacc@active
+ 5107  ls
+ 5108  docker exec -it eosio_notechain_container bash
+ 5109  ls
+ 5110  cleos push action notechainacc pull -p notechainacc@active
+ 5111  cleos push action notechain pull -p notechainacc@active
+ 5112  cleos push action --help
+ 5113  cleos push action notechainacc pull
+ 5114  eos-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm
+ 5115  cleos set contract notechainacc /opt/eosio/bin/compiled_contracts/notechain/ -p notechainacc@active
+ 5116  eos-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm
+ 5117  cleos set contract notechainacc /opt/eosio/bin/compiled_contracts/notechain/ -p notechainacc@active
+ 5118  cleos wallet list
+ 5119* ls
+ 5120* clear
+ 5121* docker exec -it eosio_notechain_container bash
+ 5122  cleos wallet unlock -n notechainwal --password PW5JJUjR1jsRFscD1Ho7B7czWccVLArhgo3qrFQ9vzDXfaiGjy4st
+ 5123  cleos set contract notechainacc /opt/eosio/bin/compiled_contracts/notechain/ -p notechainacc@active
+ 5124  cleos push action notechainacc pull '["useraaaaaaaa"]' -p useraaaaaaaa@active
+ 5125  eos-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm
+ 5126  eos-cpp -abigen /opt/eosio/bin/contracts/notechain/notechain.cpp -o /opt/eosio/bin/compiled_contracts/notechain/notechain.wasm -contract notechain
+ 5127  cleos set contract notechainacc /opt/eosio/bin/compiled_contracts/notechain/ -p notechainacc@active
+ 5128  cleos push action notechainacc pulla '["useraaaaaaaa"]' -p useraaaaaaaa@active
+ 5129  cleos wallet list
+ 5130  cleos wallet unlock -n eosiomain --password PW5JxHisLndLxazAjTrX8JN2aUFgJfVDXUbLK9uLBxpTtwwiEdUhh
+ 5131  cleos push action notechainacc pulla '["useraaaaaaaa"]' -p useraaaaaaaa@active
+ 5132  cleos wallet import 5K7mtrinTFrVTduSxizUc5hjXJEtTjVTsqSHeBHes1Viep86FP5
+ 5133  cleos wallet import -n notechainwal --private-key 5K7mtrinTFrVTduSxizUc5hjXJEtTjVTsqSHeBHes1Viep86FP5
+ 5134  cleos push action notechainacc pulla '["useraaaaaaaa"]' -p useraaaaaaaa@active
+ 5135  cleos wallet keys
