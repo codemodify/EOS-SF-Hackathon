@@ -4,6 +4,7 @@
   "private": true,
   "dependencies": {
     "@material-ui/core": "^1.5.1",
+    "body-parser": "^1.18.3",
     "eosjs": "20.0.0-beta2",
     "node-fetch": "^2.2.1",
     "react": "^16.4.2",
