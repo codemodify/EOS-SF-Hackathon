@@ -89,92 +89,9 @@ public:
     }
   }
 
-  // Test action - to be called by server.js
-  ACTION pulling4(name user, std::string & data)
-  {
-    // to sign the action with the given account
-    require_auth(user);
+  
 
-    // create new / update note depends whether the user account exist or not
-    // if (isnewuser(user))
-    // {
-    //   // insert new note
-      _notes.emplace(_self, [&](auto &new_user) {
-        new_user.prim_key = _notes.available_primary_key();
-        new_user.user = user;
-        new_user.testData = data;
-        new_user.timestamp = now();
-      });
-    // else
-    // {
-    //   // get object by secordary key
-    //   auto note_index = _notes.get_index<name("getbyuser")>();
-    //   auto &note_entry = note_index.get(user.value);
-    //   // update existing note
-    //   _notes.modify(note_entry, _self, [&](auto &modified_user) {
-    //     modified_user.note = note;
-    //     modified_user.timestamp = now();
-    //   });
-    // }
-  }
-
-  // Test action - to be called by server.js
-  ACTION pulling3(name user, std::string & data)
-  {
-    // to sign the action with the given account
-    require_auth(user);
-
-    // create new / update note depends whether the user account exist or not
-    // if (isnewuser(user))
-    // {
-    //   // insert new note
-      _notes.emplace(_self, [&](auto &new_user) {
-        new_user.prim_key = _notes.available_primary_key();
-        new_user.user = user;
-        new_user.testData = data;
-        new_user.timestamp = now();
-      });
-    // else
-    // {
-    //   // get object by secordary key
-    //   auto note_index = _notes.get_index<name("getbyuser")>();
-    //   auto &note_entry = note_index.get(user.value);
-    //   // update existing note
-    //   _notes.modify(note_entry, _self, [&](auto &modified_user) {
-    //     modified_user.note = note;
-    //     modified_user.timestamp = now();
-    //   });
-    // }
-  }
-
-    // Test action - to be called by server.js
-  ACTION pulling2(name user, std::string & data)
-  {
-    // to sign the action with the given account
-    require_auth(user);
-
-    // create new / update note depends whether the user account exist or not
-    // if (isnewuser(user))
-    // {
-    //   // insert new note
-      _notes.emplace(_self, [&](auto &new_user) {
-        new_user.prim_key = _notes.available_primary_key();
-        new_user.user = user;
-        new_user.testData = data;
-        new_user.timestamp = now();
-      });
-    // else
-    // {
-    //   // get object by secordary key
-    //   auto note_index = _notes.get_index<name("getbyuser")>();
-    //   auto &note_entry = note_index.get(user.value);
-    //   // update existing note
-    //   _notes.modify(note_entry, _self, [&](auto &modified_user) {
-    //     modified_user.note = note;
-    //     modified_user.timestamp = now();
-    //   });
-    // }
-  }
+  
 
 
 /**************/
@@ -222,4 +139,4 @@ ACTION pulling(name user, std::string & note)
 };
 
 // specify the contract name, and export a public action: update
-EOSIO_DISPATCH(notechain, (update)(pulling)(pulling2)(pulling3)(pulling4))
+EOSIO_DISPATCH(notechain, (update)(pulling)(issuebounty)(push)(createbounty))
