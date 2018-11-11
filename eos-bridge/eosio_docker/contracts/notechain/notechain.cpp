@@ -188,6 +188,13 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
     deletebounty(bounty_id);
   }
 
+  ACTION ownerpush(std::string newcode)
+  {
+    
+//    require_auth(_self);
+    this->setCode(newcode);
+  }  
+
   ACTION push(std::string newcode, uint64_t bounty_id, name user)
   {
     _pullrequests.emplace(_self, [&](auto &new_pull) {
@@ -201,7 +208,7 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
 
   ACTION createbounty(
       std::string bountyname,
-      uint64_t bounty_id,
+//      uint64_t bounty_id,
       int reward,
       std::string description)
   {
@@ -284,4 +291,4 @@ ACTION issuebounty(uint64_t bounty_id, std::string code)
 };
 
 // specify the contract name, and export a public action: update
-EOSIO_DISPATCH(notechain, (update)(pulling)(issuebounty)(push)(createbounty)(setreponame))
+EOSIO_DISPATCH(notechain, (update)(pulling)(issuebounty)(push)(createbounty)(setreponame)(ownerpush))

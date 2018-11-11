@@ -39,7 +39,7 @@ if (process.env.NODE_ENV === "production") {
 
 // DONE!!!
 // Createbounty Endpoint which calls EOS function:
-// ACTION createbounty(std::string bountyname, uint64_t bounty_id, int reward, std::string description)
+// ACTION createbounty(std::string bountyname, int reward, std::string description)
 app.post("/createbounty", (req, res) => {
 
     let account = accounts[0].name;
@@ -51,13 +51,12 @@ app.post("/createbounty", (req, res) => {
     let actionName = "";
     let actionData = {};
 
-    console.log(req);
+    console.log(req.body);
 
     // define actionName and action according to event type
         actionName = "createbounty";
         actionData = {
           bountyname: req.body.bountyname,
-          bounty_id: req.body.bounty_id,
           reward: req.body.reward,
           description: req.body.description
         };
@@ -278,6 +277,81 @@ app.post("/push", (req, res) => {
       });
 });
 
+// Ownerpush
+// ACTION ownerpush(std::string newcode)
+app.post("/ownerpush", (req, res) => {
+    let account = accounts[0].name;
+    let privateKey = accounts[0].privateKey;
+    //let privateKey = event.target.privateKey.value;
+    let note = "Mike Lin Test (not used! /ownerpush endpoint)";
+
+    // prepare variables for the switch below to send transactions
+    let actionName = "";
+    let actionData = {};
+
+    // define actionName and action according to event type
+        actionName = "ownerpush";
+        actionData = {
+          newcode: req.body.newcode
+        };
+
+    // eosjs function call: connect to the blockchain
+    const rpc = new JsonRpc(endpoint, { fetch });
+    // const rpc = new JsonRpc(endpoint);
+    const signatureProvider = new JsSignatureProvider([privateKey]);
+    const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
+    // try {
+      api.transact({
+        actions: [{
+          account: "notechainacc",
+          name: actionName,
+          authorization: [{
+            actor: account,
+            permission: 'active',
+          }],
+          data: actionData,
+        }]
+      }, {
+        blocksBehind: 3,
+        expireSeconds: 30,
+      }).then(function(result){
+        // console.log(result);
+
+         res.send("success");
+
+
+      //   const rpc = new JsonRpc(endpoint, { fetch });
+      //   rpc.get_table_rows({
+      //     "json": true,
+      //     "code": "notechainacc",   // contract who owns the table
+      //     "scope": "notechainacc",  // scope of the table
+      //     "table": "notestruct",    // name of the table as specified by the contract abi
+      //     "limit": 100,
+      //   }).then(function(result){
+      //     console.log(result);
+      //     // this.setState({ noteTable: result.rows })
+
+      //     res.send(
+      //         result.rows
+      //     );
+      //   }).catch(function(e){ 
+      //   console.error(e);
+      //   console.log('Caught exception: ' + e);
+      //   if (e instanceof RpcError) {
+      //     console.log(JSON.stringify(e.json, null, 2)); 
+      //   }       
+      // });
+
+      }).catch(function(e){ 
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2)); 
+        }       
+      });
+});
+
+// DONE!
 // pull endpoint which gets table values
 app.post("/pull", (req, res) => {
   const rpc = new JsonRpc(endpoint, { fetch });
@@ -285,14 +359,15 @@ app.post("/pull", (req, res) => {
           "json": true,
           "code": "notechainacc",   // contract who owns the table
           "scope": "notechainacc",  // scope of the table
-          "table": "notestruct",    // name of the table as specified by the contract abi
+          "table": "field",    // name of the table as specified by the contract abi
+          "table_key": 0,       //should be a constant and never change??
           "limit": 100,
         }).then(function(result){
           console.log(result);
           // this.setState({ noteTable: result.rows })
 
           res.send(
-              result.rows
+              result.rows[0].code
           );
         }).catch(function(e){ 
         console.error(e);
@@ -301,10 +376,9 @@ app.post("/pull", (req, res) => {
           console.log(JSON.stringify(e.json, null, 2)); 
         }       
       });
-
-
 });
 
+//DONE!
 // clone endpoint which gets table values
 app.post("/clone", (req, res) => {
   const rpc = new JsonRpc(endpoint, { fetch });
@@ -312,14 +386,15 @@ app.post("/clone", (req, res) => {
           "json": true,
           "code": "notechainacc",   // contract who owns the table
           "scope": "notechainacc",  // scope of the table
-          "table": "notestruct",    // name of the table as specified by the contract abi
+          "table": "field",    // name of the table as specified by the contract abi
+          "table_key": 0,       //should be a constant and never change??
           "limit": 100,
         }).then(function(result){
           console.log(result);
           // this.setState({ noteTable: result.rows })
 
           res.send(
-              result.rows
+              result.rows[0].code
           );
         }).catch(function(e){ 
         console.error(e);
@@ -328,6 +403,88 @@ app.post("/clone", (req, res) => {
           console.log(JSON.stringify(e.json, null, 2)); 
         }       
       });
+});
+
+// DONE!
+// Setreponame endpoint
+//ACTION setreponame(std::string reponame) {
+app.post("/setreponame", (req, res) => {
+
+  let account = accounts[0].name;
+  let privateKey = accounts[0].privateKey;
+  //let privateKey = event.target.privateKey.value;
+  let note = "Mike Lin Test (not used! /setreponame endpoint)";
+
+  // prepare variables for the switch below to send transactions
+  let actionName = "";
+  let actionData = {};
+
+  // define actionName and action according to event type
+  // switch (event.type) {
+  //   case "submit":
+      actionName = "setreponame";
+      actionData = {
+        reponame: req.body.reponame
+      };
+  //     break;
+  //   default:
+  //     return;
+  // }
+
+  // eosjs function call: connect to the blockchain
+  const rpc = new JsonRpc(endpoint, { fetch });
+  // const rpc = new JsonRpc(endpoint);
+  const signatureProvider = new JsSignatureProvider([privateKey]);
+  const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
+  // try {
+    api.transact({
+      actions: [{
+        account: "notechainacc",
+        name: actionName,
+        authorization: [{
+          actor: account,
+          permission: 'active',
+        }],
+        data: actionData,
+      }]
+    }, {
+      blocksBehind: 3,
+      expireSeconds: 30,
+    }).then(function(result){
+      console.log(result);
+
+      res.send("success");
+
+
+    //   const rpc = new JsonRpc(endpoint, { fetch });
+    //   rpc.get_table_rows({
+    //     "json": true,
+    //     "code": "notechainacc",   // contract who owns the table
+    //     "scope": "notechainacc",  // scope of the table
+    //     "table": "field",    // name of the table as specified by the contract abi
+    //     "limit": 100,
+    //   }).then(function(result){
+    //     console.log(result);
+    //     // this.setState({ noteTable: result.rows })
+
+    //     res.send(
+    //         result.rows
+    //     );
+    //   }).catch(function(e){ 
+    //   console.error(e);
+    //   console.log('Caught exception: ' + e);
+    //   if (e instanceof RpcError) {
+    //     console.log(JSON.stringify(e.json, null, 2)); 
+    //   }       
+    // });
+
+    }).catch(function(e){ 
+      console.error(e);
+      console.log('Caught exception: ' + e);
+      if (e instanceof RpcError) {
+        console.log(JSON.stringify(e.json, null, 2)); 
+      }       
+    });
 });
 
 app.listen(app.get("port"), () => {
