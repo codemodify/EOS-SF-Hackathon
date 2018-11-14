@@ -29,7 +29,7 @@ public:
     auto primary_key() const { return prim_key; }
   };
 
-  TABLE feild 
+  TABLE field 
   {
     uint64_t prim_key;
     std::string reponame;
@@ -38,10 +38,10 @@ public:
   };
 
   typedef eosio::multi_index<name("bounty"), bounty> bounty_table;
-  typedef eosio::multi_index<name("feild"), feild> feild_table;
+  typedef eosio::multi_index<name("field"), field> field_table;
   typedef eosio::multi_index<name("pullrequest"), pullrequest> pull_table;
 
-  feild_table _feilds;
+  field_table _fields;
   bounty_table _bounties;
   pull_table _pullrequests;
 
@@ -49,7 +49,7 @@ public:
 
   repository(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),
                                                                       _pullrequests(receiver, receiver.value),
-                                                                      _feilds(receiver, receiver.value),
+                                                                      _fields(receiver, receiver.value),
                                                                       _bounties(receiver, receiver.value) {}
 
   ACTION issuebounty(uint64_t bounty_id, std::string code)
@@ -94,16 +94,16 @@ public:
     });
   }
   ACTION setreponame(std::string reponame) {
-    auto itr = _feilds.find(0);
-    if(itr == _feilds.end()) {
-      _feilds.emplace( _self, [&](auto& new_data ) {
+    auto itr = _fields.find(0);
+    if(itr == _fields.end()) {
+      _fields.emplace( _self, [&](auto& new_data ) {
         new_data.prim_key = 0,
         new_data.reponame = reponame,
         new_data.code     = "";
       });
     } else {
       auto st = *itr;
-      _feilds.modify(itr, _self, [&](auto& new_data) {
+      _fields.modify(itr, _self, [&](auto& new_data) {
         new_data.prim_key = st.prim_key,
         new_data.reponame = reponame,
         new_data.code     = st.code;
@@ -143,16 +143,16 @@ private:
   }
 
   void setCode(std::string code) {
-    auto itr = _feilds.find(0);
-    if(itr == _feilds.end()) {
-      _feilds.emplace( _self, [&](auto& new_data ) {
+    auto itr = _fields.find(0);
+    if(itr == _fields.end()) {
+      _fields.emplace( _self, [&](auto& new_data ) {
         new_data.prim_key = 0,
         new_data.reponame = "",
         new_data.code     = code;
       });
     } else {
       auto st = *itr;
-      _feilds.modify(itr, _self, [&](auto& new_data) {
+      _fields.modify(itr, _self, [&](auto& new_data) {
         new_data.prim_key = st.prim_key,
         new_data.reponame = st.reponame,
         new_data.code     = code;
