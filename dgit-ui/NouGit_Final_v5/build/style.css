@@ -1,0 +1,224 @@
+html {
+    box-sizing: border-box;
+    overflow: hidden;
+}
+* {
+    box-sizing: inherit;
+}
+body {
+    margin: 0px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    position: fixed;
+}
+
+div,
+body {
+    outline: none;
+}
+
+body input.component:focus {
+    border-width: 10 !important;
+    border-color: #85f !important;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation-name: fadeIn;
+    animation-duration: 0.1s;
+}
+
+.fadeInLong {
+    animation-name: fadeIn;
+    animation-duration: 0.3s;
+}
+
+/* Font CSS reset. Must also be used by the exporter (serialization.ts) */
+.DraftEditor-root {
+    font: normal normal normal 16px / normal system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.DraftEditor-editorContainer {
+    border-left: 1px;
+}
+
+.zoomIndicator {
+    opacity: 0;
+    transition: opacity 0.3s;
+    transition-delay: 1s;
+}
+
+.zoomIndicator.visible {
+    opacity: 1;
+    transition: none;
+}
+
+.svgShape svg {
+    width: 100%;
+    height: 100%;
+}
+
+.svgContainer svg {
+    display: block;
+}
+
+.rotate-top-center {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-top-center.png) 1x,
+                url(../images/cursors/rotate-top-center@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-top-right {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-top-right.png) 1x,
+                url(../images/cursors/rotate-top-right@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-mid-right {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-mid-right.png) 1x,
+                url(../images/cursors/rotate-mid-right@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-bottom-right {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-bottom-right.png) 1x,
+                url(../images/cursors/rotate-bottom-right@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-bottom-center {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-bottom-center.png) 1x,
+                url(../images/cursors/rotate-bottom-center@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-bottom-left {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-bottom-left.png) 1x,
+                url(../images/cursors/rotate-bottom-left@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-mid-left {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-mid-left.png) 1x,
+                url(../images/cursors/rotate-mid-left@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.rotate-top-left {
+    cursor: -webkit-image-set(
+                url(../images/cursors/rotate-top-left.png) 1x,
+                url(../images/cursors/rotate-top-left@2x.png) 2x
+            )
+            12 12,
+        default;
+}
+
+.flash {
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    border-radius: 2px;
+    position: absolute;
+    animation-name: flash;
+    animation-duration: 400ms;
+    animation-iteration-count: 1;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes flash {
+    0% {
+        box-shadow: unset;
+        background-color: transparent;
+    }
+    50% {
+        box-shadow: inset 0px 0px 0px 1px #0099ff, 0px 0px 5px 0px #0099ff;
+        background-color: rgba(251, 251, 251, 0.5);
+    }
+    100% {
+        box-shadow: unset;
+        background-color: transparent;
+    }
+}
+
+.color-preset {
+    transition: all 0.2s;
+}
+
+.spinner {
+    animation-name: spin;
+    animation-duration: 800ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes spin {
+    100% {
+        transform: rotate(360deg) translateZ(0);
+    }
+}
+
+.hint {
+    animation-name: showHint;
+    animation-duration: 300ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes showHint {
+    0% {
+        transform: translate3d(0px, 60px, 0);
+        opacity: 0;
+    }
+    100% {
+        transform: translate3d(0, 0, 0);
+        opacity: 1;
+    }
+}
+
+.fadeInTooltip {
+    animation-name: fadeInTooltip;
+    animation-duration: 1000ms;
+    animation-timing-function: ease-out;
+}
+
+@keyframes fadeInTooltip {
+    0% {
+        opacity: 0;
+    }
+    90% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}

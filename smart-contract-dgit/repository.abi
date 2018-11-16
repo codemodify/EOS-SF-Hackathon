@@ -1,5 +1,5 @@
 {
-    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Sun Nov 11 01:18:24 2018",
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Thu Nov 15 19:17:17 2018",
     "version": "eosio::abi/1.0",
     "structs": [
         {
@@ -37,10 +37,6 @@
                     "type": "string"
                 },
                 {
-                    "name": "bounty_id",
-                    "type": "uint64"
-                },
-                {
                     "name": "reward",
                     "type": "asset"
                 },
@@ -51,12 +47,34 @@
             ]
         },
         {
+            "name": "field",
+            "base": "",
+            "fields": [
+                {
+                    "name": "prim_key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                }
+            ]
+        },
+        {
             "name": "issuebounty",
             "base": "",
             "fields": [
                 {
-                    "name": "pull",
-                    "type": "pullrequest"
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
                 }
             ]
         },
@@ -103,6 +121,16 @@
                     "type": "name"
                 }
             ]
+        },
+        {
+            "name": "setreponame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reponame",
+                    "type": "string"
+                }
+            ]
         }
     ],
     "types": [],
@@ -121,12 +149,24 @@
             "name": "push",
             "type": "push",
             "ricardian_contract": ""
+        },
+        {
+            "name": "setreponame",
+            "type": "setreponame",
+            "ricardian_contract": ""
         }
     ],
     "tables": [
         {
-            "name": "bounties",
+            "name": "bounty",
             "type": "bounty",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "field",
+            "type": "field",
             "index_type": "i64",
             "key_names": [],
             "key_types": []
