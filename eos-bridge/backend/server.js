@@ -1,8 +1,8 @@
-const sqlite3 = require("sqlite3");
+//const sqlite3 = require("sqlite3");
 const express = require("express");
 
 const app = express();
-const db = sqlite3.Database('./EOS-SF-Hackathon/dgit/sqlite/nougit.db');
+//const db = sqlite3.Database('./EOS-SF-Hackathon/dgit/sqlite/nougit.db');
 //require { Api, JsonRpc, RpcError, JsSignatureProvider } from 'eosjs'; // https://github.com/EOSIO/eosjs
 
 const { Api, JsonRpc, RpcError, JsSignatureProvider } = require('eosjs');
