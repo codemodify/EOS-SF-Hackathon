@@ -1,6 +1,8 @@
 #include <eosiolib/eosio.hpp>
 #include <eosiolib/print.hpp>
 #include <eosiolib/asset.hpp>
+#include <functional>
+#include <vector>
 
 using namespace eosio;
 
@@ -45,89 +47,74 @@ CONTRACT notechain : public eosio::contract
     int repo_id;
     std::string reponame;
     std::string code;
-    std::string manager;
+    std::string repomanager;
     std::vector<uint64_t> bounty_keys;
     std::vector<uint64_t> pr_keys;
   
     int primary_key() const { return repo_id; }
   };
   
+  TABLE accounts 
+  {
+    int acct_name_id;
+    std::string accountname;
+    
+    int primary_key() const { return acct_name_id; }
+  };
+  
   typedef eosio::multi_index<name("bounty"), bounty> bounty_table;
-  typedef eosio::multi_index<name("repositories"), repositories> repos_table;
   typedef eosio::multi_index<name("pullrequest"), pullrequest> pull_table;
+  typedef eosio::multi_index<name("repositories"), repositories> repos_table;
+  typedef eosio::multi_index<name("accounts"), accounts> nougit_accts;
 
   bounty_table _bounties;
   pull_table _pullrequests;
   repos_table _repos;
+  nougit_accts _accounts;
 
 public:
   using contract::contract;
 
   // constructor
   notechain(name receiver, name code, datastream<const char *> ds) : contract(receiver, code, ds),
-                                                                     _pullrequests(receiver, receiver.value),
-                                                                     _fields(receiver, receiver.value),
-                                                                     _bounties(receiver, receiver.value) {}
+                                                                      _pullrequests(receiver, receiver.value),
+                                                                      _bounties(receiver, receiver.value),
+                                                                      _repos(receiver, receiver.value),
+                                                                      _accounts(receiver, receiver.value) {}
   
 
+ACTION createacct(
+    std::string name) 
+  {
+    auto nm = _accounts.find(hashcode(name));
+    auto& acct = *nm;
+    eosio_assert(acct.accountname.length() != 12, "name must be 12 characters long");
+    eosio_assert(nm == _accounts.end(), "username is already taken");
 
-
-
-ACTION issuebounty(
-    std::string reponame, 
-    uint64_t bounty_id, 
-    std::string code) 
-    {
-    //require_auth(_self);
-
-    auto repo = _repos.find(hashcode(reponame));
-    eosio_assert(repo != _repos.end(), "repo must exist");
-  
-    auto existing = _bounties.find(bounty_id);
-    eosio_assert(existing != _bounties.end(), "bounty does not esists");
-
-    const auto& st = *existing;
-
-    // *** assert contract balance >= reward
-
-    this->setCode(reponame, code); // update code
-    // *** transfer(st.user, st.reward);
-    this->deletebounty(reponame, bounty_id);
-  }
-
-  ACTION push(
-    std::string reponame, 
-    std::string newcode, 
-    uint64_t bounty_id, 
-    name user) 
-    { 
-    auto repo = _repos.find(hashcode(reponame));
-    eosio_assert(repo != _repos.end(), "repo must exist");
-    uint64_t key = _pullrequests.available_primary_key();
-    _repos.modify(repo, get_self(), [&](auto& r) {
-      r.pr_keys.push_back(key);
-    });
-
-    _pullrequests.emplace(_self, [&](auto &new_pull) {
-      new_pull.prim_key   = key;
-      new_pull.code       = newcode;
-      new_pull.user       = user;
-      new_pull.bounty_id  = bounty_id;
-      new_pull.timestamp  = now();
+    _accounts.modify(nm, get_self(), [&](auto& acct) {
+      acct.acct_name_id = hashcode(name);
+      acct.accountname = name;
     });
   }
 
-  ACTION ownerpush(
-    std::string reponame, 
-    std::string newcode, 
-    std::string manager) 
-    { 
+  ACTION createrepo(
+    std::string repomanager, 
+    std::string reponame) 
+  {
+    auto acctname = _accounts.find(hashcode(repomanager));
+    eosio_assert(acctname != _accounts.end(), "Only NouGit users can create repos");
+    
     auto repo = _repos.find(hashcode(reponame));
-    eosio_assert(repo != _repos.end(), "repo must exist");
-     const auto& r = *repo;
-    eosio_assert(manager == r.manager, "only repo managers and directly update code");
-   
-    this->setCode(reponame, newcode);
+    eosio_assert(repo == _repos.end(), "repo name is already taken");
+    
+    _repos.emplace(_self, [&](auto &new_repo) {
+      new_repo.repo_id        = hashcode(reponame);
+      new_repo.reponame       = reponame;
+      new_repo.code           = "";
+      new_repo.repomanager    = repomanager;
+      new_repo.bounty_keys    = {};
+      new_repo.pr_keys        = {};
+    });
   }
 
   ACTION createbounty(
@@ -156,30 +143,72 @@ ACTION issuebounty(
     });
   }
 
-  ACTION setreponame(std::string reponame, std::string newreponame) 
+  ACTION apprbounty(
+    std::string reponame, 
+    uint64_t bounty_id, 
+    std::string code) 
+  {
+    //require_auth(_self);
+
+    auto repo = _repos.find(hashcode(reponame));
+    eosio_assert(repo != _repos.end(), "repo must exist");
+  
+    auto existing = _bounties.find(bounty_id);
+    eosio_assert(existing != _bounties.end(), "bounty does not esists");
+
+    const auto& st = *existing;
+
+    // *** assert contract balance >= reward
+
+    this->setcode(reponame, code); // update code
+    // *** transfer(st.user, st.reward);
+    this->deletebounty(reponame, bounty_id);
+  }
+
+  ACTION push(
+    std::string reponame, 
+    std::string newcode, 
+    uint64_t bounty_id, 
+    name user) 
+  { 
+    auto repo = _repos.find(hashcode(reponame));
+    eosio_assert(repo != _repos.end(), "repo must exist");
+    uint64_t key = _pullrequests.available_primary_key();
+    _repos.modify(repo, get_self(), [&](auto& r) {
+      r.pr_keys.push_back(key);
+    });
+
+    _pullrequests.emplace(_self, [&](auto &new_pull) {
+      new_pull.prim_key   = key;
+      new_pull.code       = newcode;
+      new_pull.user       = user;
+      new_pull.bounty_id  = bounty_id;
+      new_pull.timestamp  = now();
+    });
+  }
+
+  ACTION ownerpush(
+    std::string reponame, 
+    std::string newcode, 
+    std::string repomanager) 
+  { 
+    auto repo = _repos.find(hashcode(reponame));
+    eosio_assert(repo != _repos.end(), "repo must exist");
+     const auto& r = *repo;
+    eosio_assert(repomanager == r.repomanager, "only repo repomanagers and directly update code");
+   
+    this->setcode(reponame, newcode);
+  }
+
+  ACTION setreponame(
+    std::string reponame, 
+    std::string newreponame) 
   {
     auto repo = _repos.find(hashcode(reponame));
     eosio_assert(repo != _repos.end(), "repo must exist");
 
     _repos.modify(repo, get_self(), [&](auto& r) {
       r.reponame = newreponame;
-    });
-  }
-
-  ACTION createrepo(
-    std::string manager, 
-    std::string reponame, 
-    std::string code) 
-  {
-    auto repo = _repos.find(hashcode(reponame));
-    eosio_assert(repo == _repos.end(), "repo name is already taken");
-    _repos.emplace(_self, [&](auto &new_repo) {
-      new_repo.repo_id        = hashcode(reponame);
-      new_repo.reponame       = reponame;
-      new_repo.code           = code;
-      new_repo.manager        = manager;
-      new_repo.bounty_keys    = {};
-      new_repo.pr_keys        = {};
     });
   }
 
@@ -233,7 +262,7 @@ private:
     });
   }
 
-  void setCode(
+  void setcode(
     std::string reponame, 
     std::string newcode) 
   {
@@ -256,4 +285,4 @@ private:
 };
 
 // specify the contract name, and export a public action: update
-EOSIO_DISPATCH( repository, (issuebounty)(push)(createbounty)(setreponame)(createrepo)(ownerpush) )
+EOSIO_DISPATCH( notechain, (createacct)(createrepo)(createbounty)(apprbounty)(push)(ownerpush)(setreponame) )
