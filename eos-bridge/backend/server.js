@@ -1,8 +1,7 @@
-//const sqlite3 = require("sqlite3");
-const express = require("express");
 
+const express = require("express");
 const app = express();
-//const db = sqlite3.Database('./EOS-SF-Hackathon/dgit/sqlite/nougit.db');
+
 //require { Api, JsonRpc, RpcError, JsSignatureProvider } from 'eosjs'; // https://github.com/EOSIO/eosjs
 
 const { Api, JsonRpc, RpcError, JsSignatureProvider } = require('eosjs');
@@ -17,7 +16,7 @@ app.use(bodyParser.urlencoded({     // to support URL-encoded bodies
 }));
 
 // eosio endpoint
-const endpoint = "http://localhost:8888";
+const endpoint = "http://35.246.177.288:8888";
 
 const accounts = [
   { "name": "colbygilbert", "privateKey": "5K7mtrinTFrVTduSxizUc5hjXJEtTjVTsqSHeBHes1Viep86FP5", "publicKey": "EOS7R49e5CGtwxX4qNAUN6FiRG5NJguTNo6ey1yGUvMAjvdhfncye" },
@@ -27,7 +26,6 @@ const accounts = [
   { "name": "useraaaaaaae", "privateKey": "5KE2UNPCZX5QepKcLpLXVCLdAw7dBfJFJnuCHhXUf61hPRMtUZg", "publicKey": "EOS7XPiPuL3jbgpfS3FFmjtXK62Th9n2WZdvJb6XLygAghfx1W7Nb" },
   { "name": "useraaaaaaaf", "privateKey": "5KaqYiQzKsXXXxVvrG8Q3ECZdQAj2hNcvCgGEubRvvq7CU3LySK", "publicKey": "EOS5btzHW33f9zbhkwjJTYsoyRzXUNstx1Da9X2nTzk8BQztxoP3H" },
   { "name": "useraaaaaaag", "privateKey": "5KFyaxQW8L6uXFB6wSgC44EsAbzC7ideyhhQ68tiYfdKQp69xKo", "publicKey": "EOS8Du668rSVDE3KkmhwKkmAyxdBd73B51FKE7SjkKe5YERBULMrw" },
-  { "name": "eosio", "privatekey": "5KQwrPbwdL6PhXujxW37FSSQZ1JiwsST4cqQzDeyXtP79zkvFD3", "publickey": "EOS4yvPNMR6gHdovkjfvdujPnnz5CS1vc4MERTpkYAx66qsCD9w81" }
 ];
 
 
@@ -59,10 +57,6 @@ app.post("/create_acct", (req, res) => {
   actionData = {
     name: req.body.account_name,
   };
-  //     break;
-  //   default:
-  //     return;
-  // }
 
   // eosjs function call: connect to the blockchain
   const rpc = new JsonRpc(endpoint, { fetch });
@@ -72,7 +66,7 @@ app.post("/create_acct", (req, res) => {
   // try {
   api.transact({
     actions: [{
-      account: "notechainacc",
+      account: "nougitnougit",
       name: actionName,
       authorization: [{
         actor: account,
@@ -88,19 +82,6 @@ app.post("/create_acct", (req, res) => {
 
       res.send("success");
 
-      // db.run("INSERT INTO Scatter ( Account_Name, Password, Public_Key, Private_Key) VALUES ($account_Name, $password, $aublic_Key, $private_Key);",{
-      //   $account_Name: result.account_name,
-      //   $password: req.body.password,
-      //   $public_Key: , //TODO
-      //   $private_Key  //TODO
-      //   }, (row, err) => {
-      //     if(err) {
-      //       console.log(err);
-      //       return;
-      //     }
-      //   }); 
-
-
 
     }).catch(function (e) {
       console.error(e);
@@ -109,6 +90,62 @@ app.post("/create_acct", (req, res) => {
         console.log(JSON.stringify(e.json, null, 2));
       }
     });
+});
+
+// getallrepos endpoint
+app.post("/get_all_repos", (req, res) => {
+
+  const rpc = new JsonRpc(endpoint, { fetch });
+
+  rpc.get_table_rows({
+    "json": true,
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
+    "table": "repositories",        // name of the table as specified by the contract abi
+    "lower_bound": 0,        // ???? TO fix later???
+    "limit": 200,
+  }).then(function (repos) {
+
+    console.log(repos);
+
+    res.send(
+      repos.rows
+    );
+  }).catch(function (e) {
+    console.error(e);
+    console.log('Caught exception: ' + e);
+    if (e instanceof RpcError) {
+      console.log(JSON.stringify(e.json, null, 2));
+    }
+  });
+});
+
+// getallbounties endpoint
+app.post("/get_all_bounties", (req, res) => {
+
+  const rpc = new JsonRpc(endpoint, { fetch });
+
+  rpc.get_table_rows({
+    "json": true,
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
+    "table": "bounty",        // name of the table as specified by the contract abi
+    "lower_bound": 0,        // ???? TO fix later???
+    "limit": 200,
+  }).then(function (bounties) {
+
+    console.log(bounties);
+    // this.setState({ noteTable: result.rows })
+    res.send(
+      bounties.rows
+    );
+  }).catch(function (e) {
+    console.error(e);
+    console.log('Caught exception: ' + e);
+    if (e instanceof RpcError) {
+      console.log(JSON.stringify(e.json, null, 2));
+    }
+  });
 });
 
 // creatrepo endpoint
@@ -128,10 +165,6 @@ app.post("/create_repo", (req, res) => {
     manager: req.body.manager,
     reponame: req.body.reponame,
   };
-  //     break;
-  //   default:
-  //     return;
-  // }
 
   // eosjs function call: connect to the blockchain
   const rpc = new JsonRpc(endpoint, { fetch });
@@ -141,7 +174,7 @@ app.post("/create_repo", (req, res) => {
   // try {
   api.transact({
     actions: [{
-      account: "notechainacc",
+      account: "nougitnougit",
       name: actionName,
       authorization: [{
         actor: account,
@@ -157,18 +190,53 @@ app.post("/create_repo", (req, res) => {
 
       res.send("success");
 
-      // db.run("INSERT INTO IPFS ( Repo_ID, Repo_Name, Repo_Manager, Code ) VALUES ($repo_id, $repo_Name, $repo_Manager, $code );",{
-      //   $repo_id: result.repo_id, 
-      //   $repo_Name: result.reponame, 
-      //   $repo_Manager: result.repomanager, 
-      //   $code: result.code
-      // }, (row, err) => {
-      //   if(err) {
-      //     console.log(err);
-      //     return;
-      //   }
-      // }); 
 
+
+
+    }).catch(function (e) {
+      console.error(e);
+      console.log('Caught exception: ' + e);
+      if (e instanceof RpcError) {
+        console.log(JSON.stringify(e.json, null, 2));
+      }
+    });
+});
+
+// Ownerpush
+// ACTION ownerpush(std::string code)
+app.post("/owner_push", (req, res) => {
+  let account = accounts[0].name;
+  let privateKey = accounts[0].privateKey;
+
+  // define actionName and action according to event type
+  let actionName = "ownerpush";
+  let actionData = {
+    reponame: req.body.reponame,
+    code: req.body.code, // *** TOGGLE  
+    manager: rew.body.manager
+  };
+
+  // eosjs function call: connect to the blockchain
+  const rpc = new JsonRpc(endpoint, { fetch });
+  // const rpc = new JsonRpc(endpoint);
+  const signatureProvider = new JsSignatureProvider([privateKey]);
+  const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
+  api.transact({
+    actions: [{
+      account: "nougitnougit",
+      name: actionName,
+      authorization: [{
+        actor: account,
+        permission: 'active',
+      }],
+      data: actionData,
+    }]
+  }, {
+      blocksBehind: 3,
+      expireSeconds: 30,
+    }).then(function (result) {
+
+      res.send("success");
 
     }).catch(function (e) {
       console.error(e);
@@ -185,18 +253,6 @@ app.post("/create_bounty", (req, res) => {
 
   let account = accounts[0].name;
   let privateKey = accounts[0].privateKey;
-  // ***TOGGLE WITH ^
-  // let account = req.body.account_name;
-  // let privateKey;
-  // db.get("SELECT * FROM Scatter WHERE Account_Name = $account_Name;", {
-  //   $account_name: account 
-  // }, (row, err) => {
-  //   if(err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   privateKey = row.privateKey;
-  // });
 
   //let privateKey = event.target.privateKey.value;
   let note = "Mike Lin Test (not used! /createbounty endpoint)";
@@ -221,7 +277,7 @@ app.post("/create_bounty", (req, res) => {
   // try {
   api.transact({
     actions: [{
-      account: "notechainacc",
+      account: "nougitnougit",
       name: actionName,
       authorization: [{
         actor: account,
@@ -241,101 +297,8 @@ app.post("/create_bounty", (req, res) => {
       const rpc = new JsonRpc(endpoint, { fetch });
       rpc.get_table_rows({
         "json": true,
-        "code": "notechainacc",   // contract who owns the table
-        "scope": "notechainacc",  // scope of the table
-        "table": "bounty",    // name of the table as specified by the contract abi
-        "limit": 100,
-      }).then(function (result) {
-        console.log(result);
-        // this.setState({ noteTable: result.rows })
-
-        res.send(
-          result.rows
-        );
-      }).catch(function (e) {
-        console.error(e);
-        console.log('Caught exception: ' + e);
-        if (e instanceof RpcError) {
-          console.log(JSON.stringify(e.json, null, 2));
-        }
-      });
-
-    }).catch(function (e) {
-      console.error(e);
-      console.log('Caught exception: ' + e);
-      if (e instanceof RpcError) {
-        console.log(JSON.stringify(e.json, null, 2));
-      }
-    });
-});
-
-// Issuebounty Endpoint which calls EOS function:
-// ACTION apprbounty(uint64_t bounty_id, std::string code)
-app.post("/appr_bounty", (req, res) => {
-
-  let account = accounts[0].name;
-  let privateKey = accounts[0].privateKey;
-  // ***TOGGLE WITH ^
-  // let account = req.body.account_name;
-  // let privateKey;
-  // db.get("SELECT * FROM Scatter WHERE Account_Name = $account_Name;", {
-  //   $account_name: account 
-  // }, (row, err) => {
-  //   if(err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   privateKey = row.privateKey;
-  // });
-
-  // define actionName and action according to event type
-  // switch (event.type) {
-  //   case "submit":
-  let actionName = "apprbounty";
-  let actionData = {
-    reponame: req.body.reponame,
-    bounty_id: req.body.bounty_id,
-    code: req.body.code
-  };
-
-  // eosjs function call: connect to the blockchain
-  const rpc = new JsonRpc(endpoint, { fetch });
-  // const rpc = new JsonRpc(endpoint);
-  const signatureProvider = new JsSignatureProvider([privateKey]);
-  const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
-  // try {
-  api.transact({
-    actions: [{
-      account: "notechainacc",
-      name: actionName,
-      authorization: [{
-        actor: account,
-        permission: 'active',
-      }],
-      data: actionData,
-    }]
-  }, {
-      blocksBehind: 3,
-      expireSeconds: 30,
-    }).then(function (result) {
-      // console.log(result);
-
-      // res.send("success");
-      // *** TOGGLE
-      // db.run("UPDATE IPFS SET Code = $code WHERE Repo_ID = $repo_ID;", {
-      //   $repo_ID: result.repoid,
-      //   $code: req.body.code      
-      // }, (row, err) => {
-      //   if(err) {
-      //     console.log(err);
-      //   }
-      // });
-
-      const rpc = new JsonRpc(endpoint, { fetch });
-      rpc.get_table_rows({
-        "json": true,
-        "code": "notechainacc",   // contract who owns the table
-        "scope": "notechainacc",  // scope of the table
+        "code": "nougitnougit",   // contract who owns the table
+        "scope": "nougitnougit",  // scope of the table
         "table": "bounty",    // name of the table as specified by the contract abi
         "limit": 100,
       }).then(function (result) {
@@ -367,18 +330,6 @@ app.post("/appr_bounty", (req, res) => {
 app.post("/push", (req, res) => {
   let account = accounts[0].name;
   let privateKey = accounts[0].privateKey;
-  // ***TOGGLE WITH ^
-  // let account = req.body.account_name;
-  // let privateKey;
-  // db.get("SELECT * FROM Scatter WHERE Account_Name = $account_Name;", {
-  //   $account_name: account 
-  // }, (row, err) => {
-  //   if(err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   privateKey = row.privateKey;
-  // });
   // define actionName and action according to event type
   let actionName = "push";
   let actionData = {
@@ -396,7 +347,7 @@ app.post("/push", (req, res) => {
   // try {
   api.transact({
     actions: [{
-      account: "notechainacc",
+      account: "nougitnougit",
       name: actionName,
       authorization: [{
         actor: account,
@@ -410,15 +361,7 @@ app.post("/push", (req, res) => {
     }).then(function (result) {
       // console.log(result);
 
-      // *** TOGGLE
-      // db.run("SELECT * FROM PullRequests WHERE PR_ID = $pr_ID;", {
-      //   $repo_ID: result.prim_key,
-      //   $code: req.body.code      
-      // }, (row, err) => {
-      //   if(err) {
-      //     console.log(err);
-      //   }
-      // });
+
       res.send("success");
 
 
@@ -431,30 +374,21 @@ app.post("/push", (req, res) => {
     });
 });
 
-// Ownerpush
-// ACTION ownerpush(std::string code)
-app.post("/owner_push", (req, res) => {
+// Issuebounty Endpoint which calls EOS function:
+// ACTION apprbounty(uint64_t bounty_id, std::string code)
+app.post("/appr_bounty", (req, res) => {
+
   let account = accounts[0].name;
   let privateKey = accounts[0].privateKey;
-  // ***TOGGLE WITH ^
-  // let account = req.body.account_name;
-  // let privateKey;
-  // db.get("SELECT * FROM Scatter WHERE Account_Name = $account_Name;", {
-  //   $account_name: account 
-  // }, (row, err) => {
-  //   if(err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   privateKey = row.privateKey;
-  // });
 
   // define actionName and action according to event type
-  let actionName = "ownerpush";
+  // switch (event.type) {
+  //   case "submit":
+  let actionName = "apprbounty";
   let actionData = {
     reponame: req.body.reponame,
-    code: req.body.code, // *** TOGGLE  
-    manager: rew.body.manager
+    bounty_id: req.body.bounty_id,
+    code: req.body.code
   };
 
   // eosjs function call: connect to the blockchain
@@ -462,9 +396,10 @@ app.post("/owner_push", (req, res) => {
   // const rpc = new JsonRpc(endpoint);
   const signatureProvider = new JsSignatureProvider([privateKey]);
   const api = new Api({ rpc, signatureProvider, textDecoder: new TextDecoder(), textEncoder: new TextEncoder() });
+  // try {
   api.transact({
     actions: [{
-      account: "notechainacc",
+      account: "nougitnougit",
       name: actionName,
       authorization: [{
         actor: account,
@@ -478,16 +413,28 @@ app.post("/owner_push", (req, res) => {
     }).then(function (result) {
       // console.log(result);
 
-      // *** TOGGLE
-      // db.run("UPDATE IPFS SET Code = $code WHERE Repo_ID = $repo_ID;", {
-      //   $repo_ID: result.repoid,
-      //   $code: req.body.code      
-      // }, (row, err) => {
-      //   if(err) {
-      //     console.log(err);
-      //   }
-      // });
-      res.send("success");
+
+      const rpc = new JsonRpc(endpoint, { fetch });
+      rpc.get_table_rows({
+        "json": true,
+        "code": "nougitnougit",   // contract who owns the table
+        "scope": "nougitnougit",  // scope of the table
+        "table": "bounty",    // name of the table as specified by the contract abi
+        "limit": 100,
+      }).then(function (result) {
+        console.log(result);
+        // this.setState({ noteTable: result.rows })
+
+        res.send(
+          result.rows
+        );
+      }).catch(function (e) {
+        console.error(e);
+        console.log('Caught exception: ' + e);
+        if (e instanceof RpcError) {
+          console.log(JSON.stringify(e.json, null, 2));
+        }
+      });
 
     }).catch(function (e) {
       console.error(e);
@@ -504,25 +451,10 @@ app.post("/set_repo_name", (req, res) => {
 
   let account = accounts[0].name;
   let privateKey = accounts[0].privateKey;
-  // ***TOGGLE WITH ^
-  // let account = req.body.account_name;
-  // let privateKey;
-  // db.get("SELECT * FROM Scatter WHERE Account_Name = $account_Name;", {
-  //   $account_name: account 
-  // }, (row, err) => {
-  //   if(err) {
-  //     console.log(err);
-  //     return;
-  //   }
-  //   privateKey = row.privateKey;
-  // });
-
-  // *** TOGGLE
-  //let rname = req.body.reponame;
 
   let actionName = "setreponame";
   let actionData = {
-    reponame: req.body.reponame, // *** TOGGLE reponame: rname
+    reponame: req.body.reponame,
     newreponame: req.body.newreponame
   };
 
@@ -534,7 +466,7 @@ app.post("/set_repo_name", (req, res) => {
   // try {
   api.transact({
     actions: [{
-      account: "notechainacc",
+      account: "nougitnougit",
       name: actionName,
       authorization: [{
         actor: account,
@@ -548,16 +480,6 @@ app.post("/set_repo_name", (req, res) => {
     }).then(function (result) {
       console.log(result);
 
-      // *** TOGGLE
-      // db.run("UPDATE IPFS SET Repo_Name = $repo_Name WHERE Repo_ID = $repo_ID;", {
-      //   $repo_ID: result.repoid,
-      //   $repo_Name: rname      
-      // }, (row, err) => {
-      //   if(err) {
-      //     console.log(err);
-      //   }
-      // });
-
       res.send("success");
 
     }).catch(function (e) {
@@ -569,42 +491,15 @@ app.post("/set_repo_name", (req, res) => {
     });
 });
 
-// getallrepos endpoint
-app.post("/get_all_repos", (req, res) => {
-
-  const rpc = new JsonRpc(endpoint, { fetch });
-
-  rpc.get_table_rows({
-    "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
-    "table": "repositories",        // name of the table as specified by the contract abi
-    "lower_bound": 0,        // ???? TO fix later???
-    "limit": 200,
-  }).then(function (repos) {
-
-    console.log(repos);
-    // this.setState({ noteTable: result.rows })
-    res.send(
-      repos.rows
-    );
-  }).catch(function (e) {
-    console.error(e);
-    console.log('Caught exception: ' + e);
-    if (e instanceof RpcError) {
-      console.log(JSON.stringify(e.json, null, 2));
-    }
-  });
-});
 // getrepo endpoint
-app.post("/get_repo", (req, res) => {
+app.post("/getrepo", (req, res) => {
   let reponame = req.body.reponame;
 
   const rpc = new JsonRpc(endpoint, { fetch });
   rpc.get_table_rows({
     "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
     "table": "repositories",        // name of the table as specified by the contract abi
     "lower_bound": 0,        // ???? TO fix later???
     "limit": 200,
@@ -631,34 +526,6 @@ app.post("/get_repo", (req, res) => {
   });
 });
 
-// getallbounties endpoint
-app.post("/get_all_bounties", (req, res) => {
-
-  const rpc = new JsonRpc(endpoint, { fetch });
-
-  rpc.get_table_rows({
-    "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
-    "table": "bounty",        // name of the table as specified by the contract abi
-    "lower_bound": 0,        // ???? TO fix later???
-    "limit": 200,
-  }).then(function (bounties) {
-
-    console.log(bounties);
-    // this.setState({ noteTable: result.rows })
-    res.send(
-      bounties.rows
-    );
-  }).catch(function (e) {
-    console.error(e);
-    console.log('Caught exception: ' + e);
-    if (e instanceof RpcError) {
-      console.log(JSON.stringify(e.json, null, 2));
-    }
-  });
-});
-
 // getrepobounties endpoint
 app.post("/get_repo_bounties", (req, res) => {
   let reponame = req.body.reponame;
@@ -666,16 +533,16 @@ app.post("/get_repo_bounties", (req, res) => {
   const rpc = new JsonRpc(endpoint, { fetch });
   rpc.get_table_rows({
     "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
     "table": "repositories",        // name of the table as specified by the contract abi
     "lower_bound": 0,        // ???? TO fix later???
     "limit": 200,
   }).then((repos) => {
     rpc.get_table_rows({
       "json": true,
-      "code": "notechainacc",   // contract who owns the table
-      "scope": "notechainacc",  // scope of the table
+      "code": "nougitnougit",   // contract who owns the table
+      "scope": "nougitnougit",  // scope of the table
       "table": "bounty",        // name of the table as specified by the contract abi
       "lower_bound": 0,        // ???? TO fix later???
       "limit": 200,
@@ -715,8 +582,8 @@ app.post("/get_pull_requests", (req, res) => {
   const rpc = new JsonRpc(endpoint, { fetch });
   rpc.get_table_rows({
     "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
     "table": "pullrequest",    // name of the table as specified by the contract abi
     "lower_bound": 0,       //should be a constant and never change??
     "limit": 100,
@@ -726,8 +593,8 @@ app.post("/get_pull_requests", (req, res) => {
 
     rpc.get_table_rows({
       "json": true,
-      "code": "notechainacc",   // contract who owns the table
-      "scope": "notechainacc",  // scope of the table
+      "code": "nougitnougit",   // contract who owns the table
+      "scope": "nougitnougit",  // scope of the table
       "table": "pullrequest",    // name of the table as specified by the contract abi
       "table_key": bounty_id,       //should be a constant and never change??
       "limit": 100,
@@ -759,14 +626,13 @@ app.post("/get_pull_requests", (req, res) => {
   });
 });
 
-// DONE!
 // pull endpoint which gets table values
 app.post("/pull", (req, res) => {
   const rpc = new JsonRpc(endpoint, { fetch });
   rpc.get_table_rows({
     "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
     "table": "field",    // name of the table as specified by the contract abi
     "table_key": 0,       //should be a constant and never change??
     "limit": 100,
@@ -792,8 +658,8 @@ app.post("/clone", (req, res) => {
   const rpc = new JsonRpc(endpoint, { fetch });
   rpc.get_table_rows({
     "json": true,
-    "code": "notechainacc",   // contract who owns the table
-    "scope": "notechainacc",  // scope of the table
+    "code": "nougitnougit",   // contract who owns the table
+    "scope": "nougitnougit",  // scope of the table
     "table": "field",    // name of the table as specified by the contract abi
     "table_key": 0,       //should be a constant and never change??
     "limit": 100,

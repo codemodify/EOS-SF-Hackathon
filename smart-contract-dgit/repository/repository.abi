@@ -1,0 +1,298 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT Fri Nov 23 14:58:20 2018",
+    "version": "eosio::abi/1.0",
+    "structs": [
+        {
+            "name": "accounts",
+            "base": "",
+            "fields": [
+                {
+                    "name": "acct_name_id",
+                    "type": "int32"
+                },
+                {
+                    "name": "accountname",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "apprbounty",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "pr_id",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "bounty",
+            "base": "",
+            "fields": [
+                {
+                    "name": "prim_key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "bountyname",
+                    "type": "string"
+                },
+                {
+                    "name": "reward",
+                    "type": "int32"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                },
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "createacct",
+            "base": "",
+            "fields": [
+                {
+                    "name": "name",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "createbounty",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "bountyname",
+                    "type": "string"
+                },
+                {
+                    "name": "setreward",
+                    "type": "int32"
+                },
+                {
+                    "name": "description",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "createrepo",
+            "base": "",
+            "fields": [
+                {
+                    "name": "repomanager",
+                    "type": "string"
+                },
+                {
+                    "name": "reponame",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "ownerpush",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "newcode",
+                    "type": "string"
+                },
+                {
+                    "name": "repomanager",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "pullrequest",
+            "base": "",
+            "fields": [
+                {
+                    "name": "prim_key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                },
+                {
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "timestamp",
+                    "type": "uint64"
+                }
+            ]
+        },
+        {
+            "name": "push",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "newcode",
+                    "type": "string"
+                },
+                {
+                    "name": "bounty_id",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "repositories",
+            "base": "",
+            "fields": [
+                {
+                    "name": "repoid",
+                    "type": "int32"
+                },
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "code",
+                    "type": "string"
+                },
+                {
+                    "name": "repomanager",
+                    "type": "string"
+                },
+                {
+                    "name": "total_eos",
+                    "type": "uint64"
+                },
+                {
+                    "name": "bounty_keys",
+                    "type": "uint64[]"
+                },
+                {
+                    "name": "pr_keys",
+                    "type": "uint64[]"
+                }
+            ]
+        },
+        {
+            "name": "setreponame",
+            "base": "",
+            "fields": [
+                {
+                    "name": "reponame",
+                    "type": "string"
+                },
+                {
+                    "name": "newreponame",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "types": [],
+    "actions": [
+        {
+            "name": "apprbounty",
+            "type": "apprbounty",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createacct",
+            "type": "createacct",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createbounty",
+            "type": "createbounty",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "createrepo",
+            "type": "createrepo",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "ownerpush",
+            "type": "ownerpush",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "push",
+            "type": "push",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "setreponame",
+            "type": "setreponame",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "accounts",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "bounty",
+            "type": "bounty",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "pullrequest",
+            "type": "pullrequest",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "repositories",
+            "type": "repositories",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [],
+    "abi_extensions": []
+}
